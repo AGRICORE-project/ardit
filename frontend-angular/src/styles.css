@@ -1,0 +1,163 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+.badge-success {
+    color: white !important;
+    background-color: #677E67 !important;
+}
+
+body {
+    background-color: #E5E5E5 !important;
+    margin-bottom: 60px;
+}
+
+.login-body {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/main_background.png) center !important;
+    background-size: cover !important;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+.breadcrumb-item {
+    color: #44613a !important;
+}
+
+.breadcrumb-link {
+    color: #44613a !important;
+    font-weight: normal;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #46673A !important;
+    border-color: #46673A !important;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-succes:active,
+.btn-success:visited {
+    background-color: #44613a !important;
+    border-color: #44613a !important;
+}
+
+.btn-outline-success {
+    color: #44613a !important;
+    border-color: #44613a !important;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:visited {
+    background-color: #44613a !important;
+    color: white !important;
+}
+
+.card-link {
+    border-color: #44613a !important;
+}
+
+.card-link:hover {
+    cursor: pointer;
+    border-color: #44613a;
+    border: 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-link-text {
+    color: #44613a;
+}
+
+.card-select:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 5px solid #44613a;
+}
+
+.close {
+    /* Modal close button */
+    color: white !important;
+}
+
+.collapse-section {
+    cursor: pointer;
+}
+
+.extent-to {
+    /* Temporal extent second label*/
+    visibility: hidden;
+}
+
+.fa-question-circle {
+    color: #44613a;
+}
+
+.fa-globe,
+.fa-twitter {
+    color: white;
+}
+
+.fa-external-link-alt {
+    color: #44613a;
+}
+
+.fa-eye {
+    color: #44613a;
+}
+
+.footer-wrap {
+    padding-bottom: 60px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+.keyword-badge {
+    background-color: #44613a;
+}
+
+.main-panel {
+    box-shadow: 0 1px 1px 0 rgba(9, 30, 66, 0.25), 0 0 1px 0 rgba(9, 30, 66, 0.31);
+}
+
+.modal-header {
+    color: white;
+    background-color: #44613a;
+}
+
+.spinner-color {
+    color: #677E67 !important;
+}
+
+.table-highlight {
+    background-color: #44613a;
+    color: white;
+}
+
+
+/* ng-select custom styles */
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+    background-color: #d4edda !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option-marked {
+    background-color: #d4edda !important;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option-selected {
+    background-color: #44613a !important;
+    color: white !important;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon.left {
+    border-right: 1px solid #677E67 !important;
+}
+
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon:hover {
+    background-color: #677E67 !important;
+    color: white !important;
+}

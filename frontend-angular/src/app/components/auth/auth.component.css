@@ -1,0 +1,30 @@
+h1 {
+    color: white;
+}
+
+a,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #46673A;
+}
+
+.btn-link {
+    color: #46673A !important;
+}
+
+.fa-globe,
+.fa-twitter {
+    color: white;
+}
+
+.card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+    align-items: center !important;
+    justify-content: center !important;
+}

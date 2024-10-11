@@ -1,0 +1,184 @@
+<div class="container col-sm-12">
+
+    <nav *ngIf="vocabulary" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{vocabularyListRoute}}" [routerLinkActive]="['active']">Vocabularies</a></li>
+            <li class="breadcrumb-item active">Edit</li>
+            <li class="breadcrumb-item active" aria-current="page">{{vocabulary.name}}</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+
+        <div *ngIf="!vocabulary" class="d-flex justify-content-center">
+            <div class="spinner-border spinner-color m-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div *ngIf="vocabulary && vocabularyValues" class="card-body main-panel">
+            <div class="title-container d-flex justify-content-between">
+                <div class="card-title">
+                    <h5>{{vocabulary.name}}</h5>
+                </div>
+                <button class="btn btn-outline-secondary py-0" (click)="getJsonVocabulary(vocabulary.id)"><i class="fas fa-file-download"></i> Download as JSON</button>
+            </div> 
+            <hr />
+
+            <form [formGroup]="vocabularyForm" (ngSubmit)="updateVocabulary()" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name *</label>
+                        <ng-template #popVocName>
+                            <div>
+                                <span>Name of the vocabulary. It's a free text property</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocName" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="name">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'name')"><small>Vocabulary name is required</small></span>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Description *</label>
+                        <ng-template #popVocDescription>
+                            <div>
+                                <span>A brief description of its use. It's a free text property</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocDescription" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="description">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'description')"><small>Vocabulary producer is required</small></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Link</label>
+                        <ng-template #popVocLink>
+                            <div>
+                                <span>A external link to the vocabulary. Leave it blank if it is an internal vocabulary</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocLink" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="url">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Topic *</label>
+                        <ng-template #popVocTopic>
+                            <div>
+                                <span>Property of the dataset to which the vocabulary is related to. Select one</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocTopic" placement="bottom" container="body"></i>
+                        <ng-select appendTo="body" [items]="vocabularyTopics" formControlName="topic" placeholder="Select a topic"></ng-select>
+
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'topic')"><small>Vocabulary topic is required</small></span>
+                    </div>
+                </div>
+
+                <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+
+                <hr>
+                <div class="form-group mt-2">
+                    <button type="submit" [disabled]="vocabularyForm.invalid" class="btn btn-success">Save</button>
+                    <button class="btn btn-secondary ml-2" routerLink="{{vocabularyListRoute}}" [routerLinkActive]="['active']">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div *ngIf="vocabulary && vocabularyValues" class="card-body main-panel">
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="form-inline">
+                    <h5>Values</h5>
+                    <ng-template #popVocValues>
+                        <div>
+                            <span>List of vocabulary values</span>
+                        </div>
+                    </ng-template>
+                    <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocValues" placement="bottom" container="body"></i>
+                </div>
+
+                <button type="button" class="btn btn-outline-success" (click)="openValueModal()"><i class="fas fa-plus"></i> Add a new value</button>
+            </div>
+
+            <hr>
+
+            <div class="form-group form-inline">
+                Search: <input class="form-control ml-2" type="text" [(ngModel)]="searchInput" (ngModelChange)="onSearch($event)" placeholder="Search for values..." />
+            </div>
+
+            <div class="alert alert-success" role="alert">
+                <span class="mr-2"><small><em>Values found: {{vocabularyValuesFiltered.length}}</em></small></span>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Label</th>
+                            <th class="text-center">Link</th>
+                            <th class="text-center">Extra data</th>
+                            <th class="text-center">Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let value of vocabularyValuesFiltered | paginate: {itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }; index as i">
+
+                            <td>
+                                <ngb-highlight [result]="value.code" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                            </td>
+
+                            <td>
+                                <ngb-highlight [result]="value.label" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                            </td>
+
+                            <td *ngIf="!value.url; else valueLink" class="text-center">Internal vocabulary</td>
+                            <ng-template #valueLink>
+                                <td class="text-center"><small><a class="attribute-link" href="{{value.url}}" target="_blank"><i class="fas fa-external-link-alt"></i></a></small></td>
+                            </ng-template>
+
+                            <td *ngIf="!value.extra_data; else valueExtraData" class="text-center">-</td>
+                            <ng-template #valueExtraData>
+                                <td class="text-center">{{value.extra_data}}</td>
+                            </ng-template>
+
+                            <td class="text-center">
+                                <div ngbDropdown container="body">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm" ngbDropdownToggle>Options</button>
+                                    <div ngbDropdownMenu>
+                                        <button type="button" ngbDropdownItem ngbDropdownItem (click)="openValueModal(i + ((page-1)*pageSize))"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                        <button type="button" ngbDropdownItem (click)="deleteVocabularyValue(i + ((page-1)*pageSize))"><i class="fas fa-trash-alt"></i> Delete</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div *ngIf="vocabularyValuesFiltered.length == 0">
+                <span><i>No items found</i></span>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between mt-2">
+                <pagination-controls class="paginator" [responsive]="true" (pageChange)="pageChanged($event)"></pagination-controls>
+
+                <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                        <option [ngValue]="10">10 items per page</option>
+                        <option [ngValue]="20">20 items per page</option>
+                        <option [ngValue]="50">50 items per page</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+</div>

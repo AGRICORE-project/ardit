@@ -1,0 +1,36 @@
+.attribute-link {
+    color: #677E67;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.draft-heading {
+    color: grey;
+}
+
+::ng-deep .popover {
+    max-width: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+span.section {
+    font-weight: bold;
+}
+
+.section-green {
+    color: #44613a;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 20px 10px;
+}
+
+.table-link {
+    word-wrap: break-word;
+}
+
+td {
+    padding: 5px 0;
+}

@@ -1,0 +1,106 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{datasetsListRoute}}" [routerLinkActive]="['active']">Datasets</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Popovers help descriptions</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body main-panel">
+
+            <div class="card-title ml-3 d-flex justify-content-between align-items-center">
+                <h5>Dataset properties descriptions</h5>
+
+                <button type="button" class="btn btn-outline-secondary" routerLink="{{datasetsListRoute}}">Search for datasets</button>
+            </div>
+
+            <hr>
+
+            <div *ngIf="!descriptions" class="d-flex justify-content-center">
+                <div class="spinner-border spinner-color m-5" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div *ngIf="descriptions">
+                <div class="alert alert-success" role="alert">
+                    <span class="mr-2"><small><em>Descriptions found: {{descriptions.length}}</em></small></span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                <th class="text-center">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let description of descriptions | paginate: { itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }; index as i">
+
+                                <td><small>{{description.property}}</small></td>
+                                <td><small>{{description.description}}</small></td>
+                                <td class="text-center">
+                                    <div ngbDropdown container="body">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" ngbDropdownToggle>Options</button>
+                                        <div ngbDropdownMenu>
+                                            <button type="button" ngbDropdownItem (click)="openDescriptionModal(descriptionModal, i + ((page-1)*pageSize))"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                            <button type="button" ngbDropdownItem (click)="deleteDescription(i + ((page-1)*pageSize))"><i class="fas fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div *ngIf="descriptions.length == 0">
+                        <span><i>No items found</i></span>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between mt-2">
+                        <pagination-controls class="paginator" [responsive]="true" (pageChange)="pageChanged($event)"></pagination-controls>
+
+                        <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                          <option [ngValue]="5">5 items per page</option>
+                          <option [ngValue]="10">10 items per page</option>
+                          <option [ngValue]="50">50 items per page</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Dataset description modal-->
+<ng-template #descriptionModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit the property description</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="descriptionForm" (ngSubmit)="updateDescription()" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label>Description *</label>
+                    <textarea class="form-control" formControlName="description" rows="2"></textarea>
+
+                    <span class="text-danger" *ngIf="modalFieldInvalid(descriptionForm, 'description')"><small>Description is required</small></span>
+                </div>
+            </div>
+            <hr>
+            <div class="form-group mt-2 float-right">
+                <button type="submit" [disabled]="descriptionForm.pristine || descriptionForm.invalid" class="btn btn-success" (click)="modal.close()">Update</button>
+                <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</ng-template>

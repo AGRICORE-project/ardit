@@ -1,0 +1,42 @@
+version: '3' 
+services:
+    ldap:
+        image: osixia/openldap:1.4.0
+        container_name: ldap
+        ports:
+            - "389:389"
+            - "636:636"
+        volumes:
+            - ./ldap-service/volume/database:/var/lib/ldap
+            - ./ldap-service/volume/config:/etc/ldap/slapd.d
+            - ./ldap-service/dev.ldif:/container/service/slapd/assets/config/bootstrap/ldif/dev.ldif
+        environment:
+            - LDAP_DOMAIN=agricore.eu
+            - LDAP_ADMIN_PASSWORD=admin
+        command: --copy-service --loglevel debug
+    
+    phpldapadmin:
+        image: osixia/phpldapadmin:latest
+        container_name: phpldapadmin
+        environment:
+            - PHPLDAPADMIN_LDAP_HOSTS=ldap
+            - PHPLDAPADMIN_HTTPS=false
+        ports:
+            - "8081:80"
+        depends_on:
+            - ldap
+    postgres:
+        image: postgres
+        container_name: postgres
+        ports:
+            - "5432:5432"
+        volumes:
+            - ardit_postgres_data:/var/lib/postgresql/data
+            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+        environment:
+            - POSTGRES_USER=admin
+            - POSTGRES_PASSWORD=admin
+            - POSTGRES_DB=ardit
+volumes:
+    ardit_postgres_data:
+        driver: local

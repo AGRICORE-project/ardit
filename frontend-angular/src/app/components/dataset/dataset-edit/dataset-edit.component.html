@@ -1,0 +1,685 @@
+<div class="container col-md-12">
+
+    <nav *ngIf="dataset" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{datasetListRoute}}" [routerLinkActive]="['active']">Datasets</a></li>
+            <li class="breadcrumb-item active">Edit</li>
+            <li class="breadcrumb-item active" aria-current="page">{{dataset.title}}</li>
+        </ol>
+    </nav>
+
+    <ngb-alert type="info" [dismissible]="true">
+        <i class="fas fa-info-circle"></i>
+        <small> {{alertInfo}}<a href="https://confluence.agricore-project.eu/display/AG/%5BWorkingCopy%5DAGRICORE+DCAT-AP+2.0+Extension" target="_blank"> https://confluence.agricore-project.eu/display/AG/%5BWorkingCopy%5DAGRICORE+DCAT-AP+2.0+Extension</a></small>
+    </ngb-alert>
+
+    <div class="card">
+        <div *ngIf="!dataset" class="d-flex justify-content-center">
+            <div class="spinner-border spinner-color m-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div *ngIf="dataset" class="card-body main-panel">
+
+            <div class="card-title ml-3 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5>Edit dataset</h5>
+                </div>
+
+                <button type="button" class="btn btn-outline-secondary" (click)="downloadJsonFile()"><i class="fas fa-file-download"></i> Download as JSON file</button>
+            </div>
+
+            <hr>
+
+            <ngb-alert type="warning" [dismissible]="false">
+                <span><i>Required properties(*):</i></span>
+                <ul>
+                    <li><i>General category: Title, dataset type, producer, language and periodicity of the publications</i></li>
+                    <li><i>Purpose category: Temporal extent</i></li>
+                </ul>
+            </ngb-alert>
+
+            <form [formGroup]="datasetUpdateForm" (ngSubmit)="updateDataset()" novalidate>
+
+                <ngb-accordion #acc="ngbAccordion" activeIds="generalSection">
+                    <ngb-panel id="generalSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('generalSection')">
+                                <h6>{{generalSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md">
+                                        <label>Title *</label>
+                                        <ng-template #popTitle>
+                                            <div>
+                                                <span>{{datasetDescriptions.TITLE}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popTitle" placement="bottom" container="body"></i>
+                                        <input type="text" class="form-control" formControlName="title">
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'title')"><small>Dataset title is required</small></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md">
+                                        <label>Description</label>
+                                        <ng-template #popDescription>
+                                            <div>
+                                                <span>{{datasetDescriptions.DESCRIPTION}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDescription" placement="bottom" container="body"></i>
+                                        <textarea class="form-control" formControlName="description" rows="3"></textarea>
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'description')"><small>The description may not exceed 1000 characters</small></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Issued</label>
+                                        <ng-template #popIssued>
+                                            <div>
+                                                <span>{{datasetDescriptions.ISSUED}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popIssued" placement="bottom" container="body"></i>
+                                        <div class="input-group">
+                                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="issued" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #issued="ngbDatepicker">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary calendar" (click)="issued.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Last update</label>
+                                        <ng-template #popModified>
+                                            <div>
+                                                <span>{{datasetDescriptions.MODIFIED}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popModified" placement="bottom" container="body"></i>
+                                        <div class="input-group">
+                                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="modified" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #modified="ngbDatepicker">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary calendar" (click)="modified.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label>Dataset type *</label>
+                                        <ng-template #popDatasetType>
+                                            <div>
+                                                <span>{{datasetDescriptions.DATASET_TYPE}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDatasetType" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="datasetTypes" [searchable]="true" formControlName="datasetType" placeholder="Select the type of dataset"></ng-select>
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'datasetType')"><small>Dataset type is required</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Producer *</label>
+                                        <ng-template #popProducer>
+                                            <div>
+                                                <span>{{datasetDescriptions.PRODUCER}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popProducer" placement="bottom" container="body"></i>
+                                        <input type="text" class="form-control" formControlName="producer">
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'producer')"><small>Dataset producer is required</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Task to which it will be reported to</label>
+                                        <ng-select appendTo="body" [items]="tasksValues" [searchable]="true" formControlName="wpTask" placeholder="Select a WP1 task"></ng-select>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Link</label>
+                                    <ng-template #popLink>
+                                        <div>
+                                            <span>{{datasetDescriptions.LINK}}</span>
+                                        </div>
+                                    </ng-template>
+                                    <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popLink" placement="bottom" container="body"></i>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">https://www.example.com</span>
+                                        </div>
+                                        <input type="text" class="form-control" formControlName="link">
+                                    </div>
+
+                                    <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'link')"><small>The link to the dataset may not exceed 1000 characters</small></span>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label>Language *</label>
+                                        <ng-template #popLanguage>
+                                            <div>
+                                                <span>{{datasetDescriptions.LANGUAGE}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popLanguage" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="languageValues" [searchable]="true" [multiple]="true" formControlName="languages" placeholder="Select some languages"></ng-select>
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'languages')"><small>Dataset language is required</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Periodicity of the publications *</label>
+                                        <ng-template #popPeriodicity>
+                                            <div>
+                                                <span>{{datasetDescriptions.PERIODICITY}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPeriodicity" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="periodicityValues" [searchable]="true" formControlName="periodicity" placeholder="Select the periodicity"></ng-select>
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'periodicity')"><small>Dataset periodicity is required</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Catalogue</label>
+                                        <ng-template #popCatalogue>
+                                            <div>
+                                                <span>{{datasetDescriptions.CATALOGUE}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCatalogue" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="catalogues" [searchable]="true" bindLabel="title" formControlName="catalogue" placeholder="Select a catalogue"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label>Spatial resolution (in meters)</label>
+                                        <ng-template #popSpatialResolution>
+                                            <div>
+                                                <span>{{datasetDescriptions.SPATIAL_RESOLUTION}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popSpatialResolution" placement="bottom" container="body"></i>
+                                        <input type="number" min="0" class="form-control" formControlName="spatialResolutionInMeters">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Temporal resolution</label>
+                                        <ng-template #popTmpResolution>
+                                            <div>
+                                                <span>{{datasetDescriptions.TEMPORAL_RESOLUTION}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popTmpResolution" placement="bottom" container="body"></i>
+                                        <input type="text" class="form-control" formControlName="temporalResolution">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>Resource type</label>
+                                        <ng-template #popResourceType>
+                                            <div>
+                                                <span>{{datasetDescriptions.RESOURCE_TYPE}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popResourceType" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="resourceTypes" [searchable]="true" formControlName="resourceType" placeholder="Select a resource type"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Was generated by</label>
+                                        <ng-template #popGeneratedBy>
+                                            <div>
+                                                <span>{{datasetDescriptions.WAS_GENERATED_BY}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popGeneratedBy" placement="bottom" container="body"></i>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" #activityValue placeholder="New activity" aria-label="New activity" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-success btn-sm" (click)="addGenerationActivity(activityValue.value)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label class="extent-to">Was generated by</label>
+                                        <ng-select appendTo="body" [items]="generationActivities" [multiple]="true" formControlName="wasGeneratedBy" (change)="updateGenerationActivities($event)" placeholder="Activities that generated the dataset"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Is referenced by</label>
+                                        <ng-template #popReferencedBy>
+                                            <div>
+                                                <span>{{datasetDescriptions.IS_REFERENCED_BY}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popReferencedBy" placement="bottom" container="body"></i>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" #resourceValue placeholder="New resource" aria-label="New resource" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn btn-success btn-sm" (click)="addReferencedResource(resourceValue.value)">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label class="extent-to">Is referenced by</label>
+                                        <ng-select appendTo="body" [items]="referencedResources" [multiple]="true" formControlName="isReferencedBy" (change)="updateReferencedResources($event)" placeholder="Resources that reference the dataset"></ng-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="purposeSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('purposeSection')">
+                                <h6>{{purposeSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label>Temporal extent *</label>
+                                        <ng-template #popTemporalExtent>
+                                            <div>
+                                                <span>{{datasetDescriptions.TEMPORAL_EXTENT}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popTemporalExtent" placement="bottom" container="body"></i>
+                                        <input type="text" class="form-control" formControlName="tmpExtentFrom" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'tmpExtentFrom')"><small>Temporal extent is required and must be in the format yyyy-mm</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-3">
+                                        <label class="extent-to">To</label>
+                                        <input type="text" class="form-control" formControlName="tmpExtentTo" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                                        <span class="text-danger" *ngIf="fieldInvalid(datasetUpdateForm, 'tmpExtentTo')"><small>Temporal extent is required and must be in the format yyyy-mm</small></span>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Subjects</label>
+                                        <ng-template #popSubjects>
+                                            <div>
+                                                <span>{{datasetDescriptions.SUBJECTS}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popSubjects" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="subjectValues" [searchable]="true" [multiple]="true" formControlName="subjects" placeholder="Select some subjects"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Useful for the analysis of (purposes)</label>
+                                        <ng-template #popPurposes>
+                                            <div>
+                                                <span>{{datasetDescriptions.PURPOSES}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPurposes" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="purposesValues" [searchable]="true" [multiple]="true" formControlName="purposes" placeholder="Select some purposes"></ng-select>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Themes covered</label>
+                                        <ng-template #popThemes>
+                                            <div>
+                                                <span>{{datasetDescriptions.THEMES}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popThemes" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="themesValues" [searchable]="true" [multiple]="true" formControlName="themes" placeholder="Select some themes"></ng-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="geoCoverageSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('geoCoverageSection')">
+                                <h6>{{geoCoverageSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Continental coverage</label>
+                                        <ng-template #popContinentalCoverage>
+                                            <div>
+                                                <span>{{datasetDescriptions.CONTINENTS}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popContinentalCoverage" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="continentsValues" [searchable]="true" [multiple]="true" formControlName="continentalCoverage" placeholder="Select the continental coverage"></ng-select>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Country coverage</label>
+                                        <ng-template #popCountryCoverage>
+                                            <div>
+                                                <span>{{datasetDescriptions.COUNTRIES}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCountryCoverage" placement="bottom" container="body"></i>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="addEuropeanCountries()">Add EU countries</a></small>
+                                        <ng-select appendTo="body" [items]="countriesValues" [searchable]="true" [multiple]="true" formControlName="countryCoverage" placeholder="Select the country coverage"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label>NUTS 1</label>
+                                        <ng-template #popNuts1>
+                                            <div>
+                                                <span>{{datasetDescriptions.NUTS1}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popNuts1" placement="bottom" container="body"></i>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="getNUTSByCountry(1, 'country')">Add NUTS by country</a></small>
+                                        <ng-select appendTo="body" [items]="nuts1Values" [searchable]="true" [multiple]="true" bindLabel="code" formControlName="nuts1" placeholder="Select NUTS1 coverage"></ng-select>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>NUTS 2</label>
+                                        <ng-template #popNuts2>
+                                            <div>
+                                                <span>{{datasetDescriptions.NUTS2}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popNuts2" placement="bottom" container="body"></i>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="getNUTSByCountry(2, 'country')">Add by country</a></small>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="getNUTSByCountry(2, 'region')">Add by region</a></small>
+                                        <ng-select appendTo="body" [items]="nuts2Values" [searchable]="true" [multiple]="true" bindLabel="code" formControlName="nuts2" placeholder="Select NUTS2 coverage"></ng-select>
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label>NUTS 3</label>
+                                        <ng-template #popNuts3>
+                                            <div>
+                                                <span>{{datasetDescriptions.NUTS3}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popNuts3" placement="bottom" container="body"></i>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="getNUTSByCountry(3, 'country')">Add by country</a></small>
+                                        <small><a class="ml-2 green-link" [routerLink]="" (click)="getNUTSByCountry(3, 'region')">Add by region</a></small>
+                                        <ng-select appendTo="body" [items]="nuts3Values" [searchable]="true" [multiple]="true" bindLabel="code" formControlName="nuts3" placeholder="Select NUTS3 coverage"></ng-select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Geonames ADM1</label>
+                                        <ng-template #popAdm1>
+                                            <div>
+                                                <span>{{datasetDescriptions.GEONAMES_ADM1}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAdm1" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="adm1Values" [searchable]="true" [multiple]="true" bindLabel="label" formControlName="adm1" placeholder="Select geoname ADM1 coverage"></ng-select>
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Geonames ADM2</label>
+                                        <ng-template #popAdm2>
+                                            <div>
+                                                <span>{{datasetDescriptions.GEONAMES_ADM2}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAdm2" placement="bottom" container="body"></i>
+                                        <ng-select appendTo="body" [items]="adm2Values" [searchable]="true" [multiple]="true" bindLabel="label" formControlName="adm2" placeholder="Select geoname ADM2 coverage"></ng-select>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="distributionSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('distributionSection')">
+                                <h6>{{distributionSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <label>Distributions</label>
+                                        <ng-template #popDistributions>
+                                            <div>
+                                                <span>{{datasetDescriptions.DISTRIBUTION}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDistributions" placement="bottom" container="body"></i>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="btn btn-outline-success btn-sm" (click)="openDistributionModal()"><i class="fas fa-plus"></i> Add a new distribution</button>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <span *ngIf="dataset.distributions.length == 0" class="mr-2"><small><em>Distributions list is empty</em></small></span>
+
+                                <div class="row">
+                                    <div *ngFor="let distribution of dataset.distributions; let i = index" class="col-md-3 card mt-2 ml-2 card-select">
+
+                                        <div class="card-body text-center">
+                                            <h5>{{distribution.title}}</h5>
+                                            <hr>
+                                            <small class="text-muted">Distribution</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group mb-2">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openDistributionModal(i)"><i class="fas fa-pencil-alt"></i></button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteDistribution(i)"><i class="fas fa-trash-alt"></i></button>
+                                                <!--<button type="button" class="btn btn-sm btn-outline-secondary" (click)="duplicateDistribution(i)"><i class="far fa-copy"></i></button>-->
+                                            </div>
+
+                                            <span *ngIf="distribution.format" class="badge bg-secondary text-white">{{distribution.format.label}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="resolutionSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('resolutionSection')">
+                                <h6>{{resolutionSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <div>
+                                        <label>Units of analysis</label>
+                                        <ng-template #popUnitsAnalysis>
+                                            <div>
+                                                <span>{{datasetDescriptions.ANALYSIS_UNITS}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popUnitsAnalysis" placement="bottom" container="body"></i>
+                                    </div>
+
+                                    <button type="button" class="btn btn-outline-success btn-sm" (click)="openAnalysisUnitModal()"><i class="fas fa-plus"></i> Add a new unit of analysis</button>
+                                </div>
+
+                                <hr>
+
+                                <span *ngIf="dataset.analysisUnits.length == 0" class="mr-2"><small><em>Units of analysis list is empty</em></small></span>
+
+                                <div class="row">
+                                    <div *ngFor="let unit of dataset.analysisUnits; let i = index" class="col-md-3 card mt-2 ml-2 card-select">
+
+                                        <div class="card-body text-center">
+                                            <h5>{{unit.unitReference}}</h5>
+                                            <hr>
+                                            <small class="text-muted">{{unit.analysisUnitType | titlecase}} unit of analysis</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group mb-2">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openAnalysisUnitModal(i)"><i class="fas fa-pencil-alt"></i></button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteAnalysisUnit(i)"><i class="fas fa-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="variablesSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('variablesSection')">
+                                <h6>{{variablesSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div>
+                                        <label>Variables</label>
+                                        <ng-template #popVariables>
+                                            <div>
+                                                <span>{{datasetDescriptions.VARIABLES}}</span>
+                                            </div>
+                                        </ng-template>
+                                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariables" placement="bottom" container="body"></i>
+                                    </div>
+
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="btn btn-outline-success btn-sm" (click)="openVariableModal()"><i class="fas fa-plus"></i> Add a new variable</button>
+                                        <div *ngIf="getDatasetType() == 'SOCIOECONOMIC'">
+                                            <button type="button" class="btn btn-outline-success btn-sm ml-2" (click)="openVariableModal('PRICE')"><i class="fas fa-plus"></i> Add a new price variable</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <span *ngIf="dataset.variables.length == 0" class="mr-2"><small><em>Variables list is empty</em></small></span>
+
+                                <div class="row">
+                                    <div *ngFor="let variable of dataset.variables; let i = index" class="col-md-3 card mt-2 ml-2 card-select">
+
+                                        <div class="card-body text-center">
+                                            <h5>{{variable.name}}</h5>
+                                            <hr>
+                                            <small class="text-muted">{{variable.variableType | titlecase}} variable</small>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="btn-group mb-2">
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openVariableModal(variable.variableType, i)"><i class="fas fa-pencil-alt"></i></button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteVariable(i)"><i class="fas fa-trash-alt"></i></button>
+                                                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="duplicateVariable(i)"><i class="far fa-copy"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+
+                    <ngb-panel id="keywordsSection">
+                        <ng-template ngbPanelHeader>
+                            <div (click)="acc.toggle('keywordsSection')">
+                                <h6>{{keywordsSection}}</h6>
+                            </div>
+                        </ng-template>
+
+                        <ng-template ngbPanelContent>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <label>Keywords</label>
+                                    <ng-template #popVariables>
+                                        <div>
+                                            <span>{{datasetDescriptions.KEYWORDS}}</span>
+                                        </div>
+                                    </ng-template>
+                                    <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariables" placement="bottom" container="body"></i>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label>List of keywords related with the dataset</label>
+                                    <ng-select appendTo="body" [items]="keywordsFound | async" [multiple]="true" [addTag]="addNewKeyword" addTagText="Add as a new keyword" [hideSelected]="true" [trackByFn]="trackByFn" [minTermLength]="2" [loading]="keywordsLoading" typeToSearchText="Please enter 2 or more characters"
+                                        [typeahead]="keywordsInput$" formControlName="keywords" placeholder="Search for keywords or add new ones">
+                                    </ng-select>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+                <hr>
+                <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+                <div class="form-group mt-3">
+                    <div *checkRoles="['ADMIN','MANTAINER','EDITOR']" class="d-flex justify-content-between align-items-center m-3">
+                        <div  class="form-check">
+                            <input type="checkbox" class="form-check-input" formControlName="draft" id="draftCheckbox">
+                            <label class="form-check-label" for="draftCheckbox">Mark as a draft</label>
+                            <ng-template #popDraft>
+                                <div>
+                                    <span>{{datasetDescriptions.MARK_DRAFT}}</span>
+                                </div>
+                            </ng-template>
+                            <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDraft" placement="bottom" container="body"></i>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Owner</label>
+                            <ng-template #popOwner>
+                                <div>
+                                    <span>{{datasetDescriptions.CHANGE_OWNER}}</span>
+                                </div>
+                            </ng-template>
+                            <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popOwner" placement="bottom" container="body"></i>
+                            <ng-select appendTo="body" [items]="userNames" [searchable]="true" bindLabel="title" formControlName="owner"></ng-select>
+                        </div>
+                    </div>
+                    <button type="submit" [disabled]="datasetUpdateForm.invalid" class="btn btn-success">Save</button>
+                    <button class="btn btn-secondary ml-2" routerLink="{{datasetRoute}}" [routerLinkActive]="['active']">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

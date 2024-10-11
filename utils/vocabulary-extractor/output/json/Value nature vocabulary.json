@@ -1,0 +1,32 @@
+{
+    "name": "Value nature vocabulary",
+    "description": "Value nature for dataset analysis data",
+    "url": "",
+    "topic": "VALUE_NATURE",
+    "values": [
+        {
+            "code": "ABS",
+            "url": "",
+            "label": "Absolute",
+            "extraData": null
+        },
+        {
+            "code": "IDX",
+            "url": "",
+            "label": "Index(es)",
+            "extraData": null
+        },
+        {
+            "code": "PER",
+            "url": "",
+            "label": "Percentage",
+            "extraData": null
+        },
+        {
+            "code": "SHA",
+            "url": "",
+            "label": "Share",
+            "extraData": null
+        }
+    ]
+}

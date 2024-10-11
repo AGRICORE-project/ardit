@@ -1,0 +1,112 @@
+<div class="row">
+    <div class="col-sm-7 py-4">
+        <div class="row justify-content-left">
+            <img class="mr-3" src="/assets/img/logo-alt.png" alt="Agricore logo" width="70px" height="70px">
+            <h1><strong>ARDIT</strong></h1>
+        </div>
+        <p class="text-white">
+            The Agricultural Research Data Index Tool (ARDIT) is a platform created in the framework of the AGRICORE Project to index characterisations of datasets that can be used for the analysis and study of the agri-food chain. These characterisations of datasets
+            (or dataset catalogues) can be incorporated by registered users through web-based forms built on the basis of the AGRICORE-DCAT 2.0 ontology, which allows characterisation down to the level of the variables contained in each dataset. ARDIT
+            has a body of editors who verify the proposals for new additions and correct existing ones. The characterisation of each dataset has a comments section where registered users and editors can suggest and discuss corrections or changes, thus
+            allowing peer review of the ARDIT tool.
+        </p>
+
+        <p class="text-white">
+            The AGRICORE Project is an H2020 Programme project (Grant Agreement No 816078) that aims to design a simulation tool based on heterogeneous agents (down to the farm level) to analyse the potential impact that different public agricultural policy alternatives
+            would have on them. The ultimate goal is to improve the Common Agricultural Policy (CAP) design process through a suite of impact assessment tools that are detailed yet simple and transparent, incorporating the affected sectors in their construction
+            and validation.
+        </p>
+    </div>
+
+
+    <div class="py-4 col-sm-5">
+
+        <div class="card">
+            <div class="card-body justify-content-center">
+
+                <div class="card-title text-center">
+                    <h4><strong>Sign in</strong></h4>
+                    <hr>
+                </div>
+
+                <form [formGroup]="loginForm" (ngSubmit)="signIn()" novalidate>
+
+                    <div *ngIf="error" class="alert alert-danger">
+                        <span>{{error}}</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="username" type="text" class="form-control" formControlName="username" placeholder="Username">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(loginForm, 'username')"><small>Username is required</small></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="text-right">
+                            <a routerLink="{{recoverPasswordRoute}}" [routerLinkActive]="['active']">I don't remember my password</a>
+                        </div>
+
+                        <input id="password" type="password" class="form-control" formControlName="password" placeholder="Password">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(loginForm, 'password')"><small>Password is required</small></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block" [disabled]="loginForm.pristine || loginForm.invalid">Sign in</button>
+                    </div>
+                </form>
+
+                <div class="text-center">
+                    <a routerLink="{{registerRoute}}" [routerLinkActive]="['active']">Don't have an account? Sign up</a>
+                </div>
+
+                <hr>
+
+                <div class="mt-3">
+                    <button routerLink="{{datasetsRoute}}" type="button" class="btn btn-lg btn btn-link btn-block"><i class="fas fa-door-open"></i> Access as guest</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr color="white">
+
+<!--Footer-->
+<div class="col-md-12">
+    <div class="container py-4">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-between">
+                    <a href="https://cordis.europa.eu/project/id/816078" target="_blank">
+                        <img class="mr-2" src="/assets/img/european-union.jpg" alt="European Union flag" width="84px" height="56px">
+                    </a>
+                    <span class="text-white"><small>This project has received funding from the European Union's HORIZON 2020 research and innovation programme under Grant Agreement NO 816078.</small></span>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img class="mr-2 float-right" src="/assets/img/logo-complete.png" alt="European Union flag" width="90px" height="90px">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://agricore-project.eu/" target="_blank">
+                <i class="fas fa-globe"></i>
+            </a>
+
+            <a class="ml-2" href="https://twitter.com/AgricoreP" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+
+        <hr color="white" style="width: 50%;">
+
+        <div class="text-center">
+            <span class="my-2 text-white">
+                <small><i>ARDIT - Agricultural Research Data Index Tool &copy; {{currentYear}} AGRICORE PROJECT EU</i></small>
+            </span>
+        </div>
+    </div>
+</div>

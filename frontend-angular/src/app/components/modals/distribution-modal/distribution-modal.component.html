@@ -1,0 +1,238 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <ngb-alert type="warning" [dismissible]="false">
+        <span><i>Required properties(*): Title, format and access rights</i></span>
+    </ngb-alert>
+
+    <form [formGroup]="distributionForm" (ngSubmit)="submitDistribution()" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Title *</label>
+                <ng-template #popTitle>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_TITLE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popTitle" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="title">
+
+                <span class="text-danger" *ngIf="fieldInvalid(distributionForm, 'title')"><small>The title is required</small></span>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Issued</label>
+                <ng-template #popIssued>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_ISSUED}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popIssued" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="issued" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #issued="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="issued.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Last update</label>
+                <ng-template #popModified>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_MODIFIED}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popModified" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="modified" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #modified="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="modified.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Description</label>
+                <ng-template #popDescription>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_DESCRIPTION}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDescription" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="description" rows="2"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(distributionForm, 'description')"><small>The description must not exceed 1000 characters</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>License</label>
+                <ng-template #popLicense>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_LICENSE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popLicense" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="license">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Access rights *</label>
+                <ng-template #popAccessRights>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_ACCESS_RIGHTS}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAccessRights" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="accessRightsValues" [searchable]="true" formControlName="accessRights" placeholder="Select a type of access"></ng-select>
+                <span class="text-danger" *ngIf="fieldInvalid(distributionForm, 'accessRights')"><small>Access rights are required</small></span>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Byte size</label>
+                <ng-template #popByteSize>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_BYTE_SIZE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popByteSize" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="byteSize">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Procedures to access the data</label>
+                <ng-template #popAccessProcedures>
+                    <div>
+                        <span>{{popoversDescriptions.ACCESS_PROCEDURES}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAccessProcedures" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="accessProcedures" rows="3"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(distributionForm, 'accessProcedures')"><small>1000 character limit exceeded</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Access URL</label>
+                <ng-template #popAccessUrl>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_ACCESS_URL}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAccessUrl" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="accessUrl">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Download URL</label>
+                <ng-template #popDownloadUrl>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_DOWNLOAD_URL}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDownloadUrl" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="downloadUrl">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Format *</label>
+                <ng-template #popFormat>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_FORMAT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popFormat" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="formatsValues" [searchable]="true" formControlName="format" placeholder="Select a format"></ng-select>
+
+                <span class="text-danger" *ngIf="fieldInvalid(distributionForm, 'format')"><small>The format is required</small></span>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Compress format</label>
+                <ng-template #popCompressFormat>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_COMPRESS_FORMAT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCompressFormat" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="formatsValues" [searchable]="true" formControlName="compressFormat" placeholder="Select a compress format"></ng-select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Packaging format</label>
+                <ng-template #popPackagingFormat>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_PACKAGING_FORMAT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPackagingFormat" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="formatsValues" [searchable]="true" formControlName="packagingFormat" placeholder="Select a packaging format"></ng-select>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <div>
+                <label>Data service</label>
+                <ng-template #popDataService>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_DATA_SERVICE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDataService" placement="bottom" container="body"></i>
+            </div>
+
+            <div class="d-flex flex-row">
+                <button type="button" class="btn btn-outline-success btn-sm" (click)="openDataServiceModal()" [disabled]="accessServiceButtonDisabled"><i class="fas fa-plus"></i> Add a new data service</button>
+            </div>
+        </div>
+
+        <span *ngIf="!accessService" class="mr-2"><small><em>No data service specified</em></small></span>
+
+        <hr>
+
+        <div class="row">
+            <div *ngIf="accessService" class="col-md-4 card mt-2 ml-2 card-select">
+
+                <div class="card-body text-center">
+                    <h5>{{accessService.title}}</h5>
+                    <hr>
+                    <small class="text-muted">Data service</small>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group mb-2">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openDataServiceModal()"><i class="fas fa-pencil-alt"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="deleteDataService()"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+
+                    <div *ngIf="accessService.endpointUrl">
+                        <a class="attribute-link" href="{{accessService.endpointUrl}}" target="_blank"><small><i class="fas fa-external-link-alt"></i></small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="distributionForm.invalid" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+
+    </form>
+</div>

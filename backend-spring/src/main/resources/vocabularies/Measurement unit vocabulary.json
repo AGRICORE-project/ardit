@@ -1,0 +1,134 @@
+{
+    "name": "Measurement unit vocabulary",
+    "description": "Measurement units for dataset size unit values",
+    "url": "http://publications.europa.eu/resource/dataset/measurement-unit",
+    "topic": "MEASURE",
+    "values": [
+        {
+            "code": "C45",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/C45",
+            "label": "nanometre",
+            "extraData": null
+        },
+        {
+            "code": "CMK",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/CMK",
+            "label": "square centimetre",
+            "extraData": null
+        },
+        {
+            "code": "CMT",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/CMT",
+            "label": "centimetre",
+            "extraData": null
+        },
+        {
+            "code": "HAR",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/HAR",
+            "label": "hectare",
+            "extraData": null
+        },
+        {
+            "code": "HUR",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/HUR",
+            "label": "hour",
+            "extraData": null
+        },
+        {
+            "code": "KMH",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/KMH",
+            "label": "kilometre per hour",
+            "extraData": null
+        },
+        {
+            "code": "KMK",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/KMK",
+            "label": "square kilometre",
+            "extraData": null
+        },
+        {
+            "code": "KTM",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/KTM",
+            "label": "kilometre",
+            "extraData": null
+        },
+        {
+            "code": "LH",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/LH",
+            "label": "labour hour",
+            "extraData": null
+        },
+        {
+            "code": "MIN",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/MIN",
+            "label": "minute",
+            "extraData": null
+        },
+        {
+            "code": "MMT",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/MMT",
+            "label": "millimetre",
+            "extraData": null
+        },
+        {
+            "code": "MTK",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/MTK",
+            "label": "square metre",
+            "extraData": null
+        },
+        {
+            "code": "MTR",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/MTR",
+            "label": "metre",
+            "extraData": null
+        },
+        {
+            "code": "MTS",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/MTS",
+            "label": "metre per second",
+            "extraData": null
+        },
+        {
+            "code": "SEC",
+            "url": "http://publications.europa.eu/resource/authority/measurement-unit/SEC",
+            "label": "second",
+            "extraData": null
+        },
+        {
+            "code": "CON",
+            "url": "",
+            "label": "Continental",
+            "extraData": null
+        },
+        {
+            "code": "COU",
+            "url": "",
+            "label": "Country",
+            "extraData": null
+        },
+        {
+            "code": "NT1",
+            "url": "",
+            "label": "NUTS1",
+            "extraData": null
+        },
+        {
+            "code": "NT2",
+            "url": "",
+            "label": "NUTS2",
+            "extraData": null
+        },
+        {
+            "code": "NT3",
+            "url": "",
+            "label": "NUTS3",
+            "extraData": null
+        },
+        {
+            "code": "GEO",
+            "url": "",
+            "label": "Geonames",
+            "extraData": null
+        }
+    ]
+}

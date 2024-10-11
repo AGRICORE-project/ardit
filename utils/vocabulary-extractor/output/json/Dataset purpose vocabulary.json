@@ -1,0 +1,50 @@
+{
+    "name": "Dataset purpose vocabulary",
+    "description": "Values that make the datset useful for",
+    "url": "",
+    "topic": "PURPOSE",
+    "values": [
+        {
+            "code": "envp",
+            "url": "",
+            "label": "Environmental policy",
+            "extraData": null
+        },
+        {
+            "code": "gge",
+            "url": "",
+            "label": "Greenhouse gas emissions",
+            "extraData": null
+        },
+        {
+            "code": "euia",
+            "url": "",
+            "label": "Energy use in agriculture",
+            "extraData": null
+        },
+        {
+            "code": "clch",
+            "url": "",
+            "label": "Climate change",
+            "extraData": null
+        },
+        {
+            "code": "iadp",
+            "url": "",
+            "label": "Income and distributional policies",
+            "extraData": null
+        },
+        {
+            "code": "ipol",
+            "url": "",
+            "label": "Insurance policy",
+            "extraData": null
+        },
+        {
+            "code": "teffa",
+            "url": "",
+            "label": "Technical efficiency analysis",
+            "extraData": null
+        }
+    ]
+}

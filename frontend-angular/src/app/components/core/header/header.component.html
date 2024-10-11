@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg mb-3">
+
+    <a class="navbar-brand" href="#">
+        <img src="/assets/img/logo-alt.png" alt="Agricore logo" width="40px" height="40px" class="d-inline-block align-top mx-3">
+        <span class="navbar-brand mb-0 h1 navbar-brand-color">ARDIT</span>
+    </a>
+
+
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"><span class="toggler-color">&#9776;</span></button>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <ul class="navbar-nav flex-lg-grow-1">
+            <li class="nav-item" ngbDropdown placement="bottom">
+                <a class="header-link nav-link" ngbDropdownToggle id="datasetDropdown" role="button">Datasets</a>
+                <div ngbDropdownMenu class="dropdown-menu dropdown-color" aria-labelledby="datasetDropdown">
+                    <a ngbDropdownItem routerLink="{{datasetsRoute}}" class="header-link">Datasets</a>
+                    <a *checkRoles='["ADMIN", "MANTAINER", "EDITOR"]' ngbDropdownItem routerLink="{{datasetCreationRoute}}" class="header-link">Create a dataset</a>
+                    <a *ngIf="justUser" ngbDropdownItem routerLink="{{datasetCreationRoute}}" class="header-link">Create a dataset (Draft)</a>
+                    <a *checkRoles='["ADMIN", "MANTAINER", "EDITOR", "USER"]' (click)="openSubscribeModal(subscribeModal)" ngbDropdownItem class="header-link pointer">Notifications</a>
+                </div>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active">
+                <a class="header-link nav-link" routerLink="{{cataloguesRoute}}">Catalogues</a>
+            </li>
+
+            <li class="nav-item" ngbDropdown placement="bottom" *checkRoles='["ADMIN", "MANTAINER", "EDITOR"]'>
+                <a class="header-link nav-link" ngbDropdownToggle id="managementDropdown" role="button">Management</a>
+                <div ngbDropdownMenu class="dropdown-menu dropdown-color" aria-labelledby="managementDropdown">
+                    <a ngbDropdownItem routerLink="{{vocabulariesRoute}}" class="header-link">Vocabularies</a>
+                    <a *checkRoles='["ADMIN","MANTAINER","EDITOR"]' ngbDropdownItem routerLink="{{usersRoute}}" class="header-link">Users</a>
+                    <a *checkRoles='["ADMIN","MANTAINER"]' ngbDropdownItem routerLink="{{datasetDescriptionsRoute}}" class="header-link">Help popovers descriptions</a>
+                </div>
+            </li>
+
+            <li class="nav-item" routerLinkActive="active">
+                <a class="header-link nav-link" routerLink="{{helpRoute}}">Help</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="header-link nav-link" routerLink="{{contactRoute}}">Contact</a>
+            </li>
+
+            <li *ngIf="currentUser" class="nav-item dropdown" ngbDropdown placement="bottom">
+                <a class="header-link nav-link" ngbDropdownToggle id="navbarDropdown" role="button"><i class="fas fa-user-circle fa-lg"></i> {{currentUser.username}}</a>
+                <div ngbDropdownMenu class="dropdown-menu dropdown-color" aria-labelledby="navbarDropdown">
+                    <a ngbDropdownItem routerLink="{{profile}}" class="header-link"><i class="fas fa-user-cog"></i> Profile settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a ngbDropdownItem type="button" (click)="logout()" class="header-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+
+            <button *ngIf="!currentUser" routerLink="{{loginRoute}}" class="btn btn-outline-light ml-lg-auto">Sign in</button>
+
+        </ul>
+    </div>
+</nav>
+
+<ng-template #subscribeModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Subscription</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row p-3">
+            <span>Subscribe to receive a notification on your email when a new dataset is created or when an already created dataset is updated or deleted.</span>
+        </div>
+        <hr>
+
+        <ngb-alert type="success" [dismissible]="false" *ngIf="subsText">{{ subsText }}</ngb-alert>
+        <ngb-alert type="danger" [dismissible]="false" *ngIf="subsError">{{ subsError }}</ngb-alert>
+
+        <div class="form-group d-flex justify-content-center">
+            <button *ngIf="!currentUser.subscribed" type="button" class="btn btn-success" (click)="datasetSubscribe()">Subscribe</button>
+            <button *ngIf="currentUser.subscribed" type="button" class="btn btn-danger" (click)="datasetUnsubscribe()">Unsubscribe</button>
+        </div>
+
+    </div>
+</ng-template>

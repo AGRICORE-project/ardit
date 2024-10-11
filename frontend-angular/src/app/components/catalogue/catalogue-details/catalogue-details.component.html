@@ -1,0 +1,304 @@
+<div class="container col-sm-12">
+
+    <nav *ngIf="catalogue" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{cataloguesListRoute}}" [routerLinkActive]="['active']">Catalogues</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{catalogue.title}}</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div *ngIf="!catalogue" class="d-flex justify-content-center">
+            <div class="spinner-border spinner-color m-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div *ngIf="catalogue" class="card-body main-panel">
+            <div class="card-title ml-3 d-flex justify-content-between align-items-center">
+                <h5>{{catalogue.title}}</h5>
+
+                <div *checkRoles='["ADMIN", "MANTAINER", "EDITOR"]' ngbDropdown container="body">
+                    <button type="button" class="btn btn-outline-secondary" ngbDropdownToggle>Options</button>
+                    <div ngbDropdownMenu>
+                        <button type="button" ngbDropdownItem (click)="openEditModal(editCatalogueModal)"><i class="fas fa-pencil-alt"></i> Edit</button>
+                        <div class="dropdown-divider"></div>
+                        <button type="button" ngbDropdownItem (click)="openDeleteModal(deleteCatalogueModal)"><i class="fas fa-trash-alt"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row ml-2">
+                <div class="col-md-6">
+                    <dt>Description</dt>
+                    <dd>
+                        <span *ngIf="catalogue.description; else descriptionNotAvailable"><small>{{catalogue.description}}</small></span>
+                        <ng-template #descriptionNotAvailable>
+                            <span><small><i>Not available</i></small></span>
+                        </ng-template>
+                    </dd>
+
+                    <dt>Creator</dt>
+                    <dd>
+                        <span *ngIf="catalogue.creator; else creatorNotAvailable"><small>{{catalogue.creator}}</small></span>
+                        <ng-template #creatorNotAvailable>
+                            <span><small><i>Not available</i></small></span>
+                        </ng-template>
+                    </dd>
+
+                    <dt>Publisher</dt>
+                    <dd>
+                        <span *ngIf="catalogue.publisher; else publisherNotAvailable"><small>{{catalogue.publisher}}</small></span>
+                        <ng-template #publisherNotAvailable>
+                            <span><small><i>Not available</i></small></span>
+                        </ng-template>
+                    </dd>
+
+                    <dt>Link</dt>
+                    <dd *ngIf="catalogue.link; else linkNotAvailable">
+                        <a class="attribute-link" href="{{catalogue.link}}" target="_blank"><small>{{catalogue.link}}</small></a>
+                    </dd>
+                    <ng-template #linkNotAvailable>
+                        <dd>
+                            <span><small><i>Not available</i></small></span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Languages</dt>
+                    <dd><span *ngIf="catalogue.languages.length==0"><small><i>Not available</i></small></span></dd>
+                    <dd><span *ngFor="let language of catalogue.languages; let isLast=last"><small>{{language.label}}{{isLast ? '' : ', '}}</small></span></dd>
+
+                    <dt>Themes</dt>
+                    <dd><span *ngIf="catalogue.themes.length==0"><small><i>Not available</i></small></span></dd>
+                    <dd><span *ngFor="let theme of catalogue.themes; let isLast=last"><small>{{theme.label}}{{isLast ? '' : ', '}}</small></span></dd>
+                </div>
+
+                <div class="col-md-6">
+                    <dt>Updated</dt>
+                    <dd class="section-green ">{{catalogue.modified | date:'longDate'}}</dd>
+
+                    <dt>Created at</dt>
+                    <dd><small>{{catalogue.issued | date:'longDate'}}</small></dd>
+
+                    <dt>Periodicity</dt>
+                    <dd>
+                        <span *ngIf="catalogue.periodicity; else periodicityNotAvailable"><small>{{catalogue.periodicity.label}}</small></span>
+                        <ng-template #periodicityNotAvailable>
+                            <span><small><i>Not available</i></small></span>
+                        </ng-template>
+                    </dd>
+
+                    <dt>Temporal extent</dt>
+                    <dd>
+
+                        <span *ngIf="catalogue.tmpExtentFrom && catalogue.tmpExtentTo; else tmpExtentNotAvailable">
+                            <small>{{catalogue.tmpExtentFrom | date:'MMMM, yyyy'}} - {{catalogue.tmpExtentTo | date:'MMMM, yyyy'}}</small>
+                        </span>
+                        <ng-template #tmpExtentNotAvailable>
+                            <span><small><i>Not available</i></small></span>
+                        </ng-template>
+                    </dd>
+                </div>
+            </div>
+
+            <div *ngIf="datasets" class="alert alert-success mt-4" role="alert">
+                <span><small><em>Linked datasets: {{collectionSize}}</em></small></span>
+            </div>
+
+            <div *ngIf="datasets">
+                <div *ngFor="let dataset of datasets | paginate: { itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }">
+                    <div class="card mt-2 dataset-info">
+                        <div class="card-body">
+                            <div *ngIf="!dataset.draft; else draft">
+                                <h5>{{dataset.title}}</h5>
+                            </div>
+                            <ng-template #draft>
+                                <h5 class="draft-heading"><i>[DRAFT] {{dataset.title}}</i></h5>
+                            </ng-template>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span><small>Producer:</small></span>
+                                                </td>
+                                                <td>
+                                                    <span><small>{{dataset.producer}}</small></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span><small>Creation date:</small></span>
+                                                </td>
+                                                <td>
+                                                    <span><small>{{dataset.creationDateTime | date:'longDate'}}</small></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span><small>Temporal extent:</small></span>
+                                                </td>
+                                                <td>
+                                                    <span><small>{{dataset.tmpExtentFrom | date:'MMMM, yyyy'}} - {{dataset.tmpExtentTo | date:'MMMM, yyyy'}}</small></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span><small>Peridicity:</small></span>
+                                                </td>
+                                                <td>
+                                                    <span><small>{{dataset.periodicity}}</small></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span><small>Formats available:</small></span>
+                                                </td>
+                                                <td>
+                                                    <span *ngIf="dataset.formats.length == 0"><small><i>Not available</i></small></span>
+                                                    <span *ngFor="let format of dataset.formats; let isLast=last"><small>{{format}}{{isLast ? '' : ', '}}</small></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <a routerLink="{{datasetsRoute}}{{dataset.id}}" [routerLinkActive]="['active']" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <pagination-controls class="paginator" [responsive]="true" [maxSize]="5" (pageChange)="pageChanged($event)"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Edit catalogue modal-->
+<ng-template #editCatalogueModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Edit catalogue</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="editCatalogueForm" (ngSubmit)="editCatalogue()" novalidate>
+            <div class="form-group">
+                <label>Title *</label>
+                <input type="text" class="form-control" formControlName="title">
+
+                <span class="text-danger" *ngIf="fieldInvalid(editCatalogueForm, 'title')"><small>The title is required</small></span>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" formControlName="description" rows="3"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(editCatalogueForm, 'description')"><small>The description must be less than 500 characters</small></span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Creator</label>
+                    <input type="text" class="form-control" formControlName="creator">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Publisher</label>
+                    <input type="text" class="form-control" formControlName="publisher">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Link</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">https://www.example.com</span>
+                    </div>
+                    <input type="text" class="form-control" formControlName="link">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Temporal extent</label>
+                    <input type="text" class="form-control" formControlName="tmpExtentFrom" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                    <div *ngIf="fieldInvalid(editCatalogueForm, 'tmpExtentFrom')">
+                        <span class="text-danger" *ngIf="editCatalogueForm.controls['tmpExtentFrom'].errors.pattern"><small>Temporal extent must be in the format yyyy-mm (e.g. 2021-04)</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label class="extent-to">To</label>
+                    <input type="text" class="form-control" formControlName="tmpExtentTo" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                    <div *ngIf="fieldInvalid(editCatalogueForm, 'tmpExtentTo')">
+                        <span class="text-danger" *ngIf="editCatalogueForm.controls['tmpExtentTo'].errors.pattern"><small>Temporal extent must be in the format yyyy-mm (e.g. 2021-04)</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Periodicity</label>
+                    <ng-select [items]="periodicityValues" [searchable]="true" formControlName="periodicity" placeholder="Select a value"></ng-select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Languages</label>
+                    <ng-select [items]="languageValues" [searchable]="true" [multiple]="true" formControlName="languages" placeholder="Select some languages"></ng-select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Themes</label>
+                    <ng-select [items]="themesValues" [searchable]="true" [multiple]="true" formControlName="themes" placeholder="Select some themes"></ng-select>
+                </div>
+            </div>
+
+            <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+            <hr>
+            <div class="form-group mt-2 float-right">
+                <button type="submit" [disabled]="editCatalogueForm.pristine || editCatalogueForm.invalid" class="btn btn-success" (click)="modal.close()">Save</button>
+                <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</ng-template>
+
+
+<!--Delete catalogue modal-->
+<ng-template #deleteCatalogueModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Delete dataset</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row">
+            <div class="form-group">
+                <span>Are you sure you want to delete the catalogue? This process cannot be undone</span><br>
+                <span>The datasets linked with the catalogue will be preserved, only the relationship between them will be removed</span>
+            </div>
+        </div>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="button" class="btn btn-danger" (click)="deleteCatalogue()">Delete</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,929 @@
+﻿<html>
+<head>
+</head>
+<body>
+	<table>
+         <tbody>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/IS0">IS0 - ÍSLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IS0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IS0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/IS0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IS0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/IS0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IS0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IS0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/SE3">SE3 - Norra Sverige</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/SE3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/SE3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FI2">FI2 - ÅLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FI2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FI2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FI1">FI1 - MANNER-SUOMI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FI1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FI1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FI1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/NO0">NO0 - NORGE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NO0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NO0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/NO0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NO0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/NO0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NO0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NO0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/SE1">SE1 - Östra Sverige</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/SE1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/SE1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/EE0">EE0 - EESTI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/EE0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/EE0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/EE0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/EE0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/EE0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/EE0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/EE0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/LV0">LV0 - LATVIJA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LV0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LV0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/LV0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LV0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/LV0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LV0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LV0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/SE2">SE2 - Södra Sverige</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/SE2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/SE2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SE2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKM">UKM - SCOTLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKM.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKM.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKM_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKM.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKM_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKM_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKM_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DK0">DK0 - DANMARK</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DK0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DK0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DK0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DK0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DK0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DK0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DK0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKN">UKN - NORTHERN IRELAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKN.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKN.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKN_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKN.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKN_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKN_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKN_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKC">UKC - NORTH EAST (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKC.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKC.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKC_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKC.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKC_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKC_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKC_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/LT0">LT0 - LIETUVA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LT0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LT0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/LT0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LT0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/LT0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LT0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LT0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEF">DEF - SCHLESWIG-HOLSTEIN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEF.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEF.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEF_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEF.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEF_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEF_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEF_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE6">DE6 - HAMBURG</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE6.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE6.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE6_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE6.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE6_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE6_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE6_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE8">DE8 - MECKLENBURG-VORPOMMERN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE8.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE8.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE8_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE8.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE8_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE8_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE8_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKE">UKE - YORKSHIRE AND THE HUMBER</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKE.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKE.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKE_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKE.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKE_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKE_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKE_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKD">UKD - NORTH WEST (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKD.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKD.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKD_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKD.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKD_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKD_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKD_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL6">PL6 - REGION PÓŁNOCNY</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL6.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL6.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL6_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL6.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL6_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL6_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL6_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE5">DE5 - BREMEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE5.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE5.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE5_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE5.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE5_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE5_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE5_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/NL1">NL1 - NOORD-NEDERLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/NL1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/NL1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE3">DE3 - BERLIN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKF">UKF - EAST MIDLANDS (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKF.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKF.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKF_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKF.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKF_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKF_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKF_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/IE0">IE0 - IRELAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IE0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IE0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/IE0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IE0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/IE0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IE0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/IE0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKG">UKG - WEST MIDLANDS (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKG.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKG.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKG_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKG.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKG_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKG_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKG_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKL">UKL - WALES</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKL.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKL.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKL_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKL.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKL_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKL_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKL_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKI">UKI - LONDON</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKI.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKI.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKI_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKI.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKI_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKI_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKI_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/NL3">NL3 - WEST-NEDERLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/NL3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/NL3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEE">DEE - SACHSEN-ANHALT</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEE.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEE.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEE_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEE.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEE_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEE_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEE_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/NL4">NL4 - ZUID-NEDERLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/NL4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/NL4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL5">PL5 - REGION POŁUDNIOWO-ZACHODNI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL5.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL5.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL5_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL5.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL5_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL5_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL5_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR3">FR3 - NORD - PAS-DE-CALAIS</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/BE1">BE1 - RÉGION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/BE1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/BE1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/BE2">BE2 - VLAAMS GEWEST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/BE2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/BE2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL4">PL4 - REGION PÓŁNOCNO-ZACHODNI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/NL2">NL2 - OOST-NEDERLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/NL2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/NL2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/NL2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE4">DE4 - BRANDENBURG</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL1">PL1 - REGION CENTRALNY</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE9">DE9 - NIEDERSACHSEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE9.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE9.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE9_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE9.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE9_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE9_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE9_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKH">UKH - EAST OF ENGLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKH.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKH.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKH_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKH.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKH_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKH_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKH_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ITE">ITE - CENTRO (I)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITE.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITE.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ITE_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITE.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ITE_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITE_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITE_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/MK0">MK0 - ПОРАНЕШНА ЈУГОСЛОВЕНСКА РЕПУБЛИКА МАКЕДОНИЈА / PORANEŠNA JUGOSLOVENSKA REPUBLIKA MAKEDONIJA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MK0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MK0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/MK0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MK0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/MK0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MK0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MK0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES2">ES2 - NORESTE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR1">TR1 - İSTANBUL</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES3">ES3 - COMUNIDAD DE MADRID</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR8">TR8 - BATI KARADENIZ</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR8.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR8.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR8_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR8.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR8_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR8_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR8_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR9">TR9 - DOĞU KARADENIZ</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR9.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR9.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR9_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR9.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR9_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR9_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR9_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR2">TR2 - BATI MARMARA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR4">TR4 - DOĞU MARMARA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEA">DEA - NORDRHEIN-WESTFALEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEA.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEA.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEA_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEA.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEA_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEA_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEA_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKJ">UKJ - SOUTH EAST (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKJ.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKJ.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKJ_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKJ.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKJ_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKJ_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKJ_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DED">DED - SACHSEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DED.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DED.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DED_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DED.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DED_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DED_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DED_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEG">DEG - THÜRINGEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEG.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEG.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEG_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEG.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEG_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEG_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEG_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/UKK">UKK - SOUTH WEST (ENGLAND)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKK.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKK.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/UKK_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKK.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/UKK_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKK_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/UKK_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/LU0">LU0 - LUXEMBOURG (GRAND-DUCHÉ)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LU0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LU0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/LU0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LU0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/LU0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LU0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LU0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL3">PL3 - REGION WSCHODNI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PL2">PL2 - REGION POŁUDNIOWY</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PL2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PL2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PL2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/BE3">BE3 - RÉGION WALLONNE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/BE3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/BE3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BE3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE7">DE7 - HESSEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE7.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE7.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE7_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE7.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE7_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE7_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE7_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/CZ0">CZ0 - ČESKÁ REPUBLIKA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CZ0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CZ0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/CZ0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CZ0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/CZ0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CZ0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CZ0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEC">DEC - SAARLAND</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEC.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEC.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEC_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEC.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEC_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEC_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEC_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DEB">DEB - RHEINLAND-PFALZ</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEB.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEB.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DEB_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEB.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DEB_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEB_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DEB_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR1">FR1 - ÎLE DE FRANCE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/SK0">SK0 - SLOVENSKÁ REPUBLIKA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SK0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SK0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/SK0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SK0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/SK0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SK0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SK0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE1">DE1 - BADEN-WÜRTTEMBERG</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/DE2">DE2 - BAYERN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/DE2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/DE2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/DE2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/HU1">HU1 - KÖZÉP-MAGYARORSZÁG</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/HU1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/HU1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/AT1">AT1 - OSTÖSTERREICH</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/AT1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/AT1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR4">FR4 - EST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/LI0">LI0 - LIECHTENSTEIN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LI0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LI0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/LI0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LI0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/LI0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LI0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/LI0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR2">FR2 - BASSIN PARISIEN</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/AT3">AT3 - WESTÖSTERREICH</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/AT3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/AT3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/HU3">HU3 - ALFÖLD ÉS ÉSZAK</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/HU3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/HU3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/AT2">AT2 - SÜDÖSTERREICH</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/AT2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/AT2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/AT2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/HU2">HU2 - DUNÁNTÚL</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/HU2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/HU2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HU2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/CH0">CH0 - SCHWEIZ/SUISSE/SVIZZERA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CH0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CH0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/CH0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CH0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/CH0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CH0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CH0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/RO1">RO1 - Macroregiunea unu</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/RO1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/RO1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR5">FR5 - OUEST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR5.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR5.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR5_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR5.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR5_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR5_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR5_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/SI0">SI0 - SLOVENIJA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SI0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SI0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/SI0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SI0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/SI0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SI0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/SI0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR7">FR7 - CENTRE-EST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR7.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR7.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR7_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR7.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR7_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR7_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR7_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/RO2">RO2 - Macroregiunea doi</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/RO2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/RO2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/RO4">RO4 - Macroregiunea patru</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/RO4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/RO4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/RO3">RO3 - Macroregiunea trei</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/RO3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/RO3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/RO3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ITD">ITD - NORD-EST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITD.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITD.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ITD_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITD.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ITD_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITD_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITD_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ITC">ITC - NORD-OVEST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITC.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITC.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ITC_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITC.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ITC_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITC_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITC_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR6">FR6 - SUD-OUEST</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR6.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR6.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR6_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR6.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR6_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR6_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR6_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/HR0">HR0 - HRVATSKA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HR0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HR0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/HR0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HR0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/HR0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HR0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/HR0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/BG3">BG3 - СЕВЕРНА И ЮГОИЗТОЧНА БЪЛГАРИЯ / SEVERNA I IZTOCHNA BULGARIA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/BG3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/BG3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES1">ES1 - NOROESTE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR8">FR8 - MÉDITERRANÉE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR8.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR8.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR8_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR8.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR8_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR8_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR8_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/BG4">BG4 - ЮГОЗАПАДНА И ЮЖНА ЦЕНТРАЛНА БЪЛГАРИЯ / YUGOZAPADNA I YUZHNA TSENTRALNA BULGARIA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/BG4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/BG4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/BG4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PT1">PT1 - CONTINENTE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PT1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PT1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/GR2">GR2 - ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ / KENTRIKI ELLADA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/GR2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/GR2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ITG">ITG - ISOLE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITG.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITG.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ITG_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITG.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ITG_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITG_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITG_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TRC">TRC - GÜNEYDOĞU ANADOLU</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRC.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRC.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TRC_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRC.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TRC_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRC_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRC_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR6">TR6 - AKDENIZ</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR6.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR6.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR6_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR6.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR6_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR6_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR6_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/GR3">GR3 - ATTIKΗ / ATTIKI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/GR3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/GR3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/MT0">MT0 - MALTA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MT0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MT0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/MT0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MT0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/MT0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MT0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/MT0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/CY0">CY0 - ΚΥΠΡΟΣ / KIBRIS</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CY0.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CY0.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/CY0_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CY0.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/CY0_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CY0_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/CY0_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/GR4">GR4 - NΗΣΙΑ ΑΙΓΑΙΟΥ, KΡΗΤΗ / NISIA AIGAIOU, KRITI</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/GR4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/GR4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES6">ES6 - SUR</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES6.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES6.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES6_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES6.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES6_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES6_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES6_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PT3">PT3 - Região Autónoma da MADEIRA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PT3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PT3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT3_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES7">ES7 - CANARIAS</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES7.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES7.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES7_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES7.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES7_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES7_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES7_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/FR9">FR9 - DÉPARTEMENTS D'OUTRE-MER</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR9.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR9.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/FR9_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR9.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/FR9_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR9_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/FR9_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TRA">TRA - KUZEYDOĞU ANADOLU</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRA.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRA.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TRA_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRA.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TRA_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRA_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRA_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/GR1">GR1 - ΒΟΡΕΙΑ ΕΛΛΑΔΑ / VOREIA ELLADA</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR1.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR1.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/GR1_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR1.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/GR1_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR1_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/GR1_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES4">ES4 - CENTRO (E)</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES4.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES4.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES4_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES4.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES4_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES4_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES4_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ES5">ES5 - ESTE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES5.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES5.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ES5_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES5.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ES5_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES5_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ES5_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/ITF">ITF - SUD</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITF.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITF.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/ITF_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITF.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/ITF_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITF_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/ITF_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR7">TR7 - ORTA ANADOLU</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR7.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR7.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR7_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR7.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR7_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR7_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR7_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/PT2">PT2 - Região Autónoma dos AÇORES</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT2.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT2.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/PT2_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT2.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/PT2_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT2_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/PT2_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TRB">TRB - ORTADOĞU ANADOLU</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRB.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRB.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TRB_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRB.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TRB_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRB_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TRB_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR5">TR5 - BATI ANADOLU</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR5.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR5.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR5_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR5.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR5_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR5_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR5_geometry.kml">Geometry</a></td>
+         </tr>
+         <tr>
+            <td><a href="http://nuts.geovocab.org/id/TR3">TR3 - EGE</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR3.html">Feature/Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR3.ttl">Feature</a> | <a href="http://nuts.geovocab.org/id/TR3_geometry.ttl">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR3.rdf">Feature</a> | <a href="http://nuts.geovocab.org/id/TR3_geometry.rdf">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR3_geometry.gml">Geometry</a></td>
+            <td><a href="http://nuts.geovocab.org/id/TR3_geometry.kml">Geometry</a></td>
+         </tr>
+      </tbody></table>
+</body>
+</html>

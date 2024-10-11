@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/NET/dc_owl2dl/dcmitype#"
+     xml:base="http://purl.org/NET/dc_owl2dl/dcmitype"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/">
+    <owl:Ontology rdf:about="http://purl.org/NET/dc_owl2dl/dcmitype">
+        <owl:imports rdf:resource="http://purl.org/NET/dc_owl2dl/dcam"/>
+        <rdfs:comment xml:lang="en">OWL 2 DL ontology for the Dublin Core type vocabulary from the http://purl.org/dc/dcmitype/ namespace</rdfs:comment>
+        <rdfs:label xml:lang="en">DCMI Type Vocabulary</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Collection -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Collection"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Dataset -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Dataset"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Event -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Event"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Image"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/InteractiveResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/InteractiveResource"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/MovingImage -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/MovingImage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/PhysicalObject -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/PhysicalObject"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Service -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Software -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Software"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Sound -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Sound"/>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/StillImage -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/StillImage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Text -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Text"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Collection -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Collection">
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Dataset -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/dcmitype/Dataset">
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/dc/terms/DCMIType -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/DCMIType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Collection">
+        <rdfs:comment xml:lang="en-us">A collection is described as a group; its parts may also be separately described.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Collection</rdfs:label>
+        <skos:definition xml:lang="en-us">An aggregation of resources.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/dcmitype/Dataset">
+        <skos:definition xml:lang="en-us">Data encoded in a defined structure.</skos:definition>
+        <rdfs:label xml:lang="en-us">Dataset</rdfs:label>
+        <rdfs:comment xml:lang="en-us">Examples include lists, tables, and databases. A dataset may be useful for direct machine processing.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

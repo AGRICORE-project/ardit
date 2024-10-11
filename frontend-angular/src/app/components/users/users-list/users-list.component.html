@@ -1,0 +1,240 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page">User management</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body main-panel">
+
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <h5>Users registered</h5>
+
+                <button *checkRoles="['ADMIN']" type="button" class="btn btn-outline-success" (click)="openCreateUserModal(createUserModal)"><i class="fas fa-plus"></i> Create a new user</button>
+            </div>
+
+            <ngb-alert class="mt-3" type="warning" [dismissible]="false">
+                <span><i>User will always have the role "user" as default even when erased.</i></span>
+            </ngb-alert>
+
+            <hr>
+
+            <div *ngIf="!users" class="d-flex justify-content-center">
+                <div class="spinner-border spinner-color m-5" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div *ngIf="users">
+
+                <div class="form-group form-inline">
+                    Search: <input class="form-control ml-2" type="text" [(ngModel)]="searchInput" (ngModelChange)="onSearch($event)" placeholder="Search for users..." />
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <span><small><em>Users found: {{usersFiltered.length}}</em></small></span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Roles</th>
+                                <th class="text-center">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of usersFiltered | paginate: {itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }; index as i">
+
+                                <td>
+                                    <ngb-highlight [result]="user.username" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                                </td>
+
+                                <td>
+                                    <ngb-highlight [result]="user.email" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                                </td>
+
+                                <td> <span *ngFor="let role of user.roles; let isLast=last"><small>{{role}}{{isLast ? '' : ', '}}</small></span></td>
+
+                                <td class="text-center">
+                                    <div ngbDropdown container="body">
+                                        <button *checkRoles="['ADMIN','MANTAINER']" type="button" class="btn btn-outline-secondary btn-sm" ngbDropdownToggle>Options</button>
+                                        <div ngbDropdownMenu>
+                                            <button type="button" ngbDropdownItem (click)="openUpdateUserModal(updateUserModal, i + ((page-1)*pageSize))"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                            <button type="button" ngbDropdownItem (click)="deleteUser(i + ((page-1)*pageSize))"><i class="fas fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div *ngIf="usersFiltered.length == 0">
+                    <span><i>No items found</i></span>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <pagination-controls class="paginator" [responsive]="true" (pageChange)="pageChanged($event)"></pagination-controls>
+
+                    <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                            <option [ngValue]="10">10 items per page</option>
+                            <option [ngValue]="20">20 items per page</option>
+                            <option [ngValue]="50">50 items per page</option>
+                        </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--New user modal-->
+<ng-template #createUserModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Create a new user</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="createUserForm" (ngSubmit)="createUser()" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Username *</label>
+                    <input type="text" class="form-control" formControlName="username">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(createUserForm, 'username')"><small>Username is required</small></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Email *</label>
+                    <input type="email" class="form-control" formControlName="email">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(createUserForm, 'email')"><small>Email is required and must be correctly formatted</small></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Password *</label>
+                    <input type="password" class="form-control" formControlName="password">
+
+                    <div *ngIf="fieldInvalid(createUserForm, 'password')">
+                        <span class="text-danger" *ngIf="createUserForm.controls['password'].errors.required"><small>The password is required</small><br></span>
+                        <span class="text-danger" *ngIf="createUserForm.controls['password'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Roles *</label>
+                    <ng-select appendTo="body" [items]="availableRoles" [searchable]="true" [multiple]="true" formControlName="roles" placeholder="Select the roles"></ng-select>
+
+                    <span class="text-danger" *ngIf="fieldInvalid(createUserForm, 'roles')"><small>Roles are required</small></span>
+                </div>
+            </div>
+
+            <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+            <hr>
+            <div class="form-group mt-2 float-right">
+                <button type="submit" [disabled]="createUserForm.pristine || createUserForm.invalid" class="btn btn-success" (click)="modal.close()">Save</button>
+                <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</ng-template>
+
+<!--Update user modal-->
+<ng-template #updateUserModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Update user data</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form *checkRoles="['ADMIN']" [formGroup]="updateUserForm" (ngSubmit)="updateUser()" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Username *</label>
+                    <input type="text" class="form-control" formControlName="username" [readonly]="true">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(updateUserForm, 'username')"><small>Username is required</small></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Email *</label>
+                    <input type="email" class="form-control" formControlName="email">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(updateUserForm, 'email')"><small>Email is required and must be correctly formatted</small></span>
+                </div>
+            </div>
+
+            <div class="form-row ml-1">
+                <button type="submit" [disabled]="updateUserForm.pristine || updateUserForm.invalid" class="btn btn-success">Update data</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <form [formGroup]="rolesForm" (ngSubmit)="updateUserRoles()" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Roles *</label>
+                    <ng-select appendTo="body" [items]="availableRoles" [searchable]="true" [multiple]="true" formControlName="roles" placeholder="Select the roles"></ng-select>
+
+                    <span class="text-danger" *ngIf="fieldInvalid(rolesForm, 'roles')"><small>Roles are required</small></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" [disabled]="rolesForm.pristine || rolesForm.invalid" class="btn btn-success">Update roles</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <form *checkRoles="['ADMIN']" [formGroup]="passwordForm" (ngSubmit)="updateUserPassword()" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>New password *</label>
+                    <input type="password" class="form-control" formControlName="newPassword">
+
+                    <div *ngIf="fieldInvalid(passwordForm, 'newPassword')">
+                        <span class="text-danger" *ngIf="passwordForm.controls['newPassword'].errors.required"><small>New password is required</small><br></span>
+                        <span class="text-danger" *ngIf="passwordForm.controls['newPassword'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Confirm new password *</label>
+                    <input type="password" class="form-control" formControlName="newPasswordConfirm">
+
+                    <div *ngIf="fieldInvalid(passwordForm, 'newPasswordConfirm')">
+                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.required"><small>New password confirmation is required</small><br></span>
+                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.mustMatch"><small>Passwords must match</small><br></span>
+                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" [disabled]="passwordForm.pristine || passwordForm.invalid" class="btn btn-success">Update password</button>
+            </div>
+        </form>
+
+        <br>
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+        </div>
+    </div>
+</ng-template>

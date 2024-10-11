@@ -1,0 +1,11 @@
+hr.footer-border {
+    border-top: 1px solid white;
+}
+
+.footer {
+    background-color: #323437;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+}

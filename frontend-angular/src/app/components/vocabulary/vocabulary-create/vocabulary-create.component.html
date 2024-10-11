@@ -1,0 +1,83 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{vocabularyListRoute}}" [routerLinkActive]="['active']">Vocabularies</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Create</li>
+        </ol>
+    </nav>
+
+    <div class="card bg-light">
+        <div class="card-body main-panel">
+            <div class="card-title">
+                <h5>Create a new vocabulary</h5>
+                <hr>
+            </div>
+
+            <form [formGroup]="vocabularyForm" (ngSubmit)="createVocabulary()" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name *</label>
+                        <ng-template #popVocName>
+                            <div>
+                                <span>Name of the vocabulary. It's a free text property</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocName" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="name">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'name')"><small>Vocabulary name is required</small></span>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Description *</label>
+                        <ng-template #popVocDescription>
+                            <div>
+                                <span>A brief description of its use. It's a free text property</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocDescription" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="description">
+
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'description')"><small>Vocabulary producer is required</small></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Link</label>
+                        <ng-template #popVocLink>
+                            <div>
+                                <span>A external link to the vocabulary. Leave it blank if it is an internal vocabulary</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocLink" placement="bottom" container="body"></i>
+                        <input type="text" class="form-control" formControlName="url">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label>Topic *</label>
+                        <ng-template #popVocTopic>
+                            <div>
+                                <span>Property of the dataset to which the vocabulary is related to. Select one</span>
+                            </div>
+                        </ng-template>
+                        <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVocTopic" placement="bottom" container="body"></i>
+
+                        <ng-select appendTo="body" [items]="vocabularyTopics" formControlName="topic" placeholder="Select a topic"></ng-select>
+                        <span class="text-danger" *ngIf="fieldInvalid(vocabularyForm, 'topic')"><small>Vocabulary topic is required</small></span>
+                    </div>
+                </div>
+
+                <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+
+                <hr>
+                <div class="form-group mt-2">
+                    <button type="submit" [disabled]="vocabularyForm.invalid" class="btn btn-success">Create</button>
+                    <button class="btn btn-secondary ml-2" routerLink="{{vocabularyListRoute}}" [routerLinkActive]="['active']">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

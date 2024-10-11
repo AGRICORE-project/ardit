@@ -1,0 +1,49 @@
+cookie:
+  domain: localhost
+  expirationTimeInSeconds: 10800
+  name: AGRICORE-TOKEN
+  secure: false
+rate:
+  capacity: 3000 #number of request allowed
+  timePeriod: 3600000 #miliseconds unit
+jwt:
+  expirationMinutes: 60
+  id: agricorejwt
+  secret: Te2Y2NqC8jN
+ldap:
+  name: Default LDAP service
+  partition: agricore
+  partitionSuffix: dc=agricore,dc=eu
+  password: admin
+  port: 389
+  principal: cn=admin,dc=agricore,dc=eu
+  url: ldap://localhost:389
+server:
+  error:
+    include-stacktrace: never
+    include-message: always
+ardit:
+  domain: localhost
+  port: 4200
+  mail-token: # TO_MODIFY: include mail token here
+  mail-name: ardit@agricore-project.eu
+  password-uri:  localhost:4200/reset-password
+  register-uri: localhost:4200/email-verification
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ardit
+    username: admin
+    password: admin
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: update #Only for dev or testing, delete on production environments
+  profiles:
+    active: '@activatedProperties@'
+  liquibase:
+    enabled: true
+
+
+

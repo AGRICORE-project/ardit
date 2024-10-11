@@ -1,0 +1,62 @@
+{
+    "name": "Mathematical representation vocabulary",
+    "description": "Math representation values for data frequency",
+    "url": "",
+    "topic": "MATH_REPRESENTATION",
+    "values": [
+        {
+            "code": "AVG",
+            "url": "",
+            "label": "Average",
+            "extraData": null
+        },
+        {
+            "code": "INV",
+            "url": "",
+            "label": "Instant value",
+            "extraData": null
+        },
+        {
+            "code": "MAX",
+            "url": "",
+            "label": "Max",
+            "extraData": null
+        },
+        {
+            "code": "MED",
+            "url": "",
+            "label": "Median",
+            "extraData": null
+        },
+        {
+            "code": "MIN",
+            "url": "",
+            "label": "Min",
+            "extraData": null
+        },
+        {
+            "code": "MOD",
+            "url": "",
+            "label": "Mode",
+            "extraData": null
+        },
+        {
+            "code": "SUM",
+            "url": "",
+            "label": "Sum",
+            "extraData": null
+        },
+        {
+            "code": "VAR",
+            "url": "",
+            "label": "Variance",
+            "extraData": null
+        },
+        {
+            "code": "STD",
+            "url": "",
+            "label": "Standard deviation",
+            "extraData": null
+        }
+    ]
+}

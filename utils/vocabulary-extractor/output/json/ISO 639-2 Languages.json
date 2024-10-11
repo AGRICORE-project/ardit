@@ -1,0 +1,2930 @@
+{
+    "name": "ISO 639-2 Languages",
+    "description": "Codes for the Representation of Names of Languages",
+    "url": "https://id.loc.gov/vocabulary/iso639-2.json",
+    "topic": "LANGUAGE",
+    "values": [
+        {
+            "code": "tai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tai",
+            "label": "Tai languages",
+            "extraData": null
+        },
+        {
+            "code": "zxx",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zxx",
+            "label": "No linguistic content | Not applicable",
+            "extraData": null
+        },
+        {
+            "code": "bnt",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bnt",
+            "label": "Bantu languages",
+            "extraData": null
+        },
+        {
+            "code": "bul",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bul",
+            "label": "Bulgarian",
+            "extraData": null
+        },
+        {
+            "code": "fil",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fil",
+            "label": "Filipino | Pilipino",
+            "extraData": null
+        },
+        {
+            "code": "nya",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nya",
+            "label": "Chichewa | Chewa | Nyanja",
+            "extraData": null
+        },
+        {
+            "code": "sco",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sco",
+            "label": "Scots",
+            "extraData": null
+        },
+        {
+            "code": "baq",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/baq",
+            "label": "Basque",
+            "extraData": null
+        },
+        {
+            "code": "mnc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mnc",
+            "label": "Manchu",
+            "extraData": null
+        },
+        {
+            "code": "ath",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ath",
+            "label": "Athapascan languages",
+            "extraData": null
+        },
+        {
+            "code": "new",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/new",
+            "label": "Nepal Bhasa | Newari",
+            "extraData": null
+        },
+        {
+            "code": "ron",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ron",
+            "label": "Romanian | Moldavian | Moldovan",
+            "extraData": null
+        },
+        {
+            "code": "ice",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ice",
+            "label": "Icelandic",
+            "extraData": null
+        },
+        {
+            "code": "myv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/myv",
+            "label": "Erzya",
+            "extraData": null
+        },
+        {
+            "code": "ven",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ven",
+            "label": "Venda",
+            "extraData": null
+        },
+        {
+            "code": "sun",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sun",
+            "label": "Sundanese",
+            "extraData": null
+        },
+        {
+            "code": "mun",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mun",
+            "label": "Munda languages",
+            "extraData": null
+        },
+        {
+            "code": "mad",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mad",
+            "label": "Madurese",
+            "extraData": null
+        },
+        {
+            "code": "sal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sal",
+            "label": "Salishan languages",
+            "extraData": null
+        },
+        {
+            "code": "map",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/map",
+            "label": "Austronesian languages",
+            "extraData": null
+        },
+        {
+            "code": "mic",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mic",
+            "label": "Mi'kmaq | Micmac",
+            "extraData": null
+        },
+        {
+            "code": "luo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/luo",
+            "label": "Luo (Kenya and Tanzania)",
+            "extraData": null
+        },
+        {
+            "code": "elx",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/elx",
+            "label": "Elamite",
+            "extraData": null
+        },
+        {
+            "code": "paa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/paa",
+            "label": "Papuan languages",
+            "extraData": null
+        },
+        {
+            "code": "wen",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/wen",
+            "label": "Sorbian languages",
+            "extraData": null
+        },
+        {
+            "code": "bho",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bho",
+            "label": "Bhojpuri",
+            "extraData": null
+        },
+        {
+            "code": "zap",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zap",
+            "label": "Zapotec",
+            "extraData": null
+        },
+        {
+            "code": "mlt",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mlt",
+            "label": "Maltese",
+            "extraData": null
+        },
+        {
+            "code": "bua",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bua",
+            "label": "Buriat",
+            "extraData": null
+        },
+        {
+            "code": "ewo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ewo",
+            "label": "Ewondo",
+            "extraData": null
+        },
+        {
+            "code": "fan",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fan",
+            "label": "Fang",
+            "extraData": null
+        },
+        {
+            "code": "tsi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tsi",
+            "label": "Tsimshian",
+            "extraData": null
+        },
+        {
+            "code": "mao",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mao",
+            "label": "Maori",
+            "extraData": null
+        },
+        {
+            "code": "sms",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sms",
+            "label": "Skolt Sami",
+            "extraData": null
+        },
+        {
+            "code": "kut",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kut",
+            "label": "Kutenai",
+            "extraData": null
+        },
+        {
+            "code": "den",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/den",
+            "label": "Slave (Athapascan)",
+            "extraData": null
+        },
+        {
+            "code": "lun",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lun",
+            "label": "Lunda",
+            "extraData": null
+        },
+        {
+            "code": "mno",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mno",
+            "label": "Manobo languages",
+            "extraData": null
+        },
+        {
+            "code": "scn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/scn",
+            "label": "Sicilian",
+            "extraData": null
+        },
+        {
+            "code": "tkl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tkl",
+            "label": "Tokelau",
+            "extraData": null
+        },
+        {
+            "code": "pra",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pra",
+            "label": "Prakrit languages",
+            "extraData": null
+        },
+        {
+            "code": "gil",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gil",
+            "label": "Gilbertese",
+            "extraData": null
+        },
+        {
+            "code": "bra",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bra",
+            "label": "Braj",
+            "extraData": null
+        },
+        {
+            "code": "son",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/son",
+            "label": "Songhai languages",
+            "extraData": null
+        },
+        {
+            "code": "cat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cat",
+            "label": "Catalan | Valencian",
+            "extraData": null
+        },
+        {
+            "code": "rom",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/rom",
+            "label": "Romany",
+            "extraData": null
+        },
+        {
+            "code": "tut",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tut",
+            "label": "Altaic languages",
+            "extraData": null
+        },
+        {
+            "code": "arp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arp",
+            "label": "Arapaho",
+            "extraData": null
+        },
+        {
+            "code": "vot",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/vot",
+            "label": "Votic",
+            "extraData": null
+        },
+        {
+            "code": "bej",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bej",
+            "label": "Beja | Bedawiyet",
+            "extraData": null
+        },
+        {
+            "code": "swa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/swa",
+            "label": "Swahili",
+            "extraData": null
+        },
+        {
+            "code": "ale",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ale",
+            "label": "Aleut",
+            "extraData": null
+        },
+        {
+            "code": "pam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pam",
+            "label": "Pampanga | Kapampangan",
+            "extraData": null
+        },
+        {
+            "code": "spa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/spa",
+            "label": "Spanish | Castilian",
+            "extraData": null
+        },
+        {
+            "code": "min",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/min",
+            "label": "Minangkabau",
+            "extraData": null
+        },
+        {
+            "code": "san",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/san",
+            "label": "Sanskrit",
+            "extraData": null
+        },
+        {
+            "code": "kur",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kur",
+            "label": "Kurdish",
+            "extraData": null
+        },
+        {
+            "code": "chg",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chg",
+            "label": "Chagatai",
+            "extraData": null
+        },
+        {
+            "code": "bin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bin",
+            "label": "Bini | Edo",
+            "extraData": null
+        },
+        {
+            "code": "orm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/orm",
+            "label": "Oromo",
+            "extraData": null
+        },
+        {
+            "code": "tyv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tyv",
+            "label": "Tuvinian",
+            "extraData": null
+        },
+        {
+            "code": "snd",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/snd",
+            "label": "Sindhi",
+            "extraData": null
+        },
+        {
+            "code": "lol",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lol",
+            "label": "Mongo",
+            "extraData": null
+        },
+        {
+            "code": "nwc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nwc",
+            "label": "Classical Newari | Old Newari | Classical Nepal Bhasa",
+            "extraData": null
+        },
+        {
+            "code": "vai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/vai",
+            "label": "Vai",
+            "extraData": null
+        },
+        {
+            "code": "mac",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mac",
+            "label": "Macedonian",
+            "extraData": null
+        },
+        {
+            "code": "gba",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gba",
+            "label": "Gbaya",
+            "extraData": null
+        },
+        {
+            "code": "mon",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mon",
+            "label": "Mongolian",
+            "extraData": null
+        },
+        {
+            "code": "ndo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ndo",
+            "label": "Ndonga",
+            "extraData": null
+        },
+        {
+            "code": "cai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cai",
+            "label": "Central American Indian languages",
+            "extraData": null
+        },
+        {
+            "code": "roa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/roa",
+            "label": "Romance languages",
+            "extraData": null
+        },
+        {
+            "code": "pan",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pan",
+            "label": "Panjabi | Punjabi",
+            "extraData": null
+        },
+        {
+            "code": "cop",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cop",
+            "label": "Coptic",
+            "extraData": null
+        },
+        {
+            "code": "lua",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lua",
+            "label": "Luba-Lulua",
+            "extraData": null
+        },
+        {
+            "code": "kro",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kro",
+            "label": "Kru languages",
+            "extraData": null
+        },
+        {
+            "code": "lin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lin",
+            "label": "Lingala",
+            "extraData": null
+        },
+        {
+            "code": "bad",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bad",
+            "label": "Banda languages",
+            "extraData": null
+        },
+        {
+            "code": "afr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/afr",
+            "label": "Afrikaans",
+            "extraData": null
+        },
+        {
+            "code": "apa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/apa",
+            "label": "Apache languages",
+            "extraData": null
+        },
+        {
+            "code": "inh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/inh",
+            "label": "Ingush",
+            "extraData": null
+        },
+        {
+            "code": "dra",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dra",
+            "label": "Dravidian languages",
+            "extraData": null
+        },
+        {
+            "code": "sai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sai",
+            "label": "South American Indian languages",
+            "extraData": null
+        },
+        {
+            "code": "pro",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pro",
+            "label": "Proven\u00e7al, Old (to 1500) | Occitan, Old (to 1500)",
+            "extraData": null
+        },
+        {
+            "code": "guj",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/guj",
+            "label": "Gujarati",
+            "extraData": null
+        },
+        {
+            "code": "lub",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lub",
+            "label": "Luba-Katanga",
+            "extraData": null
+        },
+        {
+            "code": "khm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/khm",
+            "label": "Central Khmer",
+            "extraData": null
+        },
+        {
+            "code": "mlg",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mlg",
+            "label": "Malagasy",
+            "extraData": null
+        },
+        {
+            "code": "phi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/phi",
+            "label": "Philippine languages",
+            "extraData": null
+        },
+        {
+            "code": "tur",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tur",
+            "label": "Turkish",
+            "extraData": null
+        },
+        {
+            "code": "yor",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/yor",
+            "label": "Yoruba",
+            "extraData": null
+        },
+        {
+            "code": "est",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/est",
+            "label": "Estonian",
+            "extraData": null
+        },
+        {
+            "code": "lim",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lim",
+            "label": "Limburgan | Limburger | Limburgish",
+            "extraData": null
+        },
+        {
+            "code": "dzo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dzo",
+            "label": "Dzongkha",
+            "extraData": null
+        },
+        {
+            "code": "cau",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cau",
+            "label": "Caucasian languages",
+            "extraData": null
+        },
+        {
+            "code": "tmh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tmh",
+            "label": "Tamashek",
+            "extraData": null
+        },
+        {
+            "code": "ita",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ita",
+            "label": "Italian",
+            "extraData": null
+        },
+        {
+            "code": "som",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/som",
+            "label": "Somali",
+            "extraData": null
+        },
+        {
+            "code": "chr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chr",
+            "label": "Cherokee",
+            "extraData": null
+        },
+        {
+            "code": "may",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/may",
+            "label": "Malay",
+            "extraData": null
+        },
+        {
+            "code": "smi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/smi",
+            "label": "Sami languages",
+            "extraData": null
+        },
+        {
+            "code": "nap",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nap",
+            "label": "Neapolitan",
+            "extraData": null
+        },
+        {
+            "code": "hrv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hrv",
+            "label": "Croatian",
+            "extraData": null
+        },
+        {
+            "code": "ltz",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ltz",
+            "label": "Luxembourgish | Letzeburgesch",
+            "extraData": null
+        },
+        {
+            "code": "run",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/run",
+            "label": "Rundi",
+            "extraData": null
+        },
+        {
+            "code": "ira",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ira",
+            "label": "Iranian languages",
+            "extraData": null
+        },
+        {
+            "code": "sam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sam",
+            "label": "Samaritan Aramaic",
+            "extraData": null
+        },
+        {
+            "code": "ido",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ido",
+            "label": "Ido",
+            "extraData": null
+        },
+        {
+            "code": "kok",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kok",
+            "label": "Konkani",
+            "extraData": null
+        },
+        {
+            "code": "kha",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kha",
+            "label": "Khasi",
+            "extraData": null
+        },
+        {
+            "code": "kmb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kmb",
+            "label": "Kimbundu",
+            "extraData": null
+        },
+        {
+            "code": "man",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/man",
+            "label": "Mandingo",
+            "extraData": null
+        },
+        {
+            "code": "dua",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dua",
+            "label": "Duala",
+            "extraData": null
+        },
+        {
+            "code": "glg",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/glg",
+            "label": "Galician",
+            "extraData": null
+        },
+        {
+            "code": "gon",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gon",
+            "label": "Gondi",
+            "extraData": null
+        },
+        {
+            "code": "ceb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ceb",
+            "label": "Cebuano",
+            "extraData": null
+        },
+        {
+            "code": "jpr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/jpr",
+            "label": "Judeo-Persian",
+            "extraData": null
+        },
+        {
+            "code": "ind",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ind",
+            "label": "Indonesian",
+            "extraData": null
+        },
+        {
+            "code": "nde",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nde",
+            "label": "Ndebele, North | North Ndebele",
+            "extraData": null
+        },
+        {
+            "code": "bat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bat",
+            "label": "Baltic languages",
+            "extraData": null
+        },
+        {
+            "code": "lah",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lah",
+            "label": "Lahnda",
+            "extraData": null
+        },
+        {
+            "code": "gla",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gla",
+            "label": "Gaelic | Scottish Gaelic",
+            "extraData": null
+        },
+        {
+            "code": "dar",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dar",
+            "label": "Dargwa",
+            "extraData": null
+        },
+        {
+            "code": "cpp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cpp",
+            "label": "Creoles and pidgins, Portuguese-based",
+            "extraData": null
+        },
+        {
+            "code": "art",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/art",
+            "label": "Artificial languages",
+            "extraData": null
+        },
+        {
+            "code": "kho",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kho",
+            "label": "Khotanese | Sakan",
+            "extraData": null
+        },
+        {
+            "code": "akk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/akk",
+            "label": "Akkadian",
+            "extraData": null
+        },
+        {
+            "code": "oci",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/oci",
+            "label": "Occitan (post 1500)",
+            "extraData": null
+        },
+        {
+            "code": "suk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/suk",
+            "label": "Sukuma",
+            "extraData": null
+        },
+        {
+            "code": "sit",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sit",
+            "label": "Sino-Tibetan languages",
+            "extraData": null
+        },
+        {
+            "code": "bel",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bel",
+            "label": "Belarusian",
+            "extraData": null
+        },
+        {
+            "code": "vol",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/vol",
+            "label": "Volap\u00fck",
+            "extraData": null
+        },
+        {
+            "code": "nor",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nor",
+            "label": "Norwegian",
+            "extraData": null
+        },
+        {
+            "code": "alg",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/alg",
+            "label": "Algonquian languages",
+            "extraData": null
+        },
+        {
+            "code": "aar",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/aar",
+            "label": "Afar",
+            "extraData": null
+        },
+        {
+            "code": "ful",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ful",
+            "label": "Fulah",
+            "extraData": null
+        },
+        {
+            "code": "chk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chk",
+            "label": "Chuukese",
+            "extraData": null
+        },
+        {
+            "code": "zbl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zbl",
+            "label": "Blissymbols | Blissymbolics | Bliss",
+            "extraData": null
+        },
+        {
+            "code": "por",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/por",
+            "label": "Portuguese",
+            "extraData": null
+        },
+        {
+            "code": "frr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/frr",
+            "label": "Northern Frisian",
+            "extraData": null
+        },
+        {
+            "code": "osa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/osa",
+            "label": "Osage",
+            "extraData": null
+        },
+        {
+            "code": "bod",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bod",
+            "label": "Tibetan",
+            "extraData": null
+        },
+        {
+            "code": "afh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/afh",
+            "label": "Afrihili",
+            "extraData": null
+        },
+        {
+            "code": "mos",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mos",
+            "label": "Mossi",
+            "extraData": null
+        },
+        {
+            "code": "hup",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hup",
+            "label": "Hupa",
+            "extraData": null
+        },
+        {
+            "code": "moh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/moh",
+            "label": "Mohawk",
+            "extraData": null
+        },
+        {
+            "code": "gay",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gay",
+            "label": "Gayo",
+            "extraData": null
+        },
+        {
+            "code": "bis",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bis",
+            "label": "Bislama",
+            "extraData": null
+        },
+        {
+            "code": "smj",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/smj",
+            "label": "Lule Sami",
+            "extraData": null
+        },
+        {
+            "code": "was",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/was",
+            "label": "Washo",
+            "extraData": null
+        },
+        {
+            "code": "syr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/syr",
+            "label": "Syriac",
+            "extraData": null
+        },
+        {
+            "code": "dut",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dut",
+            "label": "Dutch | Flemish",
+            "extraData": null
+        },
+        {
+            "code": "tuk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tuk",
+            "label": "Turkmen",
+            "extraData": null
+        },
+        {
+            "code": "bai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bai",
+            "label": "Bamileke languages",
+            "extraData": null
+        },
+        {
+            "code": "lit",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lit",
+            "label": "Lithuanian",
+            "extraData": null
+        },
+        {
+            "code": "mwl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mwl",
+            "label": "Mirandese",
+            "extraData": null
+        },
+        {
+            "code": "eng",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/eng",
+            "label": "English",
+            "extraData": null
+        },
+        {
+            "code": "inc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/inc",
+            "label": "Indic languages",
+            "extraData": null
+        },
+        {
+            "code": "hin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hin",
+            "label": "Hindi",
+            "extraData": null
+        },
+        {
+            "code": "egy",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/egy",
+            "label": "Egyptian (Ancient)",
+            "extraData": null
+        },
+        {
+            "code": "ava",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ava",
+            "label": "Avaric",
+            "extraData": null
+        },
+        {
+            "code": "cnr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cnr",
+            "label": "Montenegrin",
+            "extraData": null
+        },
+        {
+            "code": "gaa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gaa",
+            "label": "Ga",
+            "extraData": null
+        },
+        {
+            "code": "cel",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cel",
+            "label": "Celtic languages",
+            "extraData": null
+        },
+        {
+            "code": "frs",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/frs",
+            "label": "Eastern Frisian",
+            "extraData": null
+        },
+        {
+            "code": "tam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tam",
+            "label": "Tamil",
+            "extraData": null
+        },
+        {
+            "code": "pap",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pap",
+            "label": "Papiamento",
+            "extraData": null
+        },
+        {
+            "code": "kpe",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kpe",
+            "label": "Kpelle",
+            "extraData": null
+        },
+        {
+            "code": "mal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mal",
+            "label": "Malayalam",
+            "extraData": null
+        },
+        {
+            "code": "bem",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bem",
+            "label": "Bemba",
+            "extraData": null
+        },
+        {
+            "code": "sat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sat",
+            "label": "Santali",
+            "extraData": null
+        },
+        {
+            "code": "bih",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bih",
+            "label": "Bihari languages",
+            "extraData": null
+        },
+        {
+            "code": "chv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chv",
+            "label": "Chuvash",
+            "extraData": null
+        },
+        {
+            "code": "nog",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nog",
+            "label": "Nogai",
+            "extraData": null
+        },
+        {
+            "code": "gmh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gmh",
+            "label": "German, Middle High (ca.1050-1500)",
+            "extraData": null
+        },
+        {
+            "code": "sux",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sux",
+            "label": "Sumerian",
+            "extraData": null
+        },
+        {
+            "code": "ast",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ast",
+            "label": "Asturian | Bable | Leonese | Asturleonese",
+            "extraData": null
+        },
+        {
+            "code": "arg",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arg",
+            "label": "Aragonese",
+            "extraData": null
+        },
+        {
+            "code": "sga",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sga",
+            "label": "Irish, Old (to 900)",
+            "extraData": null
+        },
+        {
+            "code": "alt",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/alt",
+            "label": "Southern Altai",
+            "extraData": null
+        },
+        {
+            "code": "zha",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zha",
+            "label": "Zhuang | Chuang",
+            "extraData": null
+        },
+        {
+            "code": "aka",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/aka",
+            "label": "Akan",
+            "extraData": null
+        },
+        {
+            "code": "fin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fin",
+            "label": "Finnish",
+            "extraData": null
+        },
+        {
+            "code": "uzb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/uzb",
+            "label": "Uzbek",
+            "extraData": null
+        },
+        {
+            "code": "fon",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fon",
+            "label": "Fon",
+            "extraData": null
+        },
+        {
+            "code": "kos",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kos",
+            "label": "Kosraean",
+            "extraData": null
+        },
+        {
+            "code": "ewe",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ewe",
+            "label": "Ewe",
+            "extraData": null
+        },
+        {
+            "code": "nzi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nzi",
+            "label": "Nzima",
+            "extraData": null
+        },
+        {
+            "code": "nbl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nbl",
+            "label": "Ndebele, South | South Ndebele",
+            "extraData": null
+        },
+        {
+            "code": "del",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/del",
+            "label": "Delaware",
+            "extraData": null
+        },
+        {
+            "code": "nep",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nep",
+            "label": "Nepali",
+            "extraData": null
+        },
+        {
+            "code": "hil",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hil",
+            "label": "Hiligaynon",
+            "extraData": null
+        },
+        {
+            "code": "kas",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kas",
+            "label": "Kashmiri",
+            "extraData": null
+        },
+        {
+            "code": "cos",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cos",
+            "label": "Corsican",
+            "extraData": null
+        },
+        {
+            "code": "ter",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ter",
+            "label": "Tereno",
+            "extraData": null
+        },
+        {
+            "code": "ton",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ton",
+            "label": "Tonga (Tonga Islands)",
+            "extraData": null
+        },
+        {
+            "code": "srn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/srn",
+            "label": "Sranan Tongo",
+            "extraData": null
+        },
+        {
+            "code": "aze",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/aze",
+            "label": "Azerbaijani",
+            "extraData": null
+        },
+        {
+            "code": "car",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/car",
+            "label": "Galibi Carib",
+            "extraData": null
+        },
+        {
+            "code": "wol",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/wol",
+            "label": "Wolof",
+            "extraData": null
+        },
+        {
+            "code": "war",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/war",
+            "label": "Waray",
+            "extraData": null
+        },
+        {
+            "code": "tiv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tiv",
+            "label": "Tiv",
+            "extraData": null
+        },
+        {
+            "code": "mak",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mak",
+            "label": "Makasar",
+            "extraData": null
+        },
+        {
+            "code": "kar",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kar",
+            "label": "Karen languages",
+            "extraData": null
+        },
+        {
+            "code": "ine",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ine",
+            "label": "Indo-European languages",
+            "extraData": null
+        },
+        {
+            "code": "cor",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cor",
+            "label": "Cornish",
+            "extraData": null
+        },
+        {
+            "code": "chu",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chu",
+            "label": "Church Slavic | Old Slavonic | Church Slavonic | Old Bulgarian | Old Church Slavonic",
+            "extraData": null
+        },
+        {
+            "code": "niu",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/niu",
+            "label": "Niuean",
+            "extraData": null
+        },
+        {
+            "code": "nds",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nds",
+            "label": "Low German | Low Saxon | German, Low | Saxon, Low",
+            "extraData": null
+        },
+        {
+            "code": "raj",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/raj",
+            "label": "Rajasthani",
+            "extraData": null
+        },
+        {
+            "code": "ben",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ben",
+            "label": "Bengali",
+            "extraData": null
+        },
+        {
+            "code": "kik",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kik",
+            "label": "Kikuyu | Gikuyu",
+            "extraData": null
+        },
+        {
+            "code": "him",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/him",
+            "label": "Himachali languages | Western Pahari languages",
+            "extraData": null
+        },
+        {
+            "code": "bas",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bas",
+            "label": "Basa",
+            "extraData": null
+        },
+        {
+            "code": "fao",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fao",
+            "label": "Faroese",
+            "extraData": null
+        },
+        {
+            "code": "nub",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nub",
+            "label": "Nubian languages",
+            "extraData": null
+        },
+        {
+            "code": "lat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lat",
+            "label": "Latin",
+            "extraData": null
+        },
+        {
+            "code": "gwi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gwi",
+            "label": "Gwich'in",
+            "extraData": null
+        },
+        {
+            "code": "chi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chi",
+            "label": "Chinese",
+            "extraData": null
+        },
+        {
+            "code": "tha",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tha",
+            "label": "Thai",
+            "extraData": null
+        },
+        {
+            "code": "snk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/snk",
+            "label": "Soninke",
+            "extraData": null
+        },
+        {
+            "code": "xal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/xal",
+            "label": "Kalmyk | Oirat",
+            "extraData": null
+        },
+        {
+            "code": "sel",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sel",
+            "label": "Selkup",
+            "extraData": null
+        },
+        {
+            "code": "ssw",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ssw",
+            "label": "Swati",
+            "extraData": null
+        },
+        {
+            "code": "pag",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pag",
+            "label": "Pangasinan",
+            "extraData": null
+        },
+        {
+            "code": "iba",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/iba",
+            "label": "Iban",
+            "extraData": null
+        },
+        {
+            "code": "arw",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arw",
+            "label": "Arawak",
+            "extraData": null
+        },
+        {
+            "code": "ave",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ave",
+            "label": "Avestan",
+            "extraData": null
+        },
+        {
+            "code": "ach",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ach",
+            "label": "Acoli",
+            "extraData": null
+        },
+        {
+            "code": "csb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/csb",
+            "label": "Kashubian",
+            "extraData": null
+        },
+        {
+            "code": "syc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/syc",
+            "label": "Classical Syriac",
+            "extraData": null
+        },
+        {
+            "code": "bak",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bak",
+            "label": "Bashkir",
+            "extraData": null
+        },
+        {
+            "code": "jpn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/jpn",
+            "label": "Japanese",
+            "extraData": null
+        },
+        {
+            "code": "uga",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/uga",
+            "label": "Ugaritic",
+            "extraData": null
+        },
+        {
+            "code": "tum",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tum",
+            "label": "Tumbuka",
+            "extraData": null
+        },
+        {
+            "code": "hun",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hun",
+            "label": "Hungarian",
+            "extraData": null
+        },
+        {
+            "code": "dgr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dgr",
+            "label": "Dogrib",
+            "extraData": null
+        },
+        {
+            "code": "nai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nai",
+            "label": "North American Indian languages",
+            "extraData": null
+        },
+        {
+            "code": "fro",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fro",
+            "label": "French, Old (842-ca.1400)",
+            "extraData": null
+        },
+        {
+            "code": "kaw",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kaw",
+            "label": "Kawi",
+            "extraData": null
+        },
+        {
+            "code": "sgn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sgn",
+            "label": "Sign Languages",
+            "extraData": null
+        },
+        {
+            "code": "sma",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sma",
+            "label": "Southern Sami",
+            "extraData": null
+        },
+        {
+            "code": "kal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kal",
+            "label": "Kalaallisut | Greenlandic",
+            "extraData": null
+        },
+        {
+            "code": "fat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fat",
+            "label": "Fanti",
+            "extraData": null
+        },
+        {
+            "code": "nau",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nau",
+            "label": "Nauru",
+            "extraData": null
+        },
+        {
+            "code": "chn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chn",
+            "label": "Chinook jargon",
+            "extraData": null
+        },
+        {
+            "code": "lui",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lui",
+            "label": "Luiseno",
+            "extraData": null
+        },
+        {
+            "code": "cmc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cmc",
+            "label": "Chamic languages",
+            "extraData": null
+        },
+        {
+            "code": "ina",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ina",
+            "label": "Interlingua (International Auxiliary Language Association)",
+            "extraData": null
+        },
+        {
+            "code": "bur",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bur",
+            "label": "Burmese",
+            "extraData": null
+        },
+        {
+            "code": "roh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/roh",
+            "label": "Romansh",
+            "extraData": null
+        },
+        {
+            "code": "ell",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ell",
+            "label": "Greek, Modern (1453-)",
+            "extraData": null
+        },
+        {
+            "code": "gez",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gez",
+            "label": "Geez",
+            "extraData": null
+        },
+        {
+            "code": "tpi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tpi",
+            "label": "Tok Pisin",
+            "extraData": null
+        },
+        {
+            "code": "ssa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ssa",
+            "label": "Nilo-Saharan languages",
+            "extraData": null
+        },
+        {
+            "code": "srd",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/srd",
+            "label": "Sardinian",
+            "extraData": null
+        },
+        {
+            "code": "lav",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lav",
+            "label": "Latvian",
+            "extraData": null
+        },
+        {
+            "code": "zul",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zul",
+            "label": "Zulu",
+            "extraData": null
+        },
+        {
+            "code": "ukr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ukr",
+            "label": "Ukrainian",
+            "extraData": null
+        },
+        {
+            "code": "oji",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/oji",
+            "label": "Ojibwa",
+            "extraData": null
+        },
+        {
+            "code": "krl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/krl",
+            "label": "Karelian",
+            "extraData": null
+        },
+        {
+            "code": "chy",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chy",
+            "label": "Cheyenne",
+            "extraData": null
+        },
+        {
+            "code": "bug",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bug",
+            "label": "Buginese",
+            "extraData": null
+        },
+        {
+            "code": "ilo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ilo",
+            "label": "Iloko",
+            "extraData": null
+        },
+        {
+            "code": "jbo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/jbo",
+            "label": "Lojban",
+            "extraData": null
+        },
+        {
+            "code": "din",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/din",
+            "label": "Dinka",
+            "extraData": null
+        },
+        {
+            "code": "und",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/und",
+            "label": "Undetermined",
+            "extraData": null
+        },
+        {
+            "code": "sot",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sot",
+            "label": "Sotho, Southern",
+            "extraData": null
+        },
+        {
+            "code": "mus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mus",
+            "label": "Creek",
+            "extraData": null
+        },
+        {
+            "code": "rar",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/rar",
+            "label": "Rarotongan | Cook Islands Maori",
+            "extraData": null
+        },
+        {
+            "code": "bal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bal",
+            "label": "Baluchi",
+            "extraData": null
+        },
+        {
+            "code": "kor",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kor",
+            "label": "Korean",
+            "extraData": null
+        },
+        {
+            "code": "cym",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cym",
+            "label": "Welsh",
+            "extraData": null
+        },
+        {
+            "code": "mni",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mni",
+            "label": "Manipuri",
+            "extraData": null
+        },
+        {
+            "code": "que",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/que",
+            "label": "Quechua",
+            "extraData": null
+        },
+        {
+            "code": "mai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mai",
+            "label": "Maithili",
+            "extraData": null
+        },
+        {
+            "code": "efi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/efi",
+            "label": "Efik",
+            "extraData": null
+        },
+        {
+            "code": "tso",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tso",
+            "label": "Tsonga",
+            "extraData": null
+        },
+        {
+            "code": "chb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chb",
+            "label": "Chibcha",
+            "extraData": null
+        },
+        {
+            "code": "pli",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pli",
+            "label": "Pali",
+            "extraData": null
+        },
+        {
+            "code": "day",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/day",
+            "label": "Land Dayak languages",
+            "extraData": null
+        },
+        {
+            "code": "dyu",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dyu",
+            "label": "Dyula",
+            "extraData": null
+        },
+        {
+            "code": "epo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/epo",
+            "label": "Esperanto",
+            "extraData": null
+        },
+        {
+            "code": "sla",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sla",
+            "label": "Slavic languages",
+            "extraData": null
+        },
+        {
+            "code": "fas",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fas",
+            "label": "Persian",
+            "extraData": null
+        },
+        {
+            "code": "ipk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ipk",
+            "label": "Inupiaq",
+            "extraData": null
+        },
+        {
+            "code": "doi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/doi",
+            "label": "Dogri",
+            "extraData": null
+        },
+        {
+            "code": "nav",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nav",
+            "label": "Navajo | Navaho",
+            "extraData": null
+        },
+        {
+            "code": "tir",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tir",
+            "label": "Tigrinya",
+            "extraData": null
+        },
+        {
+            "code": "vie",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/vie",
+            "label": "Vietnamese",
+            "extraData": null
+        },
+        {
+            "code": "srp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/srp",
+            "label": "Serbian",
+            "extraData": null
+        },
+        {
+            "code": "anp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/anp",
+            "label": "Angika",
+            "extraData": null
+        },
+        {
+            "code": "chm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chm",
+            "label": "Mari",
+            "extraData": null
+        },
+        {
+            "code": "lez",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lez",
+            "label": "Lezghian",
+            "extraData": null
+        },
+        {
+            "code": "kua",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kua",
+            "label": "Kuanyama | Kwanyama",
+            "extraData": null
+        },
+        {
+            "code": "lus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lus",
+            "label": "Lushai",
+            "extraData": null
+        },
+        {
+            "code": "cpf",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cpf",
+            "label": "Creoles and pidgins, French-based",
+            "extraData": null
+        },
+        {
+            "code": "cha",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cha",
+            "label": "Chamorro",
+            "extraData": null
+        },
+        {
+            "code": "tet",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tet",
+            "label": "Tetum",
+            "extraData": null
+        },
+        {
+            "code": "phn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/phn",
+            "label": "Phoenician",
+            "extraData": null
+        },
+        {
+            "code": "pon",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pon",
+            "label": "Pohnpeian",
+            "extraData": null
+        },
+        {
+            "code": "men",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/men",
+            "label": "Mende",
+            "extraData": null
+        },
+        {
+            "code": "crh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/crh",
+            "label": "Crimean Tatar | Crimean Turkish",
+            "extraData": null
+        },
+        {
+            "code": "sem",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sem",
+            "label": "Semitic languages",
+            "extraData": null
+        },
+        {
+            "code": "smn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/smn",
+            "label": "Inari Sami",
+            "extraData": null
+        },
+        {
+            "code": "got",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/got",
+            "label": "Gothic",
+            "extraData": null
+        },
+        {
+            "code": "mdr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mdr",
+            "label": "Mandar",
+            "extraData": null
+        },
+        {
+            "code": "kru",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kru",
+            "label": "Kurukh",
+            "extraData": null
+        },
+        {
+            "code": "znd",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/znd",
+            "label": "Zande languages",
+            "extraData": null
+        },
+        {
+            "code": "rus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/rus",
+            "label": "Russian",
+            "extraData": null
+        },
+        {
+            "code": "oto",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/oto",
+            "label": "Otomian languages",
+            "extraData": null
+        },
+        {
+            "code": "dan",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dan",
+            "label": "Danish",
+            "extraData": null
+        },
+        {
+            "code": "afa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/afa",
+            "label": "Afro-Asiatic languages",
+            "extraData": null
+        },
+        {
+            "code": "mis",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mis",
+            "label": "Uncoded languages",
+            "extraData": null
+        },
+        {
+            "code": "tgl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tgl",
+            "label": "Tagalog",
+            "extraData": null
+        },
+        {
+            "code": "cus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cus",
+            "label": "Cushitic languages",
+            "extraData": null
+        },
+        {
+            "code": "kum",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kum",
+            "label": "Kumyk",
+            "extraData": null
+        },
+        {
+            "code": "btk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/btk",
+            "label": "Batak languages",
+            "extraData": null
+        },
+        {
+            "code": "ces",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ces",
+            "label": "Czech",
+            "extraData": null
+        },
+        {
+            "code": "tig",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tig",
+            "label": "Tigre",
+            "extraData": null
+        },
+        {
+            "code": "wln",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/wln",
+            "label": "Walloon",
+            "extraData": null
+        },
+        {
+            "code": "ile",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ile",
+            "label": "Interlingue | Occidental",
+            "extraData": null
+        },
+        {
+            "code": "sas",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sas",
+            "label": "Sasak",
+            "extraData": null
+        },
+        {
+            "code": "mdf",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mdf",
+            "label": "Moksha",
+            "extraData": null
+        },
+        {
+            "code": "gem",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gem",
+            "label": "Germanic languages",
+            "extraData": null
+        },
+        {
+            "code": "nia",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nia",
+            "label": "Nias",
+            "extraData": null
+        },
+        {
+            "code": "cad",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cad",
+            "label": "Caddo",
+            "extraData": null
+        },
+        {
+            "code": "kau",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kau",
+            "label": "Kanuri",
+            "extraData": null
+        },
+        {
+            "code": "cpe",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cpe",
+            "label": "Creoles and pidgins, English based",
+            "extraData": null
+        },
+        {
+            "code": "mah",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mah",
+            "label": "Marshallese",
+            "extraData": null
+        },
+        {
+            "code": "her",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/her",
+            "label": "Herero",
+            "extraData": null
+        },
+        {
+            "code": "awa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/awa",
+            "label": "Awadhi",
+            "extraData": null
+        },
+        {
+            "code": "dsb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dsb",
+            "label": "Lower Sorbian",
+            "extraData": null
+        },
+        {
+            "code": "haw",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/haw",
+            "label": "Hawaiian",
+            "extraData": null
+        },
+        {
+            "code": "swe",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/swe",
+            "label": "Swedish",
+            "extraData": null
+        },
+        {
+            "code": "tgk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tgk",
+            "label": "Tajik",
+            "extraData": null
+        },
+        {
+            "code": "deu",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/deu",
+            "label": "German",
+            "extraData": null
+        },
+        {
+            "code": "kbd",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kbd",
+            "label": "Kabardian",
+            "extraData": null
+        },
+        {
+            "code": "nso",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nso",
+            "label": "Pedi | Sepedi | Northern Sotho",
+            "extraData": null
+        },
+        {
+            "code": "kin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kin",
+            "label": "Kinyarwanda",
+            "extraData": null
+        },
+        {
+            "code": "goh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/goh",
+            "label": "German, Old High (ca.750-1050)",
+            "extraData": null
+        },
+        {
+            "code": "amh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/amh",
+            "label": "Amharic",
+            "extraData": null
+        },
+        {
+            "code": "sad",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sad",
+            "label": "Sandawe",
+            "extraData": null
+        },
+        {
+            "code": "lug",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lug",
+            "label": "Ganda",
+            "extraData": null
+        },
+        {
+            "code": "udm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/udm",
+            "label": "Udmurt",
+            "extraData": null
+        },
+        {
+            "code": "grn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/grn",
+            "label": "Guarani",
+            "extraData": null
+        },
+        {
+            "code": "hmo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hmo",
+            "label": "Hiri Motu",
+            "extraData": null
+        },
+        {
+            "code": "iii",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/iii",
+            "label": "Sichuan Yi | Nuosu",
+            "extraData": null
+        },
+        {
+            "code": "bre",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bre",
+            "label": "Breton",
+            "extraData": null
+        },
+        {
+            "code": "twi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/twi",
+            "label": "Twi",
+            "extraData": null
+        },
+        {
+            "code": "ace",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ace",
+            "label": "Achinese",
+            "extraData": null
+        },
+        {
+            "code": "sag",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sag",
+            "label": "Sango",
+            "extraData": null
+        },
+        {
+            "code": "urd",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/urd",
+            "label": "Urdu",
+            "extraData": null
+        },
+        {
+            "code": "tup",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tup",
+            "label": "Tupi languages",
+            "extraData": null
+        },
+        {
+            "code": "slk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/slk",
+            "label": "Slovak",
+            "extraData": null
+        },
+        {
+            "code": "arc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arc",
+            "label": "Official Aramaic (700-300 BCE) | Imperial Aramaic (700-300 BCE)",
+            "extraData": null
+        },
+        {
+            "code": "kac",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kac",
+            "label": "Kachin | Jingpho",
+            "extraData": null
+        },
+        {
+            "code": "sog",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sog",
+            "label": "Sogdian",
+            "extraData": null
+        },
+        {
+            "code": "ban",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ban",
+            "label": "Balinese",
+            "extraData": null
+        },
+        {
+            "code": "arn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arn",
+            "label": "Mapudungun | Mapuche",
+            "extraData": null
+        },
+        {
+            "code": "khi",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/khi",
+            "label": "Khoisan languages",
+            "extraData": null
+        },
+        {
+            "code": "fiu",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fiu",
+            "label": "Finno-Ugrian languages",
+            "extraData": null
+        },
+        {
+            "code": "grc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/grc",
+            "label": "Greek, Ancient (to 1453)",
+            "extraData": null
+        },
+        {
+            "code": "smo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/smo",
+            "label": "Samoan",
+            "extraData": null
+        },
+        {
+            "code": "qaa-qtz",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/qaa-qtz",
+            "label": "Reserved for local use",
+            "extraData": null
+        },
+        {
+            "code": "mag",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mag",
+            "label": "Magahi",
+            "extraData": null
+        },
+        {
+            "code": "ber",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ber",
+            "label": "Berber languages",
+            "extraData": null
+        },
+        {
+            "code": "uig",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/uig",
+            "label": "Uighur | Uyghur",
+            "extraData": null
+        },
+        {
+            "code": "kaz",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kaz",
+            "label": "Kazakh",
+            "extraData": null
+        },
+        {
+            "code": "tem",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tem",
+            "label": "Timne",
+            "extraData": null
+        },
+        {
+            "code": "mas",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mas",
+            "label": "Masai",
+            "extraData": null
+        },
+        {
+            "code": "nyo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nyo",
+            "label": "Nyoro",
+            "extraData": null
+        },
+        {
+            "code": "dum",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dum",
+            "label": "Dutch, Middle (ca.1050-1350)",
+            "extraData": null
+        },
+        {
+            "code": "ibo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ibo",
+            "label": "Igbo",
+            "extraData": null
+        },
+        {
+            "code": "pau",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pau",
+            "label": "Palauan",
+            "extraData": null
+        },
+        {
+            "code": "fra",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fra",
+            "label": "French",
+            "extraData": null
+        },
+        {
+            "code": "zun",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zun",
+            "label": "Zuni",
+            "extraData": null
+        },
+        {
+            "code": "umb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/umb",
+            "label": "Umbundu",
+            "extraData": null
+        },
+        {
+            "code": "rap",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/rap",
+            "label": "Rapanui",
+            "extraData": null
+        },
+        {
+            "code": "hsb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hsb",
+            "label": "Upper Sorbian",
+            "extraData": null
+        },
+        {
+            "code": "kir",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kir",
+            "label": "Kirghiz | Kyrgyz",
+            "extraData": null
+        },
+        {
+            "code": "kab",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kab",
+            "label": "Kabyle",
+            "extraData": null
+        },
+        {
+            "code": "pol",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pol",
+            "label": "Polish",
+            "extraData": null
+        },
+        {
+            "code": "fij",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fij",
+            "label": "Fijian",
+            "extraData": null
+        },
+        {
+            "code": "shn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/shn",
+            "label": "Shan",
+            "extraData": null
+        },
+        {
+            "code": "yid",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/yid",
+            "label": "Yiddish",
+            "extraData": null
+        },
+        {
+            "code": "hai",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hai",
+            "label": "Haida",
+            "extraData": null
+        },
+        {
+            "code": "loz",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/loz",
+            "label": "Lozi",
+            "extraData": null
+        },
+        {
+            "code": "heb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/heb",
+            "label": "Hebrew",
+            "extraData": null
+        },
+        {
+            "code": "xho",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/xho",
+            "label": "Xhosa",
+            "extraData": null
+        },
+        {
+            "code": "sio",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sio",
+            "label": "Siouan languages",
+            "extraData": null
+        },
+        {
+            "code": "sah",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sah",
+            "label": "Yakut",
+            "extraData": null
+        },
+        {
+            "code": "jrb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/jrb",
+            "label": "Judeo-Arabic",
+            "extraData": null
+        },
+        {
+            "code": "hmn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hmn",
+            "label": "Hmong | Mong",
+            "extraData": null
+        },
+        {
+            "code": "fur",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fur",
+            "label": "Friulian",
+            "extraData": null
+        },
+        {
+            "code": "pus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pus",
+            "label": "Pushto | Pashto",
+            "extraData": null
+        },
+        {
+            "code": "gsw",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gsw",
+            "label": "Swiss German | Alemannic | Alsatian",
+            "extraData": null
+        },
+        {
+            "code": "lam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lam",
+            "label": "Lamba",
+            "extraData": null
+        },
+        {
+            "code": "ada",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ada",
+            "label": "Adangme",
+            "extraData": null
+        },
+        {
+            "code": "mar",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mar",
+            "label": "Marathi",
+            "extraData": null
+        },
+        {
+            "code": "tog",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tog",
+            "label": "Tonga (Nyasa)",
+            "extraData": null
+        },
+        {
+            "code": "mwr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mwr",
+            "label": "Marwari",
+            "extraData": null
+        },
+        {
+            "code": "alb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/alb",
+            "label": "Albanian",
+            "extraData": null
+        },
+        {
+            "code": "srr",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/srr",
+            "label": "Serer",
+            "extraData": null
+        },
+        {
+            "code": "gor",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gor",
+            "label": "Gorontalo",
+            "extraData": null
+        },
+        {
+            "code": "tlh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tlh",
+            "label": "Klingon | tlhIngan-Hol",
+            "extraData": null
+        },
+        {
+            "code": "eka",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/eka",
+            "label": "Ekajuk",
+            "extraData": null
+        },
+        {
+            "code": "frm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/frm",
+            "label": "French, Middle (ca.1400-1600)",
+            "extraData": null
+        },
+        {
+            "code": "ijo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ijo",
+            "label": "Ijo languages",
+            "extraData": null
+        },
+        {
+            "code": "hau",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hau",
+            "label": "Hausa",
+            "extraData": null
+        },
+        {
+            "code": "enm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/enm",
+            "label": "English, Middle (1100-1500)",
+            "extraData": null
+        },
+        {
+            "code": "nno",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nno",
+            "label": "Norwegian Nynorsk | Nynorsk, Norwegian",
+            "extraData": null
+        },
+        {
+            "code": "che",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/che",
+            "label": "Chechen",
+            "extraData": null
+        },
+        {
+            "code": "kan",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kan",
+            "label": "Kannada",
+            "extraData": null
+        },
+        {
+            "code": "ain",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ain",
+            "label": "Ainu",
+            "extraData": null
+        },
+        {
+            "code": "sid",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sid",
+            "label": "Sidamo",
+            "extraData": null
+        },
+        {
+            "code": "krc",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/krc",
+            "label": "Karachay-Balkar",
+            "extraData": null
+        },
+        {
+            "code": "hit",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hit",
+            "label": "Hittite",
+            "extraData": null
+        },
+        {
+            "code": "tli",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tli",
+            "label": "Tlingit",
+            "extraData": null
+        },
+        {
+            "code": "sme",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sme",
+            "label": "Northern Sami",
+            "extraData": null
+        },
+        {
+            "code": "abk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/abk",
+            "label": "Abkhazian",
+            "extraData": null
+        },
+        {
+            "code": "nqo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nqo",
+            "label": "N'Ko",
+            "extraData": null
+        },
+        {
+            "code": "nob",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nob",
+            "label": "Bokm\u00e5l, Norwegian | Norwegian Bokm\u00e5l",
+            "extraData": null
+        },
+        {
+            "code": "peo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/peo",
+            "label": "Persian, Old (ca.600-400 B.C.)",
+            "extraData": null
+        },
+        {
+            "code": "nic",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nic",
+            "label": "Niger-Kordofanian languages",
+            "extraData": null
+        },
+        {
+            "code": "mga",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mga",
+            "label": "Irish, Middle (900-1200)",
+            "extraData": null
+        },
+        {
+            "code": "lao",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lao",
+            "label": "Lao",
+            "extraData": null
+        },
+        {
+            "code": "byn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/byn",
+            "label": "Blin | Bilin",
+            "extraData": null
+        },
+        {
+            "code": "kam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kam",
+            "label": "Kamba",
+            "extraData": null
+        },
+        {
+            "code": "arm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/arm",
+            "label": "Armenian",
+            "extraData": null
+        },
+        {
+            "code": "fry",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/fry",
+            "label": "Western Frisian",
+            "extraData": null
+        },
+        {
+            "code": "chp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/chp",
+            "label": "Chipewyan | Dene Suline",
+            "extraData": null
+        },
+        {
+            "code": "tsn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tsn",
+            "label": "Tswana",
+            "extraData": null
+        },
+        {
+            "code": "bik",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bik",
+            "label": "Bikol",
+            "extraData": null
+        },
+        {
+            "code": "sna",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sna",
+            "label": "Shona",
+            "extraData": null
+        },
+        {
+            "code": "nyn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nyn",
+            "label": "Nyankole",
+            "extraData": null
+        },
+        {
+            "code": "tah",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tah",
+            "label": "Tahitian",
+            "extraData": null
+        },
+        {
+            "code": "tvl",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tvl",
+            "label": "Tuvalu",
+            "extraData": null
+        },
+        {
+            "code": "nah",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nah",
+            "label": "Nahuatl languages",
+            "extraData": null
+        },
+        {
+            "code": "cre",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cre",
+            "label": "Cree",
+            "extraData": null
+        },
+        {
+            "code": "ara",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ara",
+            "label": "Arabic",
+            "extraData": null
+        },
+        {
+            "code": "lad",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/lad",
+            "label": "Ladino",
+            "extraData": null
+        },
+        {
+            "code": "gle",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/gle",
+            "label": "Irish",
+            "extraData": null
+        },
+        {
+            "code": "rup",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/rup",
+            "label": "Aromanian | Arumanian | Macedo-Romanian",
+            "extraData": null
+        },
+        {
+            "code": "mkh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mkh",
+            "label": "Mon-Khmer languages",
+            "extraData": null
+        },
+        {
+            "code": "wak",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/wak",
+            "label": "Wakashan languages",
+            "extraData": null
+        },
+        {
+            "code": "yap",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/yap",
+            "label": "Yapese",
+            "extraData": null
+        },
+        {
+            "code": "dak",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/dak",
+            "label": "Dakota",
+            "extraData": null
+        },
+        {
+            "code": "geo",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/geo",
+            "label": "Georgian",
+            "extraData": null
+        },
+        {
+            "code": "glv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/glv",
+            "label": "Manx",
+            "extraData": null
+        },
+        {
+            "code": "kom",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kom",
+            "label": "Komi",
+            "extraData": null
+        },
+        {
+            "code": "grb",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/grb",
+            "label": "Grebo",
+            "extraData": null
+        },
+        {
+            "code": "zen",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zen",
+            "label": "Zenaga",
+            "extraData": null
+        },
+        {
+            "code": "ypk",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ypk",
+            "label": "Yupik languages",
+            "extraData": null
+        },
+        {
+            "code": "bam",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bam",
+            "label": "Bambara",
+            "extraData": null
+        },
+        {
+            "code": "cho",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/cho",
+            "label": "Choctaw",
+            "extraData": null
+        },
+        {
+            "code": "hat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/hat",
+            "label": "Haitian | Haitian Creole",
+            "extraData": null
+        },
+        {
+            "code": "non",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/non",
+            "label": "Norse, Old",
+            "extraData": null
+        },
+        {
+            "code": "sus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sus",
+            "label": "Susu",
+            "extraData": null
+        },
+        {
+            "code": "aus",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/aus",
+            "label": "Australian languages",
+            "extraData": null
+        },
+        {
+            "code": "ori",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ori",
+            "label": "Oriya",
+            "extraData": null
+        },
+        {
+            "code": "bos",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bos",
+            "label": "Bosnian",
+            "extraData": null
+        },
+        {
+            "code": "wal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/wal",
+            "label": "Wolaitta | Wolaytta",
+            "extraData": null
+        },
+        {
+            "code": "pal",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/pal",
+            "label": "Pahlavi",
+            "extraData": null
+        },
+        {
+            "code": "tel",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tel",
+            "label": "Telugu",
+            "extraData": null
+        },
+        {
+            "code": "tat",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/tat",
+            "label": "Tatar",
+            "extraData": null
+        },
+        {
+            "code": "zgh",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zgh",
+            "label": "Standard Moroccan Tamazight",
+            "extraData": null
+        },
+        {
+            "code": "mul",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/mul",
+            "label": "Multiple languages",
+            "extraData": null
+        },
+        {
+            "code": "kaa",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kaa",
+            "label": "Kara-Kalpak",
+            "extraData": null
+        },
+        {
+            "code": "kon",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/kon",
+            "label": "Kongo",
+            "extraData": null
+        },
+        {
+            "code": "bla",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/bla",
+            "label": "Siksika",
+            "extraData": null
+        },
+        {
+            "code": "nym",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/nym",
+            "label": "Nyamwezi",
+            "extraData": null
+        },
+        {
+            "code": "ady",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ady",
+            "label": "Adyghe | Adygei",
+            "extraData": null
+        },
+        {
+            "code": "yao",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/yao",
+            "label": "Yao",
+            "extraData": null
+        },
+        {
+            "code": "oss",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/oss",
+            "label": "Ossetian | Ossetic",
+            "extraData": null
+        },
+        {
+            "code": "slv",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/slv",
+            "label": "Slovenian",
+            "extraData": null
+        },
+        {
+            "code": "div",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/div",
+            "label": "Divehi | Dhivehi | Maldivian",
+            "extraData": null
+        },
+        {
+            "code": "myn",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/myn",
+            "label": "Mayan languages",
+            "extraData": null
+        },
+        {
+            "code": "ota",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ota",
+            "label": "Turkish, Ottoman (1500-1928)",
+            "extraData": null
+        },
+        {
+            "code": "asm",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/asm",
+            "label": "Assamese",
+            "extraData": null
+        },
+        {
+            "code": "iku",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/iku",
+            "label": "Inuktitut",
+            "extraData": null
+        },
+        {
+            "code": "aym",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/aym",
+            "label": "Aymara",
+            "extraData": null
+        },
+        {
+            "code": "zza",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/zza",
+            "label": "Zaza | Dimili | Dimli | Kirdki | Kirmanjki | Zazaki",
+            "extraData": null
+        },
+        {
+            "code": "crp",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/crp",
+            "label": "Creoles and pidgins",
+            "extraData": null
+        },
+        {
+            "code": "iro",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/iro",
+            "label": "Iroquoian languages",
+            "extraData": null
+        },
+        {
+            "code": "ang",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/ang",
+            "label": "English, Old (ca.450-1100)",
+            "extraData": null
+        },
+        {
+            "code": "jav",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/jav",
+            "label": "Javanese",
+            "extraData": null
+        },
+        {
+            "code": "sin",
+            "url": "http://id.loc.gov/vocabulary/iso639-2/sin",
+            "label": "Sinhala | Sinhalese",
+            "extraData": null
+        }
+    ]
+}

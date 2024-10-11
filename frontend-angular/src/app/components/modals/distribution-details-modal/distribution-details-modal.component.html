@@ -1,0 +1,173 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{distributionSelected.title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <div class="row ml-1">
+        <div class="col-md-6">
+
+            <dt>Title</dt>
+            <dd>{{distributionSelected.title}}</dd>
+
+            <dt>Description</dt>
+            <dd *ngIf="!distributionSelected.description; else distributionDescription" class="font-italic">Not available</dd>
+            <ng-template #distributionDescription>
+                <dd>{{distributionSelected.description}}</dd>
+            </ng-template>
+
+            <dt>Issued</dt>
+            <dd *ngIf="!distributionSelected.issued; else distributionIssued" class="font-italic">Not available</dd>
+            <ng-template #distributionIssued>
+                <dd>{{distributionSelected.issued | date:'longDate'}}</dd>
+            </ng-template>
+
+            <dt>Last update</dt>
+            <dd *ngIf="!distributionSelected.modified; else distributionModified" class="font-italic">Not available</dd>
+            <ng-template #distributionModified>
+                <dd>{{distributionSelected.modified | date:'longDate'}}</dd>
+            </ng-template>
+
+            <dt>License</dt>
+            <dd *ngIf="!distributionSelected.license; else distributionLicense" class="font-italic">Not available</dd>
+            <ng-template #distributionLicense>
+                <dd><a class="attribute-link" href="{{distributionSelected.license}}" target="_blank">{{distributionSelected.license}}</a></dd>
+            </ng-template>
+
+            <dt>Access rights</dt>
+            <dd *ngIf="!distributionSelected.accessRights; else distributionAccessRights" class="font-italic">Not available</dd>
+            <ng-template #distributionAccessRights>
+                <dd>{{distributionSelected.accessRights}}
+                    <ng-template #popAccessProcedures>
+                        <div>
+                            <span><b>Procedures to access the data</b></span>
+                            <hr>
+                            <span *ngIf="distributionSelected.accessProcedures; else accessProceduresNotAvailable">{{distributionSelected.accessProcedures}}</span>
+                            <ng-template #accessProceduresNotAvailable>
+                                <span>Not required</span>
+                            </ng-template>
+                        </div>
+                    </ng-template>
+                    <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAccessProcedures" placement="bottom" container="body"></i>
+                </dd>
+            </ng-template>
+        </div>
+
+        <div class="col-md-6">
+
+            <dt>Access URL</dt>
+            <dd *ngIf="!distributionSelected.accessUrl; else distributionAccessUrl" class="font-italic">Not available</dd>
+            <ng-template #distributionAccessUrl>
+                <dd><a class="attribute-link" href="{{distributionSelected.accessUrl}}" target="_blank">{{distributionSelected.accessUrl}}</a></dd>
+            </ng-template>
+
+            <dt>Download URL</dt>
+            <dd *ngIf="!distributionSelected.downloadUrl; else distributionDownloadUrl" class="font-italic">Not available</dd>
+            <ng-template #distributionDownloadUrl>
+                <dd><a class="attribute-link" href="{{distributionSelected.downloadUrl}}" target="_blank">{{distributionSelected.downloadUrl}}</a></dd>
+            </ng-template>
+
+            <dt>Byte size</dt>
+            <dd *ngIf="!distributionSelected.byteSize; else distributionByteSize" class="font-italic">Not available</dd>
+            <ng-template #distributionByteSize>
+                <dd>{{distributionSelected.byteSize}}</dd>
+            </ng-template>
+
+            <dt>Format</dt>
+            <dd *ngIf="!distributionSelected.format; else distributionFormat" class="font-italic">Not available</dd>
+            <ng-template #distributionFormat>
+                <dd>{{distributionSelected.format}}</dd>
+            </ng-template>
+
+            <dt>Compress format</dt>
+            <dd *ngIf="!distributionSelected.compressFormat; else distributionCompressFormat" class="font-italic">Not available</dd>
+            <ng-template #distributionCompressFormat>
+                <dd>{{distributionSelected.compressFormat}}</dd>
+            </ng-template>
+
+            <dt>Packaging format</dt>
+            <dd *ngIf="!distributionSelected.packagingFormat else distributionPackagingFormat" class="font-italic">Not available</dd>
+            <ng-template #distributionPackagingFormat>
+                <dd>{{distributionSelected.packagingFormat}}</dd>
+            </ng-template>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h5>Access service</h5>
+        <span *ngIf="!distributionSelected.accessService"><i>No data service specified</i></span>
+
+        <div *ngIf="distributionSelected.accessService" class="row ml-1">
+            <div class="col-md-6">
+                <dt>Title</dt>
+                <dd>{{distributionSelected.accessService.title}}</dd>
+
+                <dt>Description</dt>
+                <dd *ngIf="!distributionSelected.accessService.description; else accessServiceDescription" class="font-italic">Not available</dd>
+                <ng-template #accessServiceDescription>
+                    <dd>{{distributionSelected.accessService.description}}</dd>
+                </ng-template>
+
+                <dt>Issued</dt>
+                <dd *ngIf="!distributionSelected.accessService.issued; else accessServiceIssued" class="font-italic">Not available</dd>
+                <ng-template #accessServiceIssued>
+                    <dd>{{distributionSelected.accessService.issued | date:'longDate'}}</dd>
+                </ng-template>
+
+                <dt>Last update</dt>
+                <dd *ngIf="!distributionSelected.accessService.modified; else accessServiceModified" class="font-italic">Not available</dd>
+                <ng-template #accessServiceModified>
+                    <dd>{{distributionSelected.accessService.modified | date:'longDate'}}</dd>
+                </ng-template>
+
+                <dt>Creator</dt>
+                <dd *ngIf="!distributionSelected.accessService.creator; else accessServiceCreator" class="font-italic">Not available</dd>
+                <ng-template #accessServiceCreator>
+                    <dd>{{distributionSelected.accessService.creator}}</dd>
+                </ng-template>
+
+                <dt>Publisher</dt>
+                <dd *ngIf="!distributionSelected.accessService.publisher; else accessServicePublisher" class="font-italic">Not available</dd>
+                <ng-template #accessServicePublisher>
+                    <dd>{{distributionSelected.accessService.publisher}}</dd>
+                </ng-template>
+            </div>
+
+            <div class="col-md-6">
+
+                <dt>Access rights</dt>
+                <dd *ngIf="!distributionSelected.accessService.accessRights; else accessServiceAccessRights" class="font-italic">Not available</dd>
+                <ng-template #accessServiceAccessRights>
+                    <dd>{{distributionSelected.accessService.accessRights}}</dd>
+                </ng-template>
+
+                <dt>Endpoint URL</dt>
+                <dd *ngIf="!distributionSelected.accessService.endpointUrl; else accessServiceEndpointUrl" class="font-italic">Not available</dd>
+                <ng-template #accessServiceEndpointUrl>
+                    <dd><a class="attribute-link" href="{{distributionSelected.accessService.endpointUrl}}" target="_blank">{{distributionSelected.accessService.endpointUrl}}</a></dd>
+                </ng-template>
+
+                <dt>Endpoint description</dt>
+                <dd *ngIf="!distributionSelected.accessService.endpointDescription; else accessServiceEndpointDescription" class="font-italic">Not available</dd>
+                <ng-template #accessServiceEndpointDescription>
+                    <dd>{{distributionSelected.accessService.endpointDescription}}</dd>
+                </ng-template>
+
+                <dt>Served datasets</dt>
+                <dd *ngIf="distributionSelected.accessService.servedDatasets.length == 0; else accessServiceServedDatasets" class="font-italic">Not available</dd>
+                <ng-template #accessServiceServedDatasets>
+                    <dd>
+                        <div *ngFor="let dataset of distributionSelected.accessService.servedDatasets">
+                            <a class="attribute-link" href="{{dataset}}" target="_blank">{{dataset}}</a>
+                        </div>
+                    </dd>
+                </ng-template>
+
+            </div>
+        </div>
+    </div>
+</div>

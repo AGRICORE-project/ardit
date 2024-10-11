@@ -1,0 +1,47 @@
+a {
+    color: #ffff;
+}
+
+:host>>>.alert-info {
+    color: #ffff;
+    background-color: #46673A;
+    border-color: #46673A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+::ng-deep .card-header {
+    background: #46673A;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+ ::ng-deep .card-header h6 {
+    color: #ffff;
+}
+
+.form-group {
+    background: #ffff;
+}
+
+.form-row {
+    background: #ffff;
+}
+
+.green-link {
+    color: #46673A;
+    font-weight: bold;
+}
+
+::ng-deep .popover {
+    max-width: 270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table {
+    display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+}

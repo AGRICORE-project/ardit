@@ -1,0 +1,86 @@
+{
+    "name": "Dataset theme vocabulary",
+    "description": "Data Theme Authority tables for dataset themes",
+    "url": "http://publications.europa.eu/resource/authority/data-theme",
+    "topic": "THEME",
+    "values": [
+        {
+            "code": "AGRI",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/AGRI",
+            "label": "Agriculture, fisheries, forestry and food",
+            "extraData": null
+        },
+        {
+            "code": "ECON",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/ECON",
+            "label": "Economy and finance",
+            "extraData": null
+        },
+        {
+            "code": "EDUC",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/EDUC",
+            "label": "Education, culture and sport",
+            "extraData": null
+        },
+        {
+            "code": "ENER",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/ENER",
+            "label": "Energy",
+            "extraData": null
+        },
+        {
+            "code": "ENVI",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/ENVI",
+            "label": "Environment",
+            "extraData": null
+        },
+        {
+            "code": "GOVE",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/GOVE",
+            "label": "Government and public sector",
+            "extraData": null
+        },
+        {
+            "code": "HEAL",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/HEAL",
+            "label": "Health",
+            "extraData": null
+        },
+        {
+            "code": "INTR",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/INTR",
+            "label": "International issues",
+            "extraData": null
+        },
+        {
+            "code": "JUST",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/JUST",
+            "label": "Justice, legal system and public safety",
+            "extraData": null
+        },
+        {
+            "code": "REGI",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/REGI",
+            "label": "Regions and cities",
+            "extraData": null
+        },
+        {
+            "code": "SOCI",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
+            "label": "Population and society",
+            "extraData": null
+        },
+        {
+            "code": "TECH",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/TECH",
+            "label": "Science and technology",
+            "extraData": null
+        },
+        {
+            "code": "TRAN",
+            "url": "http://publications.europa.eu/resource/authority/data-theme/TRAN",
+            "label": "Transport",
+            "extraData": null
+        }
+    ]
+}

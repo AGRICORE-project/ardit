@@ -1,0 +1,327 @@
+<div class="container col-sm-12">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Datasets</li>
+            </ol>
+        </nav>
+
+        <div>
+            <p *checkRoles='["ADMIN", "MANTAINER", "EDITOR", "USER"]' class="breadcrumb-link pointer" (click)="openSubscribeModal(subscribeModal)">
+                Subscribe to receive dataset notifications <i class="far fa-envelope"></i></p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-3 px-0">
+            <div class="card">
+                <div class="card-body main-panel">
+                    <div class="card-title">
+                        <h6>Search filters</h6>
+                        <hr>
+                    </div>
+
+                    <form [formGroup]="filtersForm" (ngSubmit)="submitSearchFilters()" novalidate>
+                        <div class="form-group">
+                            <button type="submit" [disabled]="filtersForm.pristine" class="btn btn-success btn-block">Submit</button>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Dataset type</h6>
+                            <div class="ml-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="type" value="socioeconomic" id="socioeconomicCheck">
+                                    <label class="form-check-label" for="socioeconomicCheck">Socioeconomic</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="type" value="georeferenced" id="georeferencedCheck">
+                                    <label class="form-check-label" for="georeferencedCheck">Georeferenced</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="type" value="all" id="bothTypesCheck" checked>
+                                    <label class="form-check-label" for="bothTypesCheck">All</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *checkRoles="['ADMIN','MANTAINER','EDITOR','USER']" class="form-group">
+                            <h6 class="text-muted">Draft</h6>
+                            <div class="ml-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="draft" value="true" id="draftCheck">
+                                    <label class="form-check-label" for="draftCheck">Draft characterisations</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="draft" value="false" id="noDraftCheck">
+                                    <label class="form-check-label" for="noDraftCheck">Finished characterisations</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" formControlName="draft" value="all" id="bothDraftCheck" checked>
+                                    <label class="form-check-label" for="bothDraftCheck">All</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Task to which it is reported to</h6>
+                            <ng-select appendTo="body" [items]="tasksValues" [searchable]="true" formControlName="task" placeholder="Select a task"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Producer</h6>
+                            <input type="text" class="form-control" formControlName="producer" placeholder="Name of the institution">
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Catalogue</h6>
+                            <ng-select appendTo="body" [items]="catalogues" [searchable]="true" bindLabel="title" formControlName="catalogue" placeholder="Select a catalogue"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Unit of analysis included</h6>
+                            <input type="text" class="form-control" formControlName="analysisUnit" placeholder="Name of the unit of analysis">
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Variable included</h6>
+                            <input type="text" class="form-control" formControlName="variable" placeholder="Name of the variable">
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Temporal extent</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="number" min="0" class="form-control" formControlName="from" placeholder="From">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" min="0" class="form-control" formControlName="to" placeholder="To">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Language</h6>
+                            <ng-select appendTo="body" [items]="languageValues" [searchable]="true" formControlName="language" placeholder="Select one language"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Periodicity</h6>
+                            <ng-select appendTo="body" [items]="periodicityValues" [searchable]="true" formControlName="periodicity" placeholder="Select the periodicity"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Format</h6>
+                            <ng-select appendTo="body" [items]="formatsValues" [searchable]="true" formControlName="format" placeholder="Select a format"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Continent</h6>
+                            <ng-select appendTo="body" [items]="continentsValues" [searchable]="true" formControlName="continent" placeholder="Select the continental coverage"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">Country</h6>
+                            <ng-select appendTo="body" [items]="countriesValues" [searchable]="true" formControlName="country" placeholder="Select the country coverage"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">NUTS 1</h6>
+                            <ng-select appendTo="body" [items]="nuts1Values" [searchable]="true" bindLabel="code" formControlName="nuts1" placeholder="Select NUTS1 coverage"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">NUTS 2</h6>
+                            <ng-select appendTo="body" [items]="nuts2Values" [searchable]="true" bindLabel="code" formControlName="nuts2" placeholder="Select NUTS2 coverage"></ng-select>
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-muted">NUTS 3</h6>
+                            <ng-select appendTo="body" [items]="nuts3Values" [searchable]="true" bindLabel="code" formControlName="nuts3" placeholder="Select NUTS3 coverage"></ng-select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="card">
+                <div class="card-body main-panel">
+
+                    <div class="card-title d-flex justify-content-between align-items-center">
+                        <h5>Datasets available</h5>
+
+                        <button *checkRoles='["ADMIN", "MANTAINER", "EDITOR"]' type="button" class="btn btn-outline-success" routerLink="{{datasetCreateRoute}}"><i class="fas fa-plus"></i> Create a new dataset</button>
+                        <button *ngIf="justUser" type="button" class="btn btn-outline-success" routerLink="{{datasetCreateRoute}}"><i class="fas fa-plus"></i> Create a new dataset (Draft)</button>
+                    </div>
+
+                    <hr>
+
+                    <div *ngIf="queryParams.size > 0" class="mb-3">
+                        <span class="text-muted"><i>Filters applied:</i></span>
+                        <span *ngFor="let entry of queryParams | keyvalue" class="badge badge-pill badge-success ml-1">{{entry.key}} > {{entry.value}}</span>
+                        <button type="button" class="btn btn-outline-secondary btn-sm ml-2" (click)="clearFilters()"><i class="fas fa-times-circle"></i> Clear all</button>
+                    </div>
+
+                    <form [formGroup]="searchForm" (ngSubmit)="submitTitleQuery()" novalidate>
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control" formControlName="query" placeholder="Search for datasets..." aria-label="Search for datasets..." aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button type="submit" [disabled]="searchForm.pristine" class="btn btn-success btn-sm"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div *ngIf="datasets" class="alert alert-success mt-2" role="alert">
+                        <span><small><em>Datasets found: {{collectionSize}}</em></small></span>
+                    </div>
+
+                    <div *ngIf="!datasets" class="d-flex justify-content-center">
+                        <div class="spinner-border spinner-color m-5" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+
+                    <div *ngIf="datasets">
+
+                        <div class="mb-3 text-right">
+                             <button (click)="sortDatasets()" class="btn btn-outline-secondary">Sort by temporal extent
+                                <i *ngIf="sortParam  == 'tmpExtentFrom'" class="fas fa-sort-amount-up"></i>
+                                <i *ngIf="sortParam  == '-tmpExtentFrom'" class="fas fa-sort-amount-down"></i>
+                             </button>
+                         </div>
+
+                        <div *ngFor="let dataset of datasets | paginate: { itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }">
+                            <div class="card bg-light mt-2 dataset-info">
+                                <div class="card-body">
+                                    <div *ngIf="!dataset.draft; else draft">
+                                        <h5>{{dataset.title}}</h5>
+                                    </div>
+                                    <ng-template #draft>
+                                        <h5 class="draft-heading"><i>[DRAFT] {{dataset.title}}</i></h5>
+                                    </ng-template>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Producer:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span><small>{{dataset.producer}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Creation date:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span><small>{{dataset.creationDateTime | date:'longDate'}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Last update:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span><small>{{dataset.lastUpdateDateTime | date:'longDate'}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr *ngIf="dataset.datasetType">
+                                                        <td>
+                                                            <span><small>Dataset type:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-secondary"><i>{{dataset.datasetType | titlecase}}</i></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Temporal extent:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span><small>{{dataset.tmpExtentFrom | date:'MMMM, yyyy'}} - {{dataset.tmpExtentTo | date:'MMMM, yyyy'}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Peridicity:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span><small>{{dataset.periodicity}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Formats available:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span *ngIf="dataset.formats.length == 0"><small><i>Not available</i></small></span>
+                                                            <span *ngFor="let format of dataset.formats; let isLast=last"><small>{{format}}{{isLast ? '' : ', '}}</small></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span><small>Owner:</small></span>
+                                                        </td>
+                                                        <td>
+                                                            <span *ngIf="dataset.owner"><small>{{dataset.owner | titlecase}}</small></span>
+                                                            <span *ngIf="!dataset.owner"><small>Unknown</small></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a routerLink="{{datasetRoute}}{{dataset.id}}" [routerLinkActive]="['active']" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <pagination-controls class="paginator" [responsive]="true" [maxSize]="5" (pageChange)="pageChanged($event)"></pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #subscribeModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Subscription</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row p-3">
+            <span>Subscribe to receive a notification on your email when a new dataset is created or when an already created dataset is updated or deleted.</span>
+        </div>
+        <hr>
+
+        <ngb-alert type="success" [dismissible]="false" *ngIf="subsText">{{ subsText }}</ngb-alert>
+        <ngb-alert type="danger" [dismissible]="false" *ngIf="subsError">{{ subsError }}</ngb-alert>
+
+        <div class="form-group d-flex justify-content-center">
+            <button *ngIf="!currentUser.subscribed" type="button" class="btn btn-success" (click)="datasetSubscribe()">Subscribe</button>
+            <button *ngIf="currentUser.subscribed" type="button" class="btn btn-danger" (click)="datasetUnsubscribe()">Unsubscribe</button>
+        </div>
+
+    </div>
+</ng-template>

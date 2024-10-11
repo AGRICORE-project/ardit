@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.org/dc/terms/" uri="dcterms.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1635504384200" name="http://purl.org/NET/dc_owl2dl/dcmitype" uri="dcmitype.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1635504384200" name="http://purl.org/NET/dc_owl2dl/terms" uri="dcterms.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1635504384200" name="http://www.w3.org/ns/dcat" uri="dcat2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1635504384200" name="http://www.w3.org/ns/prov" uri="prov-o.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1635504384200" name="https://agricore-project.eu/ontology/agricore-dcatap" uri="root-ontology.rdf"/>
+    </group>
+</catalog>

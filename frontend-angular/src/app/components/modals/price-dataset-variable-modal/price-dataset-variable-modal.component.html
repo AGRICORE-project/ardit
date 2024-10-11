@@ -1,0 +1,281 @@
+<div class="modal-header">
+    <h4 class="modal-title">Add a new price variable</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <ngb-alert type="warning" [dismissible]="false">
+        <span><i>Required properties(*): Name, temporal extent and price type</i></span>
+    </ngb-alert>
+
+    <form [formGroup]="datasetVariableForm" (ngSubmit)="submitDatasetVariable()" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Name *</label>
+                <ng-template #popVariableName>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_NAME}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableName" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="name">
+
+                <div *ngIf="fieldInvalid(datasetVariableForm, 'name')">
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['name'].errors.required"><small>The name is required</small><br></span>
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['name'].errors.maxlength"><small>The name may not exceed 500 characters</small></span>
+                </div>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Unit of measurement</label>
+                <ng-template #popVariableUnit>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_MEASUREMENT_UNIT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableUnit" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="measurementUnit">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Temporal extent *</label>
+                <ng-template #popVariableTmpExtent>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_TEMPORAL_EXTENT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableTmpExtent" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="tmpExtentFrom" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                <div *ngIf="fieldInvalid(datasetVariableForm, 'tmpExtentFrom')">
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['tmpExtentFrom'].errors.required"><small>Temporal extent is required</small><br></span>
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['tmpExtentFrom'].errors.pattern"><small>Temporal extent must be in the format yyyy-mm (e.g. 2021-04)</small></span>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label class="extent-to">To</label>
+                <input type="text" class="form-control" formControlName="tmpExtentTo" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                <div *ngIf="fieldInvalid(datasetVariableForm, 'tmpExtentTo')">
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['tmpExtentTo'].errors.required"><small>Temporal extent is required</small><br></span>
+                    <span class="text-danger" *ngIf="datasetVariableForm.controls['tmpExtentTo'].errors.pattern"><small>Temporal extent must be in the format yyyy-mm (e.g. 2021-04)</small></span>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Mathematical representation</label>
+                <ng-template #popVariableMathRep>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_MATH_REPRESENTATION}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableMathRep" placement="bottom" container="body"></i>
+                <ng-select [items]="mathRepValues" [searchable]="true" formControlName="mathRepresentation" placeholder="Select a value"></ng-select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Data frequency</label>
+                <ng-template #popVariableDataFreq>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_DATA_FREQUENCY}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableDataFreq" placement="bottom" container="body"></i>
+                <ng-select [items]="periodicityValues" [searchable]="true" formControlName="frequency" placeholder="Select a frequency value"></ng-select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Data frequency mathematical representation</label>
+                <ng-template #popVariableDataFreqMathRep>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_MATH_REPRESENTATION}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableDataFreqMathRep" placement="bottom" container="body"></i>
+                <ng-select [items]="mathRepValues" [searchable]="true" formControlName="frequencyMathRep" placeholder="Select a value"></ng-select>
+            </div>
+        </div>
+
+        <hr style="width:50%">
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Aggregation level</label>
+                <ng-template #popAggLevel>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_AGGREGATION_LEVEL}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggLevel" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="aggregationLevel">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Aggregation level unit</label>
+                <ng-template #popAggUnit>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_AGGREGATION_UNIT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggUnit" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="measuresValues" [searchable]="true" formControlName="aggregationUnit" placeholder="Select a measure unit"></ng-select>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Aggregation scale</label>
+                <ng-template #popAggScale>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_AGGREGATION_SCALE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggScale" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="aggregationScale">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Statistical representativeness</label>
+                <ng-template #popVStatsRep>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_STATS_REPRESENTATIVE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVStatsRep" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="statsRepresentativeness" rows="2"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(datasetVariableForm, 'statsRepresentativeness')"><small>Statistically representativeness may not exceed 1000 characters</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Data origin</label>
+                <ng-template #popDataOrigin>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_DATA_ORIGIN}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDataOrigin" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="variableDataOriginValues" [searchable]="true" formControlName="dataOrigin" placeholder="Select an origin"></ng-select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Reference values</label>
+                <ng-template #popReferenceValues>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_REFERENCE_VALUES}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popReferenceValues" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input type="text" class="form-control" #referenceValue placeholder="New reference value" aria-label="New reference value" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-success btn-sm" (click)="addReferenceValue(referenceValue.value)">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label class="extent-to">Reference values</label>
+                <ng-select appendTo="body" [items]="variableReferenceValues" [multiple]="true" formControlName="referenceValues" (change)="updateReferenceValue($event)" placeholder="Reference values"></ng-select>
+            </div>
+        </div>
+
+        <hr style="width:50%">
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Currency</label>
+                <ng-template #popCurrency>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_CURRENCY}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCurrency" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="currencyValues" [searchable]="true" formControlName="currency" placeholder="Select a currency"></ng-select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Price type *</label>
+                <ng-template #popPriceType>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_PRICE_TYPE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPriceType" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="priceTypeValues" [searchable]="true" formControlName="priceType" placeholder="Select a price type"></ng-select>
+
+                <span class="text-danger" *ngIf="fieldInvalid(datasetVariableForm, 'priceType')"><small>The price type is required</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Size unit</label>
+                <ng-template #popSizeUnit>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_SIZE_UNIT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popSizeUnit" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="sizeUnitAmount">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class="extent-to">-</label>
+                <ng-select appendTo="body" [items]="sizeUnitValues" [searchable]="true" formControlName="sizeUnit" placeholder="Select a unit of measure"></ng-select>
+            </div>
+        </div>
+
+        <hr style="width:50%">
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Unit of analysis</label>
+                <ng-template #popVariableAnalysisUnits>
+                    <div>
+                        <span>{{datasetDescriptions.VARIABLE_ANALYSIS_UNITS}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableAnalysisUnits" placement="bottom" container="body"></i>
+
+                <ng-select [items]="analysisUnits" [multiple]="true" [searchable]="true" bindLabel="unitReference" formControlName="analysisUnits" placeholder="Select some units">
+                    <ng-template ng-label-tmp let-item="item">
+                        <span>{{item.unitReference}}, {{item.tmpExtentFrom | date:'MMMM, yyyy'}} / {{item.tmpExtentTo | date:'MMMM, yyyy'}}, {{item.statsRepresentative}}</span>
+                    </ng-template>
+                    <ng-template ng-option-tmp let-item="item" let-search="searchTerm" let-index="index">
+                        <span>{{item.unitReference}}, {{item.tmpExtentFrom | date:'MMMM, yyyy'}} / {{item.tmpExtentTo | date:'MMMM, yyyy'}}, {{item.statsRepresentative}}</span>
+                    </ng-template>
+                </ng-select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Suggested downscaling methodologies</label>
+                <ng-template #popVariableDownscaling>
+                    <div>
+                        <span>{{datasetDescriptions.DOWNSCALING_METHODOLOGY}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popVariableDownscaling" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="downscalingMethodology" rows="4"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(datasetVariableForm, 'downscalingMethodology')"><small>1000 character limit exceeded</small></span>
+            </div>
+        </div>
+
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="datasetVariableForm.pristine || datasetVariableForm.invalid" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

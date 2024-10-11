@@ -1,0 +1,34 @@
+.dropdown-color {
+    background-color: #46673A;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.dropdown-menu>a:hover {
+    color: #46673A;
+    background-color: white !important;
+}
+
+.header {
+    background-color: #46673A;
+    height: 64px;
+}
+
+.header-link {
+    color: white;
+}
+
+.navbar-brand-color {
+    color: white;
+}
+
+nav.navbar {
+    background: #46673A;
+}
+
+.toggler-color {
+    color: white;
+}
+.pointer {
+    cursor: pointer
+}

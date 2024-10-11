@@ -1,0 +1,40 @@
+.card-body {
+    background-color: #ffff;
+}
+
+.form-group {
+    background: #ffff;
+}
+
+.form-row {
+    background: #ffff;
+}
+
+.table {
+    display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+}
+
+
+/* Pagination config*/
+
+ngb-pagination ::ng-deep ul>li:not(.active)>a {
+    background-color: #ffff !important;
+    color: black !important;
+}
+
+ngb-pagination ::ng-deep ul>li.active>a {
+    background-color: #44613a !important;
+    border-color: #44613a !important;
+    color: #ffff !important;
+}
+
+ngb-pagination ::ng-deep .page-item.active .page-link:focus,
+.page-link:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.1rem #a3d9af;
+}
+
+ngb-pagination ::ng-deep .page-link:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.1rem #a3d9af;
+}

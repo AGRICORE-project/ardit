@@ -1,0 +1,38 @@
+{
+    "name": "Access Right Vocabulary",
+    "description": "Access right vocabulary for dataset type of access",
+    "url": "http://publications.europa.eu/resource/authority/access-right",
+    "topic": "ACCESS_RIGHT",
+    "values": [
+        {
+            "code": "NON_PUBLIC",
+            "url": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+            "label": "Non-public",
+            "extraData": null
+        },
+        {
+            "code": "OP_DATPRO",
+            "url": "http://publications.europa.eu/resource/authority/access-right/OP_DATPRO",
+            "label": "Provisional data",
+            "extraData": null
+        },
+        {
+            "code": "PUBLIC",
+            "url": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+            "label": "Public",
+            "extraData": null
+        },
+        {
+            "code": "RESTRICTED",
+            "url": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
+            "label": "Restricted",
+            "extraData": null
+        },
+        {
+            "code": "SENSITIVE",
+            "url": "http://publications.europa.eu/resource/authority/access-right/SENSITIVE",
+            "label": "Sensitive",
+            "extraData": null
+        }
+    ]
+}

@@ -1,0 +1,166 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <ngb-alert type="warning" [dismissible]="false">
+        <span><i>Required properties(*): Title</i></span>
+    </ngb-alert>
+
+    <form [formGroup]="dataServiceForm" (ngSubmit)="submitDataService()" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Title *</label>
+                <ng-template #popTitle>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_TITLE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popTitle" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="title">
+
+                <span class="text-danger" *ngIf="fieldInvalid(dataServiceForm, 'title')"><small>The title is required</small></span>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Issued</label>
+                <ng-template #popIssued>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_ISSUED}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popIssued" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="issued" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #issued="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="issued.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Last update</label>
+                <ng-template #popModified>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_MODIFIED}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popModified" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" formControlName="modified" [minDate]="{year: 1900, month: 1, day: 1}" ngbDatepicker #modified="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary calendar" (click)="modified.toggle()" type="button"><i class="far fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Description</label>
+                <ng-template #popDescription>
+                    <div>
+                        <span>{{popoversDescriptions.DISTRIBUTION_DESCRIPTION}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popDescription" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="description" rows="2"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(dataServiceForm, 'description')"><small>The description must not exceed 1000 characters</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Creator</label>
+                <ng-template #popCreator>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_CREATOR}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCreator" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="creator">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Publisher</label>
+                <ng-template #popPublisher>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_PUBLISHER}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPublisher" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="publisher">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Access rights</label>
+                <ng-template #popAccessRights>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_ACCESS_RIGHTS}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAccessRights" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="accessRightsValues" [searchable]="true" formControlName="accessRights" placeholder="Select a type of access"></ng-select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Endpoint URL</label>
+                <ng-template #popEndpointUrl>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_ENDPOINT_URL}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popEndpointUrl" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="endpointUrl">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Endpoint description</label>
+                <ng-template #popEndpointDescription>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_ENDPOINT_DESCRIPTION}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popEndpointDescription" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="endpointDescription">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Served datasets</label>
+                <ng-template #popServedDatasets>
+                    <div>
+                        <span>{{popoversDescriptions.DATA_SERVICE_SERVED_DATASETS}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popServedDatasets" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input type="text" class="form-control" #servedDataset placeholder="New dataset" aria-label="New dataset" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-success btn-sm" (click)="addServedDataset(servedDataset.value)">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label class="extent-to">Served datasets</label>
+                <ng-select appendTo="body" [items]="servedDatasets" [multiple]="true" formControlName="servedDatasets" (change)="updateServedDatasets($event)" placeholder="Datasets served by the data service"></ng-select>
+            </div>
+        </div>
+
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="dataServiceForm.pristine || dataServiceForm.invalid" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+
+    </form>
+</div>

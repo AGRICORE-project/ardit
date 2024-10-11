@@ -1,0 +1,161 @@
+<div class="modal-header">
+    <h4 class="modal-title">Add a new socioeconomic unit of analysis</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <ngb-alert type="warning" [dismissible]="false">
+        <span><i>Required properties(*): Name and temporal extent</i></span>
+    </ngb-alert>
+
+    <form [formGroup]="analysisUnitForm" (ngSubmit)="submitAnalysisUnit()" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Name *</label>
+                <ng-template #popUnitReference>
+                    <div>
+                        <span>{{popoversDescriptions.ANALYSISUNIT_UNIT_REFERENCE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popUnitReference" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="unitReference">
+
+                <span class="text-danger" *ngIf="fieldInvalid(analysisUnitForm, 'unitReference')"><small>The name is required</small></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Temporal extent *</label>
+                <ng-template #popAnalysisUnitTmpExtent>
+                    <div>
+                        <span>{{popoversDescriptions.ANALYSISUNIT_TEMPORAL_EXTENT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAnalysisUnitTmpExtent" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="tmpExtentFrom" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                <span class="text-danger" *ngIf="fieldInvalid(analysisUnitForm, 'tmpExtentFrom')"><small>Temporal extent is required and must be in the format yyyy-mm</small></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label class="extent-to">To</label>
+                <input type="text" class="form-control" formControlName="tmpExtentTo" placeholder="yyyy-mm" pattern="\d{4}\-(0?[1-9]|1[012])*$">
+
+                <span class="text-danger" *ngIf="fieldInvalid(analysisUnitForm, 'tmpExtentTo')"><small>Temporal extent is required and must be in the format yyyy-mm</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Aggregation level</label>
+                <ng-template #popAggLevel>
+                    <div>
+                        <span>{{popoversDescriptions.AGGREGATION_LEVEL}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggLevel" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="aggregationLevel">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Aggregation level unit</label>
+                <ng-template #popAggUnit>
+                    <div>
+                        <span>{{popoversDescriptions.AGGREGATION_UNIT}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggUnit" placement="bottom" container="body"></i>
+                <ng-select appendTo="body" [items]="measuresValues" [searchable]="true" formControlName="aggregationUnit" placeholder="Select a measure unit"></ng-select>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Aggregation scale</label>
+                <ng-template #popAggScale>
+                    <div>
+                        <span>{{popoversDescriptions.AGGREGATION_SCALE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAggScale" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="aggregationScale">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" formControlName="census" id="censusCheckbox">
+                    <label class="form-check-label" for="censusCheckbox">Census</label>
+                    <ng-template #popCensus>
+                        <div>
+                            <span>{{popoversDescriptions.ANALYSISUNIT_CENSUS}}</span>
+                        </div>
+                    </ng-template>
+                    <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popCensus" placement="bottom" container="body"></i>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Population coverage</label>
+                <ng-template #popPopulationCoverage>
+                    <div>
+                        <span>{{popoversDescriptions.ANALYSISUNIT_POPULATION_COVERAGE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popPopulationCoverage" placement="bottom" container="body"></i>
+                <div class="input-group">
+                    <input type="number" min="0" max="100" class="form-control" formControlName="populationCoverage">
+                    <div class="input-group-append">
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Unit of analysis number</label>
+                <ng-template #popAnalysisUnitNumber>
+                    <div>
+                        <span>{{popoversDescriptions.ANALYSISUNIT_NUMBER}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAnalysisUnitNumber" placement="bottom" container="body"></i>
+                <input type="number" min="0" class="form-control" formControlName="unitAnalysisNumber">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Statistical representativeness</label>
+                <ng-template #popStatsRep>
+                    <div>
+                        <span>{{popoversDescriptions.ANALYSISUNIT_STATS_REPRESENTATIVE}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popStatsRep" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="statsRepresentativeness" rows="2"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(analysisUnitForm, 'statsRepresentativeness')"><small>Statistically representativeness may not exceed 1000 characters</small></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Available stratification criteria & suggested downscaling methodologies</label>
+                <ng-template #popAnalysisUnitDownscaling>
+                    <div>
+                        <span>{{popoversDescriptions.DOWNSCALING_METHODOLOGY}}</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popAnalysisUnitDownscaling" placement="bottom" container="body"></i>
+                <textarea class="form-control" formControlName="downscalingMethodology" rows="2"></textarea>
+
+                <span class="text-danger" *ngIf="fieldInvalid(analysisUnitForm, 'downscalingMethodology')"><small>1000 character limit exceeded</small></span>
+            </div>
+        </div>
+
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="analysisUnitForm.pristine || analysisUnitForm.invalid" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

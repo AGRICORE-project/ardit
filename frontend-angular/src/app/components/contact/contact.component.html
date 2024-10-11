@@ -1,0 +1,63 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+
+        <div class="card-body main-panel">
+            
+            <div class="card-title">
+                <h5>Contact</h5>
+                <hr />
+            </div>
+
+            <form [formGroup]="contactForm">
+                
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name *</label>
+                        <input type="text" formControlName="name" class="form-control" name="name">
+                        <span *ngIf="inavlidField('name')" class="text-danger"><small>{{ nameErrorMsg }}</small></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Surname *</label>
+                        <input type="text" formControlName="surname" class="form-control" name="surname">
+                        <span *ngIf="inavlidField('surname')" class="text-danger"><small>{{ surnameErrorMsg }}</small></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <label>Email *</label>
+                        <input type="text" formControlName="email" class="form-control" name="email">
+                        <span *ngIf="inavlidField('email')" class="text-danger"><small> {{ emailErrorMsg }} </small></span>
+
+                        <br />
+                        <label>Subject *</label>
+                        <input type="text" formControlName="subject" class="form-control" name="subject">
+                        <span *ngIf="inavlidField('subject')" class="text-danger"><small> {{ subjectErrorMsg }} </small></span>
+
+                        <br />
+                        <label>Message *</label>
+                        <textarea name="message" formControlName="message" class="form-control" cols="30" rows="10"></textarea>
+                        <span *ngIf="inavlidField('message')" class="text-danger"><small>{{ messageErrorMsg }}</small></span>
+                    </div>
+                </div>
+
+                <div class="form-row mt-3 d-flex justify-content-end">
+                    <button (click)="handleSubmit()" type="submit" class="btn btn-success px-5" [disabled]="contactForm.invalid"> Send 
+                        <div *ngIf="isSending" class="spinner-border spinner-border-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

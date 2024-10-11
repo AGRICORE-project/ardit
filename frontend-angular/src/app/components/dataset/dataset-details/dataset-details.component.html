@@ -1,0 +1,306 @@
+<div *ngIf="dataset" class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a class="breadcrumb-link" routerLink="{{datasetListRoute}}" [routerLinkActive]="['active']">Datasets</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{dataset.title}}</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body main-panel">
+            <div class="card-title ml-3 d-flex justify-content-between align-items-center">
+                <div *ngIf="!dataset.draft; else draft">
+                    <h4>{{dataset.title}}</h4>
+                </div>
+                <ng-template #draft>
+                    <h4 class="draft-heading"><i>[DRAFT] {{dataset.title}}</i></h4>
+                </ng-template>
+
+                <div ngbDropdown container="body">
+                    <button type="button" class="btn btn-outline-secondary" ngbDropdownToggle>Options</button>
+                    <div ngbDropdownMenu>
+                        <button *canEditDataset="dataset.owner" type="button" ngbDropdownItem routerLink="{{datasetEditRoute}}"><i class="fas fa-pencil-alt"></i> Edit</button>
+                        <button *checkRoles='["ADMIN", "MANTAINER"]' type="button" ngbDropdownItem (click)="duplicateDataset()"><i class="far fa-copy"></i> Duplicate</button>
+                        <button type="button" ngbDropdownItem (click)="downloadJsonFile()"><i class="fas fa-file-download"></i> Download characterisation as JSON file</button>
+                        <div *canDeleteDataset="dataset.owner" class="dropdown-divider"></div>
+                        <button *canDeleteDataset="dataset.owner" type="button" ngbDropdownItem (click)="openDeleteModal(deleteDatasetModal)"><i class="fas fa-trash-alt"></i> Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <ngb-alert *ngIf="dataset.draft" [dismissible]="false">
+                <small>The characterisation of this dataset has not been completed yet. Please, note that there may be certain attributes and parameters that have not been correctly added or set yet.</small>
+            </ngb-alert>
+
+            <div class="row ml-1">
+                <div class="col-md-9">
+
+                    <dt>Description</dt>
+                    <dd *ngIf="!dataset.description; else datasetDescription" class="font-italic">Not available</dd>
+                    <ng-template #datasetDescription>
+                        <dd>{{dataset.description}}</dd>
+                    </ng-template>
+
+                    <div *ngIf="dataset.wpTask">
+                        <dt>Task to which it will be reported to</dt>
+                        <dd>{{dataset.wpTask}}</dd>
+                    </div>
+
+                    <dt>Producer</dt>
+                    <dd *ngIf="!dataset.producer; else datasetProducer" class="font-italic">Not available</dd>
+                    <ng-template #datasetProducer>
+                        <dd>{{dataset.producer}}</dd>
+                    </ng-template>
+
+                    <dt>Link</dt>
+                    <dd *ngIf="!dataset.link; else datasetLink" class="font-italic">Not available</dd>
+                    <ng-template #datasetLink>
+                        <dd class="table-link">
+                            <a class="attribute-link font-italic" href="{{dataset.link}}" target="_blank">{{dataset.link}}</a>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Languages</dt>
+                    <dd *ngIf="dataset.languages.length == 0; else datasetLanguages" class="font-italic">Not available</dd>
+                    <ng-template #datasetLanguages>
+                        <dd>
+                            <span *ngFor="let language of dataset.languages; let isLast=last">{{language}}{{isLast ? '' : '; '}}</span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Catalogue</dt>
+                    <dd *ngIf="!dataset.catalogueId && !dataset.catalogueTitle; else datasetCatalogue" class="font-italic">Not available</dd>
+                    <ng-template #datasetCatalogue>
+                        <dd class="table-link">
+                            <a class="attribute-link font-italic" routerLink="{{cataloguesRoute}}{{dataset.catalogueId}}" [routerLinkActive]="['active']">{{dataset.catalogueTitle}}</a>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Subjects</dt>
+                    <dd *ngIf="dataset.subjects.length == 0; else datasetSubjects" class="font-italic">Not available</dd>
+                    <ng-template #datasetSubjects>
+                        <dd>
+                            <span *ngFor="let subject of dataset.subjects; let isLast=last">{{subject}}{{isLast ? '' : '; '}}</span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Purposes (useful for the analysis of)</dt>
+                    <dd *ngIf="dataset.purposes.length == 0; else datasetPurposes" class="font-italic">Not available</dd>
+                    <ng-template #datasetPurposes>
+                        <dd>
+                            <span *ngFor="let purpose of dataset.purposes; let isLast=last">{{purpose}}{{isLast ? '' : '; '}}</span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Themes covered</dt>
+                    <dd *ngIf="dataset.themes.length == 0; else datasetThemes" class="font-italic">Not available</dd>
+                    <ng-template #datasetThemes>
+                        <dd>
+                            <span *ngFor="let theme of dataset.themes; let isLast=last">{{theme}}{{isLast ? '' : '; '}}</span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Spatial resolution (in meters)</dt>
+                    <dd *ngIf="!dataset.spatialResolutionInMeters; else datasetSpatialResolution" class="font-italic">Not available</dd>
+                    <ng-template #datasetSpatialResolution>
+                        <dd>{{dataset.spatialResolutionInMeters}}</dd>
+                    </ng-template>
+
+                    <dt>Temporal resolution</dt>
+                    <dd *ngIf="!dataset.temporalResolution; else datasetTmpResolution" class="font-italic">Not available</dd>
+                    <ng-template #datasetTmpResolution>
+                        <dd>{{dataset.temporalResolution}}</dd>
+                    </ng-template>
+
+                    <dt>Resource type</dt>
+                    <dd *ngIf="!dataset.resourceType; else datasetResourceType" class="font-italic">Not available</dd>
+                    <ng-template #datasetResourceType>
+                        <dd>{{dataset.resourceType}}</dd>
+                    </ng-template>
+
+                    <dt>Was generated by</dt>
+                    <dd *ngIf="dataset.wasGeneratedBy.length == 0; else datasetWasGeneratedBy" class="font-italic">Not available</dd>
+                    <ng-template #datasetWasGeneratedBy>
+                        <dd>
+                            <span *ngFor="let activity of dataset.wasGeneratedBy; let isLast=last">{{activity}}{{isLast ? '' : '; '}}</span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Is referenced by</dt>
+                    <dd *ngIf="dataset.isReferencedBy.length == 0; else datasetIsReferencedBy" class="font-italic">Not available</dd>
+                    <ng-template #datasetIsReferencedBy>
+                        <dd>
+                            <div *ngFor="let resource of dataset.isReferencedBy">
+                                <a class="attribute-link font-italic" href="{{resource}}" target="_blank">{{resource}}</a><br>
+                            </div>
+                        </dd>
+                    </ng-template>
+                </div>
+                <div class="col-md-3">
+
+                    <dt>Dataset type</dt>
+                    <dd *ngIf="dataset.datasetType=='GEOREFERENCED'; else socioEconomicDataset">
+                        <span class="badge badge-success"><i>{{dataset.datasetType | titlecase}}</i></span>
+                    </dd>
+                    <ng-template #socioEconomicDataset>
+                        <dd>
+                            <span class="badge bg-warning"><i>{{dataset.datasetType | titlecase}}</i></span>
+                        </dd>
+                    </ng-template>
+
+                    <dt>Characterization last update</dt>
+                    <dd class="section-green">{{dataset.lastUpdateDateTime | date:'longDate'}}</dd>
+
+                    <dt>Characterization created at</dt>
+                    <dd>{{dataset.creationDateTime | date:'longDate'}}</dd>
+
+                    <dt>Issued</dt>
+                    <dd *ngIf="!dataset.issued; else datasetIssued" class="font-italic">Not available</dd>
+                    <ng-template #datasetIssued>
+                        <dd>{{dataset.issued}}</dd>
+                    </ng-template>
+
+                    <dt>Last update</dt>
+                    <dd *ngIf="!dataset.modified; else datasetModified" class="font-italic">Not available</dd>
+                    <ng-template #datasetModified>
+                        <dd>{{dataset.modified}}</dd>
+                    </ng-template>
+
+                    <dt>Periodicity</dt>
+                    <dd *ngIf="!dataset.periodicity; else datasetPeriodicity" class="font-italic">Not available</dd>
+                    <ng-template #datasetPeriodicity>
+                        <dd>{{dataset.periodicity}}</dd>
+                    </ng-template>
+
+                    <dt>Temporal extent</dt>
+                    <dd *ngIf="!dataset.tmpExtentFrom && !dataset.tmpExtentTo; else datasetTmpExtent" class="font-italic">Not available</dd>
+                    <ng-template #datasetTmpExtent>
+                        <dd>{{dataset.tmpExtentFrom | date:'MMMM, yyyy'}} - {{dataset.tmpExtentTo | date:'MMMM, yyyy'}}</dd>
+                    </ng-template>
+
+                    <dt>Formats available</dt>
+                    <dd><span *ngIf="dataset.distributions.length==0" class="font-italic">Not available</span></dd>
+                    <dd><span *ngFor="let distribution of dataset.distributions; let isLast=last">{{distribution.format}}{{isLast ? '' : ', '}}</span></dd>
+
+                    <hr>
+                    <dt>Dataset owner</dt>
+                    <dd *ngIf="dataset.owner" class="font-italic">{{ dataset.owner }}</dd>
+                    <dd *ngIf="!dataset.owner" class="font-italic">Not available</dd>
+
+                    <dt>Total views</dt>
+                    <dd class="font-italic">{{ dataset.view }}</dd>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="ml-1">
+                <h5>Geographical coverage</h5>
+
+                <span *ngIf="geocoverage.length==0" class="font-italic">Not available</span>
+                <span *ngFor="let value of geocoverage; let isLast=last">{{value}}{{isLast ? '' : ', '}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body main-panel">
+            <h5>Keywords</h5>
+            <hr>
+            <span *ngIf="dataset.keywords==0 "><i>Not available</i></span>
+            <div class="row ml-1">
+                <span *ngFor="let keyword of dataset.keywords" class="col-6 col-sm-3 col-md-2 mt-md-0 mt-3 mr-2 mb-2 mx-0 px-1 rounded-pill keyword-badge">
+                    <small class="d-inline-block w-100 p-2 text-center text-white text-truncate font-weight-bold">
+                        {{keyword}}
+                    </small>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body main-panel">
+            <div class="d-flex justify-content-between align-items-center collapse-section" (click)="distributionCollapse.toggle()" [attr.aria-expanded]="!distributionsCollapsed">
+                <h5>Distributions: <span>{{dataset.distributions.length}}</span></h5>
+                <span class="fa fa-chevron-down" [ngClass]="{'fa-chevron-up':!distributionsCollapsed, 'fa-chevron-down':distributionsCollapsed}"></span>
+            </div>
+
+            <div #distributionCollapse="ngbCollapse" [(ngbCollapse)]="distributionsCollapsed">
+
+                <span *ngIf="dataset.distributions.length==0"><small><em>Distributions list is empty</em></small></span>
+
+                <div *ngIf="dataset.distributions.length > 0">
+                    <app-distribution-table [distributions]="dataset.distributions"></app-distribution-table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body main-panel">
+            <div class="d-flex justify-content-between align-items-center collapse-section" (click)="analysisUnitCollapse.toggle()" [attr.aria-expanded]="!analysisUnitsCollapsed">
+                <h5>Units of analysis: <span>{{dataset.analysisUnits.length}}</span></h5>
+                <span class="fa fa-chevron-down" [ngClass]="{'fa-chevron-up':!analysisUnitsCollapsed, 'fa-chevron-down':analysisUnitsCollapsed}"></span>
+            </div>
+
+            <div #analysisUnitCollapse="ngbCollapse" [(ngbCollapse)]="analysisUnitsCollapsed">
+                <span *ngIf="dataset.analysisUnits.length==0"><small><em>Units of analysis list is empty</em></small></span>
+
+                <div *ngIf="dataset.analysisUnits.length > 0">
+                    <app-analysis-unit-table [datasetType]="dataset.datasetType" [analysisUnits]="dataset.analysisUnits"></app-analysis-unit-table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body main-panel">
+
+            <div class="d-flex justify-content-between align-items-center collapse-section" (click)="variableCollapse.toggle()" [attr.aria-expanded]="!variablesCollapsed">
+                <h5>Variables included: <span>{{dataset.variables.length}}</span></h5>
+                <span class="fa fa-chevron-down" [ngClass]="{'fa-chevron-up':!variablesCollapsed, 'fa-chevron-down':variablesCollapsed}"></span>
+            </div>
+
+            <div #variableCollapse="ngbCollapse" [(ngbCollapse)]="variablesCollapsed">
+                <span *ngIf="dataset.variables.length==0"><small><em>Variables list is empty</em></small></span>
+
+                <div *ngIf="dataset.variables.length > 0">
+                    <app-variable-table [variables]="dataset.variables"></app-variable-table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-body main-panel">
+            <div>
+                <app-comment-list [datasetId]="dataset.id"></app-comment-list>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Delete dataset modal-->
+<ng-template #deleteDatasetModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Delete dataset</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row">
+            <span>Are you sure you want to delete this dataset? Changes cannot be undone</span>
+        </div>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button class="btn btn-danger" (click)="deleteDataset()">Yes, delete it</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+        </div>
+
+    </div>
+</ng-template>

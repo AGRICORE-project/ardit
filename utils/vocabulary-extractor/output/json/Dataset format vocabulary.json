@@ -1,0 +1,1034 @@
+{
+    "name": "Dataset format vocabulary",
+    "description": "File types for dataset format values",
+    "url": "http://publications.europa.eu/resource/authority/file-type",
+    "topic": "FORMAT",
+    "values": [
+        {
+            "code": "7Z",
+            "url": "http://publications.europa.eu/resource/authority/file-type/7Z",
+            "label": "7z",
+            "extraData": null
+        },
+        {
+            "code": "AAC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/AAC",
+            "label": "AAC",
+            "extraData": null
+        },
+        {
+            "code": "APK",
+            "url": "http://publications.europa.eu/resource/authority/file-type/APK",
+            "label": "APK",
+            "extraData": null
+        },
+        {
+            "code": "APPX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/APPX",
+            "label": "AppX",
+            "extraData": null
+        },
+        {
+            "code": "ARC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ARC",
+            "label": "ARC",
+            "extraData": null
+        },
+        {
+            "code": "ARC_GZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ARC_GZ",
+            "label": "ARC GZ",
+            "extraData": null
+        },
+        {
+            "code": "ARJ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ARJ",
+            "label": "ARJ",
+            "extraData": null
+        },
+        {
+            "code": "ATOM",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ATOM",
+            "label": "Atom Feed",
+            "extraData": null
+        },
+        {
+            "code": "AZW",
+            "url": "http://publications.europa.eu/resource/authority/file-type/AZW",
+            "label": "Amazon Kindle eBook",
+            "extraData": null
+        },
+        {
+            "code": "BIN",
+            "url": "http://publications.europa.eu/resource/authority/file-type/BIN",
+            "label": "Binary Data",
+            "extraData": null
+        },
+        {
+            "code": "BITS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/BITS",
+            "label": "BITS XML",
+            "extraData": null
+        },
+        {
+            "code": "BMP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/BMP",
+            "label": "Bitmap Image File",
+            "extraData": null
+        },
+        {
+            "code": "BWF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/BWF",
+            "label": "BWF",
+            "extraData": null
+        },
+        {
+            "code": "BZIP2",
+            "url": "http://publications.europa.eu/resource/authority/file-type/BZIP2",
+            "label": "bzip2",
+            "extraData": null
+        },
+        {
+            "code": "CSS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/CSS",
+            "label": "CSS",
+            "extraData": null
+        },
+        {
+            "code": "CSV",
+            "url": "http://publications.europa.eu/resource/authority/file-type/CSV",
+            "label": "CSV",
+            "extraData": null
+        },
+        {
+            "code": "DBF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DBF",
+            "label": "DBF",
+            "extraData": null
+        },
+        {
+            "code": "DCR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DCR",
+            "label": "DCR File",
+            "extraData": null
+        },
+        {
+            "code": "DEB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DEB",
+            "label": "deb",
+            "extraData": null
+        },
+        {
+            "code": "DMG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DMG",
+            "label": "DMG",
+            "extraData": null
+        },
+        {
+            "code": "DMP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DMP",
+            "label": "Oracle Dump",
+            "extraData": null
+        },
+        {
+            "code": "DOC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DOC",
+            "label": "Word DOC",
+            "extraData": null
+        },
+        {
+            "code": "DOCX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DOCX",
+            "label": "Word DOCX",
+            "extraData": null
+        },
+        {
+            "code": "DTD_SGML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DTD_SGML",
+            "label": "SGML DTD",
+            "extraData": null
+        },
+        {
+            "code": "DTD_XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/DTD_XML",
+            "label": "XML DTD",
+            "extraData": null
+        },
+        {
+            "code": "E00",
+            "url": "http://publications.europa.eu/resource/authority/file-type/E00",
+            "label": "E00",
+            "extraData": null
+        },
+        {
+            "code": "EAR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/EAR",
+            "label": "EAR",
+            "extraData": null
+        },
+        {
+            "code": "ECW",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ECW",
+            "label": "ECW",
+            "extraData": null
+        },
+        {
+            "code": "EPS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/EPS",
+            "label": "Encapsulated Postscript",
+            "extraData": null
+        },
+        {
+            "code": "EPUB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/EPUB",
+            "label": "EPUB",
+            "extraData": null
+        },
+        {
+            "code": "EXE",
+            "url": "http://publications.europa.eu/resource/authority/file-type/EXE",
+            "label": "EXE",
+            "extraData": null
+        },
+        {
+            "code": "FMX2",
+            "url": "http://publications.europa.eu/resource/authority/file-type/FMX2",
+            "label": "Formex 2",
+            "extraData": null
+        },
+        {
+            "code": "FMX3",
+            "url": "http://publications.europa.eu/resource/authority/file-type/FMX3",
+            "label": "Formex 3",
+            "extraData": null
+        },
+        {
+            "code": "FMX4",
+            "url": "http://publications.europa.eu/resource/authority/file-type/FMX4",
+            "label": "Formex 4",
+            "extraData": null
+        },
+        {
+            "code": "GDB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GDB",
+            "label": "Esri File Geodatabase",
+            "extraData": null
+        },
+        {
+            "code": "GEOJSON",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GEOJSON",
+            "label": "GeoJSON",
+            "extraData": null
+        },
+        {
+            "code": "GIF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GIF",
+            "label": "GIF",
+            "extraData": null
+        },
+        {
+            "code": "GML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GML",
+            "label": "GML",
+            "extraData": null
+        },
+        {
+            "code": "GMZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GMZ",
+            "label": "Zipped GML",
+            "extraData": null
+        },
+        {
+            "code": "GRID",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GRID",
+            "label": "Esri binary grid",
+            "extraData": null
+        },
+        {
+            "code": "GRID_ASCII",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GRID_ASCII",
+            "label": "Esri ASCII grid",
+            "extraData": null
+        },
+        {
+            "code": "GZIP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/GZIP",
+            "label": "GNU zip",
+            "extraData": null
+        },
+        {
+            "code": "HDF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/HDF",
+            "label": "HDF",
+            "extraData": null
+        },
+        {
+            "code": "HDT",
+            "url": "http://publications.europa.eu/resource/authority/file-type/HDT",
+            "label": "HDT",
+            "extraData": null
+        },
+        {
+            "code": "HTML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/HTML",
+            "label": "HTML",
+            "extraData": null
+        },
+        {
+            "code": "HTML_SIMPL",
+            "url": "http://publications.europa.eu/resource/authority/file-type/HTML_SIMPL",
+            "label": "HTML simplified",
+            "extraData": null
+        },
+        {
+            "code": "ICS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ICS",
+            "label": "ICalendar",
+            "extraData": null
+        },
+        {
+            "code": "IMMC_XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/IMMC_XML",
+            "label": "IMMC XML message",
+            "extraData": null
+        },
+        {
+            "code": "INDD",
+            "url": "http://publications.europa.eu/resource/authority/file-type/INDD",
+            "label": "INDD",
+            "extraData": null
+        },
+        {
+            "code": "ISO",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ISO",
+            "label": "ISO image",
+            "extraData": null
+        },
+        {
+            "code": "ISO_ZIP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ISO_ZIP",
+            "label": "Zipped ISO image",
+            "extraData": null
+        },
+        {
+            "code": "JAR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JAR",
+            "label": "JAR",
+            "extraData": null
+        },
+        {
+            "code": "JATS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JATS",
+            "label": "JATS XML",
+            "extraData": null
+        },
+        {
+            "code": "JPEG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JPEG",
+            "label": "JPEG",
+            "extraData": null
+        },
+        {
+            "code": "JPEG2000",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JPEG2000",
+            "label": "JPEG 2000",
+            "extraData": null
+        },
+        {
+            "code": "JS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JS",
+            "label": "JavaScript",
+            "extraData": null
+        },
+        {
+            "code": "JSON",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JSON",
+            "label": "JSON",
+            "extraData": null
+        },
+        {
+            "code": "JSON_LD",
+            "url": "http://publications.europa.eu/resource/authority/file-type/JSON_LD",
+            "label": "JSON-LD",
+            "extraData": null
+        },
+        {
+            "code": "KML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/KML",
+            "label": "KML",
+            "extraData": null
+        },
+        {
+            "code": "KMZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/KMZ",
+            "label": "KMZ",
+            "extraData": null
+        },
+        {
+            "code": "LAS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LAS",
+            "label": "LASer file",
+            "extraData": null
+        },
+        {
+            "code": "LAZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LAZ",
+            "label": "Compressed LAS file",
+            "extraData": null
+        },
+        {
+            "code": "LEG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LEG",
+            "label": "LEG",
+            "extraData": null
+        },
+        {
+            "code": "LHA",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LHA",
+            "label": "LHA",
+            "extraData": null
+        },
+        {
+            "code": "LZIP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LZIP",
+            "label": "lzip",
+            "extraData": null
+        },
+        {
+            "code": "LZMA",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LZMA",
+            "label": "lzma",
+            "extraData": null
+        },
+        {
+            "code": "LZO",
+            "url": "http://publications.europa.eu/resource/authority/file-type/LZO",
+            "label": "lzo",
+            "extraData": null
+        },
+        {
+            "code": "MAP_PRVW",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MAP_PRVW",
+            "label": "ArcGIS Map Preview",
+            "extraData": null
+        },
+        {
+            "code": "MAP_SRVC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MAP_SRVC",
+            "label": "ArcGIS Map Service",
+            "extraData": null
+        },
+        {
+            "code": "MBOX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MBOX",
+            "label": "MBOX",
+            "extraData": null
+        },
+        {
+            "code": "MDB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MDB",
+            "label": "MDB",
+            "extraData": null
+        },
+        {
+            "code": "METS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/METS",
+            "label": "METS XML",
+            "extraData": null
+        },
+        {
+            "code": "METS_ZIP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/METS_ZIP",
+            "label": "METS package",
+            "extraData": null
+        },
+        {
+            "code": "MHTML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MHTML",
+            "label": "MHTML",
+            "extraData": null
+        },
+        {
+            "code": "MOBI",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MOBI",
+            "label": "Mobipocket eBook",
+            "extraData": null
+        },
+        {
+            "code": "MOP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MOP",
+            "label": "MOP",
+            "extraData": null
+        },
+        {
+            "code": "MPEG2",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MPEG2",
+            "label": "MPEG-2",
+            "extraData": null
+        },
+        {
+            "code": "MPEG4",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MPEG4",
+            "label": "MPEG-4",
+            "extraData": null
+        },
+        {
+            "code": "MPEG4_AVC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MPEG4_AVC",
+            "label": "MPEG-4 AVC",
+            "extraData": null
+        },
+        {
+            "code": "MRSID",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MRSID",
+            "label": "MrSID",
+            "extraData": null
+        },
+        {
+            "code": "MSG_HTTP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MSG_HTTP",
+            "label": "HTTP Message",
+            "extraData": null
+        },
+        {
+            "code": "MSI",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MSI",
+            "label": "MSI",
+            "extraData": null
+        },
+        {
+            "code": "MXD",
+            "url": "http://publications.europa.eu/resource/authority/file-type/MXD",
+            "label": "MXD",
+            "extraData": null
+        },
+        {
+            "code": "N3",
+            "url": "http://publications.europa.eu/resource/authority/file-type/N3",
+            "label": "N3",
+            "extraData": null
+        },
+        {
+            "code": "NETCDF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/NETCDF",
+            "label": "NetCDF",
+            "extraData": null
+        },
+        {
+            "code": "OCTET",
+            "url": "http://publications.europa.eu/resource/authority/file-type/OCTET",
+            "label": "Octet Stream",
+            "extraData": null
+        },
+        {
+            "code": "ODB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODB",
+            "label": "OpenDocument Database",
+            "extraData": null
+        },
+        {
+            "code": "ODC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODC",
+            "label": "OpenDocument Chart",
+            "extraData": null
+        },
+        {
+            "code": "ODF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODF",
+            "label": "ODF",
+            "extraData": null
+        },
+        {
+            "code": "ODG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODG",
+            "label": "OpenDocument Image",
+            "extraData": null
+        },
+        {
+            "code": "ODP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODP",
+            "label": "ODP",
+            "extraData": null
+        },
+        {
+            "code": "ODS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODS",
+            "label": "ODS",
+            "extraData": null
+        },
+        {
+            "code": "ODT",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ODT",
+            "label": "ODT",
+            "extraData": null
+        },
+        {
+            "code": "OVF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/OVF",
+            "label": "OVF",
+            "extraData": null
+        },
+        {
+            "code": "OWL",
+            "url": "http://publications.europa.eu/resource/authority/file-type/OWL",
+            "label": "OWL",
+            "extraData": null
+        },
+        {
+            "code": "PDF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDF",
+            "label": "PDF",
+            "extraData": null
+        },
+        {
+            "code": "PDF1X",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDF1X",
+            "label": "PDF1X",
+            "extraData": null
+        },
+        {
+            "code": "PDFA1A",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFA1A",
+            "label": "PDF/A-1a",
+            "extraData": null
+        },
+        {
+            "code": "PDFA1B",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFA1B",
+            "label": "PDF/A-1b",
+            "extraData": null
+        },
+        {
+            "code": "PDFA2A",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFA2A",
+            "label": "PDF/A-2a",
+            "extraData": null
+        },
+        {
+            "code": "PDFA2B",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFA2B",
+            "label": "PDF/A-2b",
+            "extraData": null
+        },
+        {
+            "code": "PDFA3",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFA3",
+            "label": "PDFA-3",
+            "extraData": null
+        },
+        {
+            "code": "PDFX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFX",
+            "label": "PDF/X",
+            "extraData": null
+        },
+        {
+            "code": "PDFX1A",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFX1A",
+            "label": "PDF/X-1a",
+            "extraData": null
+        },
+        {
+            "code": "PDFX2A",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFX2A",
+            "label": "PDF/X-2a",
+            "extraData": null
+        },
+        {
+            "code": "PDFX4",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PDFX4",
+            "label": "PDF/X-4",
+            "extraData": null
+        },
+        {
+            "code": "PL",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PL",
+            "label": "Perl script",
+            "extraData": null
+        },
+        {
+            "code": "PNG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PNG",
+            "label": "PNG",
+            "extraData": null
+        },
+        {
+            "code": "PPS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PPS",
+            "label": "PowerPoint Slide Show",
+            "extraData": null
+        },
+        {
+            "code": "PPSX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PPSX",
+            "label": "PowerPoint PPSX",
+            "extraData": null
+        },
+        {
+            "code": "PPT",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PPT",
+            "label": "PowerPoint PPT",
+            "extraData": null
+        },
+        {
+            "code": "PPTX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PPTX",
+            "label": "PowerPoint PPTX",
+            "extraData": null
+        },
+        {
+            "code": "PS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PS",
+            "label": "PS",
+            "extraData": null
+        },
+        {
+            "code": "PSD",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PSD",
+            "label": "PSD",
+            "extraData": null
+        },
+        {
+            "code": "PWP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/PWP",
+            "label": "PWP",
+            "extraData": null
+        },
+        {
+            "code": "QGS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/QGS",
+            "label": "QGS",
+            "extraData": null
+        },
+        {
+            "code": "RAR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RAR",
+            "label": "RAR",
+            "extraData": null
+        },
+        {
+            "code": "RDF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF",
+            "label": "RDF",
+            "extraData": null
+        },
+        {
+            "code": "RDFA",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDFA",
+            "label": "RDFa",
+            "extraData": null
+        },
+        {
+            "code": "RDF_N_QUADS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_N_QUADS",
+            "label": "RDF N-Quads",
+            "extraData": null
+        },
+        {
+            "code": "RDF_N_TRIPLES",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES",
+            "label": "RDF N-Triples",
+            "extraData": null
+        },
+        {
+            "code": "RDF_TRIG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_TRIG",
+            "label": "RDF TriG",
+            "extraData": null
+        },
+        {
+            "code": "RDF_TRIX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_TRIX",
+            "label": "RDF TriX",
+            "extraData": null
+        },
+        {
+            "code": "RDF_TURTLE",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE",
+            "label": "RDF Turtle",
+            "extraData": null
+        },
+        {
+            "code": "RDF_XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RDF_XML",
+            "label": "RDF XML",
+            "extraData": null
+        },
+        {
+            "code": "REST",
+            "url": "http://publications.europa.eu/resource/authority/file-type/REST",
+            "label": "Esri REST",
+            "extraData": null
+        },
+        {
+            "code": "RPM",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RPM",
+            "label": "RPM",
+            "extraData": null
+        },
+        {
+            "code": "RSS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RSS",
+            "label": "RSS feed",
+            "extraData": null
+        },
+        {
+            "code": "RTF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/RTF",
+            "label": "RTF",
+            "extraData": null
+        },
+        {
+            "code": "SB3",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SB3",
+            "label": "sb3",
+            "extraData": null
+        },
+        {
+            "code": "SCHEMA_XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SCHEMA_XML",
+            "label": "XML schema",
+            "extraData": null
+        },
+        {
+            "code": "SDMX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SDMX",
+            "label": "SDMX",
+            "extraData": null
+        },
+        {
+            "code": "SGML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SGML",
+            "label": "SGML",
+            "extraData": null
+        },
+        {
+            "code": "SHP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SHP",
+            "label": "Esri Shape",
+            "extraData": null
+        },
+        {
+            "code": "SKOS_XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SKOS_XML",
+            "label": "SKOS",
+            "extraData": null
+        },
+        {
+            "code": "SPARQLQ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SPARQLQ",
+            "label": "SPARQL",
+            "extraData": null
+        },
+        {
+            "code": "SPARQLQRES",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SPARQLQRES",
+            "label": "SPARQL results",
+            "extraData": null
+        },
+        {
+            "code": "SQL",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SQL",
+            "label": "SQL",
+            "extraData": null
+        },
+        {
+            "code": "SVG",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SVG",
+            "label": "SVG",
+            "extraData": null
+        },
+        {
+            "code": "SWM",
+            "url": "http://publications.europa.eu/resource/authority/file-type/SWM",
+            "label": "SWM",
+            "extraData": null
+        },
+        {
+            "code": "TAB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TAB",
+            "label": "MapInfo TAB file",
+            "extraData": null
+        },
+        {
+            "code": "TAB_RSTR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TAB_RSTR",
+            "label": "MapInfo TAB raster file",
+            "extraData": null
+        },
+        {
+            "code": "TAR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TAR",
+            "label": "TAR",
+            "extraData": null
+        },
+        {
+            "code": "TAR_GZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TAR_GZ",
+            "label": "TAR GZ",
+            "extraData": null
+        },
+        {
+            "code": "TAR_XZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TAR_XZ",
+            "label": "TAR XZ",
+            "extraData": null
+        },
+        {
+            "code": "TIFF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TIFF",
+            "label": "TIFF",
+            "extraData": null
+        },
+        {
+            "code": "TIFF_FX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TIFF_FX",
+            "label": "TIFF FX",
+            "extraData": null
+        },
+        {
+            "code": "TMX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TMX",
+            "label": "TMX",
+            "extraData": null
+        },
+        {
+            "code": "TSV",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TSV",
+            "label": "TSV",
+            "extraData": null
+        },
+        {
+            "code": "TXT",
+            "url": "http://publications.europa.eu/resource/authority/file-type/TXT",
+            "label": "Plain text",
+            "extraData": null
+        },
+        {
+            "code": "WAR",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WAR",
+            "label": "WAR",
+            "extraData": null
+        },
+        {
+            "code": "WARC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WARC",
+            "label": "WARC",
+            "extraData": null
+        },
+        {
+            "code": "WARC_GZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WARC_GZ",
+            "label": "WARC GZ",
+            "extraData": null
+        },
+        {
+            "code": "WFS_SRVC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WFS_SRVC",
+            "label": "WFS",
+            "extraData": null
+        },
+        {
+            "code": "WIM",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WIM",
+            "label": "WIM",
+            "extraData": null
+        },
+        {
+            "code": "WMS_SRVC",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WMS_SRVC",
+            "label": "WMS",
+            "extraData": null
+        },
+        {
+            "code": "WORLD",
+            "url": "http://publications.europa.eu/resource/authority/file-type/WORLD",
+            "label": "World file",
+            "extraData": null
+        },
+        {
+            "code": "XHTML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XHTML",
+            "label": "XHTML",
+            "extraData": null
+        },
+        {
+            "code": "XHTML_SIMPL",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XHTML_SIMPL",
+            "label": "XHTML simplified",
+            "extraData": null
+        },
+        {
+            "code": "XLIFF",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XLIFF",
+            "label": "XLIFF",
+            "extraData": null
+        },
+        {
+            "code": "XLS",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XLS",
+            "label": "Excel XLS",
+            "extraData": null
+        },
+        {
+            "code": "XLSB",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XLSB",
+            "label": "XLSB",
+            "extraData": null
+        },
+        {
+            "code": "XLSM",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XLSM",
+            "label": "XLSM",
+            "extraData": null
+        },
+        {
+            "code": "XLSX",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XLSX",
+            "label": "Excel XLSX",
+            "extraData": null
+        },
+        {
+            "code": "XML",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XML",
+            "label": "XML",
+            "extraData": null
+        },
+        {
+            "code": "XSLFO",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XSLFO",
+            "label": "XSL-FO",
+            "extraData": null
+        },
+        {
+            "code": "XSLT",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XSLT",
+            "label": "XSLT",
+            "extraData": null
+        },
+        {
+            "code": "XYZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XYZ",
+            "label": "XYZ Chemical File",
+            "extraData": null
+        },
+        {
+            "code": "XZ",
+            "url": "http://publications.europa.eu/resource/authority/file-type/XZ",
+            "label": "xz",
+            "extraData": null
+        },
+        {
+            "code": "Z",
+            "url": "http://publications.europa.eu/resource/authority/file-type/Z",
+            "label": "Z",
+            "extraData": null
+        },
+        {
+            "code": "ZIP",
+            "url": "http://publications.europa.eu/resource/authority/file-type/ZIP",
+            "label": "ZIP",
+            "extraData": null
+        }
+    ]
+}

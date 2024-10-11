@@ -1,0 +1,15 @@
+<p>Sign in/Sign up works! Now you are logged in</p>
+
+<div *ngIf="currentUser">
+    <p>Username: {{currentUser.username}}</p>
+    <p>Email: {{currentUser.email}}</p>
+    <p>Roles: {{currentUser.roles}}</p>
+</div>
+
+<div id="error-container" *ngIf="error">
+    <span>{{error}}</span>
+</div>
+
+<button type="button" (click)="getUsers()">Users</button>
+<button type="button" (click)="getDatasets()">Datasets</button>
+<button type="button" (click)="logout()">Logout</button>

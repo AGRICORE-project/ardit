@@ -1,0 +1,1700 @@
+{
+    "name": "Country vocabulary",
+    "description": "Countries values for dataset country coverage",
+    "url": "http://publications.europa.eu/resource/authority/country",
+    "topic": "COUNTRY",
+    "values": [
+        {
+            "code": "1A0",
+            "url": "http://publications.europa.eu/resource/authority/country/1A0",
+            "label": "Kosovo",
+            "extraData": null
+        },
+        {
+            "code": "ABW",
+            "url": "http://publications.europa.eu/resource/authority/country/ABW",
+            "label": "Aruba",
+            "extraData": null
+        },
+        {
+            "code": "AFG",
+            "url": "http://publications.europa.eu/resource/authority/country/AFG",
+            "label": "Afghanistan",
+            "extraData": null
+        },
+        {
+            "code": "AFI",
+            "url": "http://publications.europa.eu/resource/authority/country/AFI",
+            "label": "French Afar and Issas",
+            "extraData": null
+        },
+        {
+            "code": "AGO",
+            "url": "http://publications.europa.eu/resource/authority/country/AGO",
+            "label": "Angola",
+            "extraData": null
+        },
+        {
+            "code": "AIA",
+            "url": "http://publications.europa.eu/resource/authority/country/AIA",
+            "label": "Anguilla",
+            "extraData": null
+        },
+        {
+            "code": "ALA",
+            "url": "http://publications.europa.eu/resource/authority/country/ALA",
+            "label": "\u00c5land Islands",
+            "extraData": null
+        },
+        {
+            "code": "ALB",
+            "url": "http://publications.europa.eu/resource/authority/country/ALB",
+            "label": "Albania",
+            "extraData": null
+        },
+        {
+            "code": "AND",
+            "url": "http://publications.europa.eu/resource/authority/country/AND",
+            "label": "Andorra",
+            "extraData": null
+        },
+        {
+            "code": "ANT",
+            "url": "http://publications.europa.eu/resource/authority/country/ANT",
+            "label": "Netherlands Antilles",
+            "extraData": null
+        },
+        {
+            "code": "ARE",
+            "url": "http://publications.europa.eu/resource/authority/country/ARE",
+            "label": "United Arab Emirates",
+            "extraData": null
+        },
+        {
+            "code": "ARG",
+            "url": "http://publications.europa.eu/resource/authority/country/ARG",
+            "label": "Argentina",
+            "extraData": null
+        },
+        {
+            "code": "ARM",
+            "url": "http://publications.europa.eu/resource/authority/country/ARM",
+            "label": "Armenia",
+            "extraData": null
+        },
+        {
+            "code": "ASM",
+            "url": "http://publications.europa.eu/resource/authority/country/ASM",
+            "label": "American Samoa",
+            "extraData": null
+        },
+        {
+            "code": "ATA",
+            "url": "http://publications.europa.eu/resource/authority/country/ATA",
+            "label": "Antarctica",
+            "extraData": null
+        },
+        {
+            "code": "ATB",
+            "url": "http://publications.europa.eu/resource/authority/country/ATB",
+            "label": "British Antarctic Territory",
+            "extraData": null
+        },
+        {
+            "code": "ATG",
+            "url": "http://publications.europa.eu/resource/authority/country/ATG",
+            "label": "Antigua and Barbuda",
+            "extraData": null
+        },
+        {
+            "code": "ATN",
+            "url": "http://publications.europa.eu/resource/authority/country/ATN",
+            "label": "Dronning Maud Land",
+            "extraData": null
+        },
+        {
+            "code": "AUS",
+            "url": "http://publications.europa.eu/resource/authority/country/AUS",
+            "label": "Australia",
+            "extraData": null
+        },
+        {
+            "code": "AUT",
+            "url": "http://publications.europa.eu/resource/authority/country/AUT",
+            "label": "Austria",
+            "extraData": null
+        },
+        {
+            "code": "AZE",
+            "url": "http://publications.europa.eu/resource/authority/country/AZE",
+            "label": "Azerbaijan",
+            "extraData": null
+        },
+        {
+            "code": "BDI",
+            "url": "http://publications.europa.eu/resource/authority/country/BDI",
+            "label": "Burundi",
+            "extraData": null
+        },
+        {
+            "code": "BEL",
+            "url": "http://publications.europa.eu/resource/authority/country/BEL",
+            "label": "Belgium",
+            "extraData": null
+        },
+        {
+            "code": "BEN",
+            "url": "http://publications.europa.eu/resource/authority/country/BEN",
+            "label": "Benin",
+            "extraData": null
+        },
+        {
+            "code": "BES",
+            "url": "http://publications.europa.eu/resource/authority/country/BES",
+            "label": "Bonaire, Sint Eustatius and Saba",
+            "extraData": null
+        },
+        {
+            "code": "BFA",
+            "url": "http://publications.europa.eu/resource/authority/country/BFA",
+            "label": "Burkina Faso",
+            "extraData": null
+        },
+        {
+            "code": "BGD",
+            "url": "http://publications.europa.eu/resource/authority/country/BGD",
+            "label": "Bangladesh",
+            "extraData": null
+        },
+        {
+            "code": "BGR",
+            "url": "http://publications.europa.eu/resource/authority/country/BGR",
+            "label": "Bulgaria",
+            "extraData": null
+        },
+        {
+            "code": "BHR",
+            "url": "http://publications.europa.eu/resource/authority/country/BHR",
+            "label": "Bahrain",
+            "extraData": null
+        },
+        {
+            "code": "BHS",
+            "url": "http://publications.europa.eu/resource/authority/country/BHS",
+            "label": "Bahamas",
+            "extraData": null
+        },
+        {
+            "code": "BIH",
+            "url": "http://publications.europa.eu/resource/authority/country/BIH",
+            "label": "Bosnia and Herzegovina",
+            "extraData": null
+        },
+        {
+            "code": "BLM",
+            "url": "http://publications.europa.eu/resource/authority/country/BLM",
+            "label": "Saint Barth\u00e9lemy",
+            "extraData": null
+        },
+        {
+            "code": "BLR",
+            "url": "http://publications.europa.eu/resource/authority/country/BLR",
+            "label": "Belarus",
+            "extraData": null
+        },
+        {
+            "code": "BLZ",
+            "url": "http://publications.europa.eu/resource/authority/country/BLZ",
+            "label": "Belize",
+            "extraData": null
+        },
+        {
+            "code": "BMU",
+            "url": "http://publications.europa.eu/resource/authority/country/BMU",
+            "label": "Bermuda",
+            "extraData": null
+        },
+        {
+            "code": "BOL",
+            "url": "http://publications.europa.eu/resource/authority/country/BOL",
+            "label": "Bolivia",
+            "extraData": null
+        },
+        {
+            "code": "BRA",
+            "url": "http://publications.europa.eu/resource/authority/country/BRA",
+            "label": "Brazil",
+            "extraData": null
+        },
+        {
+            "code": "BRB",
+            "url": "http://publications.europa.eu/resource/authority/country/BRB",
+            "label": "Barbados",
+            "extraData": null
+        },
+        {
+            "code": "BRN",
+            "url": "http://publications.europa.eu/resource/authority/country/BRN",
+            "label": "Brunei",
+            "extraData": null
+        },
+        {
+            "code": "BTN",
+            "url": "http://publications.europa.eu/resource/authority/country/BTN",
+            "label": "Bhutan",
+            "extraData": null
+        },
+        {
+            "code": "BUR",
+            "url": "http://publications.europa.eu/resource/authority/country/BUR",
+            "label": "Burma",
+            "extraData": null
+        },
+        {
+            "code": "BVT",
+            "url": "http://publications.europa.eu/resource/authority/country/BVT",
+            "label": "Bouvet Island",
+            "extraData": null
+        },
+        {
+            "code": "BWA",
+            "url": "http://publications.europa.eu/resource/authority/country/BWA",
+            "label": "Botswana",
+            "extraData": null
+        },
+        {
+            "code": "BYS",
+            "url": "http://publications.europa.eu/resource/authority/country/BYS",
+            "label": "Belarus",
+            "extraData": null
+        },
+        {
+            "code": "CAF",
+            "url": "http://publications.europa.eu/resource/authority/country/CAF",
+            "label": "Central African Republic",
+            "extraData": null
+        },
+        {
+            "code": "CAN",
+            "url": "http://publications.europa.eu/resource/authority/country/CAN",
+            "label": "Canada",
+            "extraData": null
+        },
+        {
+            "code": "CCK",
+            "url": "http://publications.europa.eu/resource/authority/country/CCK",
+            "label": "Cocos (Keeling) Islands",
+            "extraData": null
+        },
+        {
+            "code": "CHE",
+            "url": "http://publications.europa.eu/resource/authority/country/CHE",
+            "label": "Switzerland",
+            "extraData": null
+        },
+        {
+            "code": "CHL",
+            "url": "http://publications.europa.eu/resource/authority/country/CHL",
+            "label": "Chile",
+            "extraData": null
+        },
+        {
+            "code": "CHN",
+            "url": "http://publications.europa.eu/resource/authority/country/CHN",
+            "label": "China",
+            "extraData": null
+        },
+        {
+            "code": "CIV",
+            "url": "http://publications.europa.eu/resource/authority/country/CIV",
+            "label": "C\u00f4te d\u2019Ivoire",
+            "extraData": null
+        },
+        {
+            "code": "CMR",
+            "url": "http://publications.europa.eu/resource/authority/country/CMR",
+            "label": "Cameroon",
+            "extraData": null
+        },
+        {
+            "code": "COD",
+            "url": "http://publications.europa.eu/resource/authority/country/COD",
+            "label": "Democratic Republic of the Congo",
+            "extraData": null
+        },
+        {
+            "code": "COG",
+            "url": "http://publications.europa.eu/resource/authority/country/COG",
+            "label": "Congo",
+            "extraData": null
+        },
+        {
+            "code": "COK",
+            "url": "http://publications.europa.eu/resource/authority/country/COK",
+            "label": "Cook Islands",
+            "extraData": null
+        },
+        {
+            "code": "COL",
+            "url": "http://publications.europa.eu/resource/authority/country/COL",
+            "label": "Colombia",
+            "extraData": null
+        },
+        {
+            "code": "COM",
+            "url": "http://publications.europa.eu/resource/authority/country/COM",
+            "label": "Comoros",
+            "extraData": null
+        },
+        {
+            "code": "CPT",
+            "url": "http://publications.europa.eu/resource/authority/country/CPT",
+            "label": "Clipperton",
+            "extraData": null
+        },
+        {
+            "code": "CPV",
+            "url": "http://publications.europa.eu/resource/authority/country/CPV",
+            "label": "Cabo Verde",
+            "extraData": null
+        },
+        {
+            "code": "CRI",
+            "url": "http://publications.europa.eu/resource/authority/country/CRI",
+            "label": "Costa Rica",
+            "extraData": null
+        },
+        {
+            "code": "CSK",
+            "url": "http://publications.europa.eu/resource/authority/country/CSK",
+            "label": "Czechoslovakia",
+            "extraData": null
+        },
+        {
+            "code": "CTE",
+            "url": "http://publications.europa.eu/resource/authority/country/CTE",
+            "label": "Canton and Enderbury Islands",
+            "extraData": null
+        },
+        {
+            "code": "CUB",
+            "url": "http://publications.europa.eu/resource/authority/country/CUB",
+            "label": "Cuba",
+            "extraData": null
+        },
+        {
+            "code": "CUW",
+            "url": "http://publications.europa.eu/resource/authority/country/CUW",
+            "label": "Cura\u00e7ao",
+            "extraData": null
+        },
+        {
+            "code": "CXR",
+            "url": "http://publications.europa.eu/resource/authority/country/CXR",
+            "label": "Christmas Island",
+            "extraData": null
+        },
+        {
+            "code": "CYM",
+            "url": "http://publications.europa.eu/resource/authority/country/CYM",
+            "label": "Cayman Islands",
+            "extraData": null
+        },
+        {
+            "code": "CYP",
+            "url": "http://publications.europa.eu/resource/authority/country/CYP",
+            "label": "Cyprus",
+            "extraData": null
+        },
+        {
+            "code": "CZE",
+            "url": "http://publications.europa.eu/resource/authority/country/CZE",
+            "label": "Czechia",
+            "extraData": null
+        },
+        {
+            "code": "DDR",
+            "url": "http://publications.europa.eu/resource/authority/country/DDR",
+            "label": "East Germany",
+            "extraData": null
+        },
+        {
+            "code": "DEU",
+            "url": "http://publications.europa.eu/resource/authority/country/DEU",
+            "label": "Germany",
+            "extraData": null
+        },
+        {
+            "code": "DHY",
+            "url": "http://publications.europa.eu/resource/authority/country/DHY",
+            "label": "Dahomey",
+            "extraData": null
+        },
+        {
+            "code": "DJI",
+            "url": "http://publications.europa.eu/resource/authority/country/DJI",
+            "label": "Djibouti",
+            "extraData": null
+        },
+        {
+            "code": "DMA",
+            "url": "http://publications.europa.eu/resource/authority/country/DMA",
+            "label": "Dominica",
+            "extraData": null
+        },
+        {
+            "code": "DNK",
+            "url": "http://publications.europa.eu/resource/authority/country/DNK",
+            "label": "Denmark",
+            "extraData": null
+        },
+        {
+            "code": "DOM",
+            "url": "http://publications.europa.eu/resource/authority/country/DOM",
+            "label": "Dominican Republic",
+            "extraData": null
+        },
+        {
+            "code": "DZA",
+            "url": "http://publications.europa.eu/resource/authority/country/DZA",
+            "label": "Algeria",
+            "extraData": null
+        },
+        {
+            "code": "ECU",
+            "url": "http://publications.europa.eu/resource/authority/country/ECU",
+            "label": "Ecuador",
+            "extraData": null
+        },
+        {
+            "code": "EGY",
+            "url": "http://publications.europa.eu/resource/authority/country/EGY",
+            "label": "Egypt",
+            "extraData": null
+        },
+        {
+            "code": "ERI",
+            "url": "http://publications.europa.eu/resource/authority/country/ERI",
+            "label": "Eritrea",
+            "extraData": null
+        },
+        {
+            "code": "ESH",
+            "url": "http://publications.europa.eu/resource/authority/country/ESH",
+            "label": "Western Sahara",
+            "extraData": null
+        },
+        {
+            "code": "ESP",
+            "url": "http://publications.europa.eu/resource/authority/country/ESP",
+            "label": "Spain",
+            "extraData": null
+        },
+        {
+            "code": "EST",
+            "url": "http://publications.europa.eu/resource/authority/country/EST",
+            "label": "Estonia",
+            "extraData": null
+        },
+        {
+            "code": "ETH",
+            "url": "http://publications.europa.eu/resource/authority/country/ETH",
+            "label": "Ethiopia",
+            "extraData": null
+        },
+        {
+            "code": "EUR",
+            "url": "http://publications.europa.eu/resource/authority/country/EUR",
+            "label": "European Union",
+            "extraData": null
+        },
+        {
+            "code": "FIN",
+            "url": "http://publications.europa.eu/resource/authority/country/FIN",
+            "label": "Finland",
+            "extraData": null
+        },
+        {
+            "code": "FJI",
+            "url": "http://publications.europa.eu/resource/authority/country/FJI",
+            "label": "Fiji",
+            "extraData": null
+        },
+        {
+            "code": "FLK",
+            "url": "http://publications.europa.eu/resource/authority/country/FLK",
+            "label": "Falkland Islands",
+            "extraData": null
+        },
+        {
+            "code": "FQ0",
+            "url": "http://publications.europa.eu/resource/authority/country/FQ0",
+            "label": "French Southern and Antarctic Lands",
+            "extraData": null
+        },
+        {
+            "code": "FRA",
+            "url": "http://publications.europa.eu/resource/authority/country/FRA",
+            "label": "France",
+            "extraData": null
+        },
+        {
+            "code": "FRO",
+            "url": "http://publications.europa.eu/resource/authority/country/FRO",
+            "label": "Faroes",
+            "extraData": null
+        },
+        {
+            "code": "FSM",
+            "url": "http://publications.europa.eu/resource/authority/country/FSM",
+            "label": "Micronesia",
+            "extraData": null
+        },
+        {
+            "code": "FXX",
+            "url": "http://publications.europa.eu/resource/authority/country/FXX",
+            "label": "Metropolitan France",
+            "extraData": null
+        },
+        {
+            "code": "GAB",
+            "url": "http://publications.europa.eu/resource/authority/country/GAB",
+            "label": "Gabon",
+            "extraData": null
+        },
+        {
+            "code": "GBR",
+            "url": "http://publications.europa.eu/resource/authority/country/GBR",
+            "label": "United Kingdom",
+            "extraData": null
+        },
+        {
+            "code": "GEL",
+            "url": "http://publications.europa.eu/resource/authority/country/GEL",
+            "label": "Gilbert and Ellice Islands",
+            "extraData": null
+        },
+        {
+            "code": "GEO",
+            "url": "http://publications.europa.eu/resource/authority/country/GEO",
+            "label": "Georgia",
+            "extraData": null
+        },
+        {
+            "code": "GGY",
+            "url": "http://publications.europa.eu/resource/authority/country/GGY",
+            "label": "Guernsey",
+            "extraData": null
+        },
+        {
+            "code": "GHA",
+            "url": "http://publications.europa.eu/resource/authority/country/GHA",
+            "label": "Ghana",
+            "extraData": null
+        },
+        {
+            "code": "GIB",
+            "url": "http://publications.europa.eu/resource/authority/country/GIB",
+            "label": "Gibraltar",
+            "extraData": null
+        },
+        {
+            "code": "GIN",
+            "url": "http://publications.europa.eu/resource/authority/country/GIN",
+            "label": "Guinea",
+            "extraData": null
+        },
+        {
+            "code": "GLP",
+            "url": "http://publications.europa.eu/resource/authority/country/GLP",
+            "label": "Guadeloupe",
+            "extraData": null
+        },
+        {
+            "code": "GMB",
+            "url": "http://publications.europa.eu/resource/authority/country/GMB",
+            "label": "The Gambia",
+            "extraData": null
+        },
+        {
+            "code": "GNB",
+            "url": "http://publications.europa.eu/resource/authority/country/GNB",
+            "label": "Guinea-Bissau",
+            "extraData": null
+        },
+        {
+            "code": "GNQ",
+            "url": "http://publications.europa.eu/resource/authority/country/GNQ",
+            "label": "Equatorial Guinea",
+            "extraData": null
+        },
+        {
+            "code": "GRC",
+            "url": "http://publications.europa.eu/resource/authority/country/GRC",
+            "label": "Greece",
+            "extraData": null
+        },
+        {
+            "code": "GRD",
+            "url": "http://publications.europa.eu/resource/authority/country/GRD",
+            "label": "Grenada",
+            "extraData": null
+        },
+        {
+            "code": "GRL",
+            "url": "http://publications.europa.eu/resource/authority/country/GRL",
+            "label": "Greenland",
+            "extraData": null
+        },
+        {
+            "code": "GTM",
+            "url": "http://publications.europa.eu/resource/authority/country/GTM",
+            "label": "Guatemala",
+            "extraData": null
+        },
+        {
+            "code": "GUF",
+            "url": "http://publications.europa.eu/resource/authority/country/GUF",
+            "label": "French Guiana",
+            "extraData": null
+        },
+        {
+            "code": "GUM",
+            "url": "http://publications.europa.eu/resource/authority/country/GUM",
+            "label": "Guam",
+            "extraData": null
+        },
+        {
+            "code": "GUY",
+            "url": "http://publications.europa.eu/resource/authority/country/GUY",
+            "label": "Guyana",
+            "extraData": null
+        },
+        {
+            "code": "HKG",
+            "url": "http://publications.europa.eu/resource/authority/country/HKG",
+            "label": "Hong Kong",
+            "extraData": null
+        },
+        {
+            "code": "HMD",
+            "url": "http://publications.europa.eu/resource/authority/country/HMD",
+            "label": "Heard Island and McDonald Islands",
+            "extraData": null
+        },
+        {
+            "code": "HND",
+            "url": "http://publications.europa.eu/resource/authority/country/HND",
+            "label": "Honduras",
+            "extraData": null
+        },
+        {
+            "code": "HRV",
+            "url": "http://publications.europa.eu/resource/authority/country/HRV",
+            "label": "Croatia",
+            "extraData": null
+        },
+        {
+            "code": "HTI",
+            "url": "http://publications.europa.eu/resource/authority/country/HTI",
+            "label": "Haiti",
+            "extraData": null
+        },
+        {
+            "code": "HUN",
+            "url": "http://publications.europa.eu/resource/authority/country/HUN",
+            "label": "Hungary",
+            "extraData": null
+        },
+        {
+            "code": "HVO",
+            "url": "http://publications.europa.eu/resource/authority/country/HVO",
+            "label": "Upper Volta",
+            "extraData": null
+        },
+        {
+            "code": "IDN",
+            "url": "http://publications.europa.eu/resource/authority/country/IDN",
+            "label": "Indonesia",
+            "extraData": null
+        },
+        {
+            "code": "IMN",
+            "url": "http://publications.europa.eu/resource/authority/country/IMN",
+            "label": "Isle of Man",
+            "extraData": null
+        },
+        {
+            "code": "IND",
+            "url": "http://publications.europa.eu/resource/authority/country/IND",
+            "label": "India",
+            "extraData": null
+        },
+        {
+            "code": "IOT",
+            "url": "http://publications.europa.eu/resource/authority/country/IOT",
+            "label": "British Indian Ocean Territory",
+            "extraData": null
+        },
+        {
+            "code": "IRL",
+            "url": "http://publications.europa.eu/resource/authority/country/IRL",
+            "label": "Ireland",
+            "extraData": null
+        },
+        {
+            "code": "IRN",
+            "url": "http://publications.europa.eu/resource/authority/country/IRN",
+            "label": "Iran",
+            "extraData": null
+        },
+        {
+            "code": "IRQ",
+            "url": "http://publications.europa.eu/resource/authority/country/IRQ",
+            "label": "Iraq",
+            "extraData": null
+        },
+        {
+            "code": "ISL",
+            "url": "http://publications.europa.eu/resource/authority/country/ISL",
+            "label": "Iceland",
+            "extraData": null
+        },
+        {
+            "code": "ISR",
+            "url": "http://publications.europa.eu/resource/authority/country/ISR",
+            "label": "Israel",
+            "extraData": null
+        },
+        {
+            "code": "ITA",
+            "url": "http://publications.europa.eu/resource/authority/country/ITA",
+            "label": "Italy",
+            "extraData": null
+        },
+        {
+            "code": "JAM",
+            "url": "http://publications.europa.eu/resource/authority/country/JAM",
+            "label": "Jamaica",
+            "extraData": null
+        },
+        {
+            "code": "JEY",
+            "url": "http://publications.europa.eu/resource/authority/country/JEY",
+            "label": "Jersey",
+            "extraData": null
+        },
+        {
+            "code": "JOR",
+            "url": "http://publications.europa.eu/resource/authority/country/JOR",
+            "label": "Jordan",
+            "extraData": null
+        },
+        {
+            "code": "JPN",
+            "url": "http://publications.europa.eu/resource/authority/country/JPN",
+            "label": "Japan",
+            "extraData": null
+        },
+        {
+            "code": "JTN",
+            "url": "http://publications.europa.eu/resource/authority/country/JTN",
+            "label": "Johnston Island",
+            "extraData": null
+        },
+        {
+            "code": "KAZ",
+            "url": "http://publications.europa.eu/resource/authority/country/KAZ",
+            "label": "Kazakhstan",
+            "extraData": null
+        },
+        {
+            "code": "KEN",
+            "url": "http://publications.europa.eu/resource/authority/country/KEN",
+            "label": "Kenya",
+            "extraData": null
+        },
+        {
+            "code": "KGZ",
+            "url": "http://publications.europa.eu/resource/authority/country/KGZ",
+            "label": "Kyrgyzstan",
+            "extraData": null
+        },
+        {
+            "code": "KHM",
+            "url": "http://publications.europa.eu/resource/authority/country/KHM",
+            "label": "Cambodia",
+            "extraData": null
+        },
+        {
+            "code": "KIR",
+            "url": "http://publications.europa.eu/resource/authority/country/KIR",
+            "label": "Kiribati",
+            "extraData": null
+        },
+        {
+            "code": "KNA",
+            "url": "http://publications.europa.eu/resource/authority/country/KNA",
+            "label": "Saint Kitts and Nevis",
+            "extraData": null
+        },
+        {
+            "code": "KOR",
+            "url": "http://publications.europa.eu/resource/authority/country/KOR",
+            "label": "South Korea",
+            "extraData": null
+        },
+        {
+            "code": "KWT",
+            "url": "http://publications.europa.eu/resource/authority/country/KWT",
+            "label": "Kuwait",
+            "extraData": null
+        },
+        {
+            "code": "LAO",
+            "url": "http://publications.europa.eu/resource/authority/country/LAO",
+            "label": "Laos",
+            "extraData": null
+        },
+        {
+            "code": "LBN",
+            "url": "http://publications.europa.eu/resource/authority/country/LBN",
+            "label": "Lebanon",
+            "extraData": null
+        },
+        {
+            "code": "LBR",
+            "url": "http://publications.europa.eu/resource/authority/country/LBR",
+            "label": "Liberia",
+            "extraData": null
+        },
+        {
+            "code": "LBY",
+            "url": "http://publications.europa.eu/resource/authority/country/LBY",
+            "label": "Libya",
+            "extraData": null
+        },
+        {
+            "code": "LCA",
+            "url": "http://publications.europa.eu/resource/authority/country/LCA",
+            "label": "Saint Lucia",
+            "extraData": null
+        },
+        {
+            "code": "LIE",
+            "url": "http://publications.europa.eu/resource/authority/country/LIE",
+            "label": "Liechtenstein",
+            "extraData": null
+        },
+        {
+            "code": "LKA",
+            "url": "http://publications.europa.eu/resource/authority/country/LKA",
+            "label": "Sri Lanka",
+            "extraData": null
+        },
+        {
+            "code": "LSO",
+            "url": "http://publications.europa.eu/resource/authority/country/LSO",
+            "label": "Lesotho",
+            "extraData": null
+        },
+        {
+            "code": "LTU",
+            "url": "http://publications.europa.eu/resource/authority/country/LTU",
+            "label": "Lithuania",
+            "extraData": null
+        },
+        {
+            "code": "LUX",
+            "url": "http://publications.europa.eu/resource/authority/country/LUX",
+            "label": "Luxembourg",
+            "extraData": null
+        },
+        {
+            "code": "LVA",
+            "url": "http://publications.europa.eu/resource/authority/country/LVA",
+            "label": "Latvia",
+            "extraData": null
+        },
+        {
+            "code": "MAC",
+            "url": "http://publications.europa.eu/resource/authority/country/MAC",
+            "label": "Macau",
+            "extraData": null
+        },
+        {
+            "code": "MAF",
+            "url": "http://publications.europa.eu/resource/authority/country/MAF",
+            "label": "Saint Martin",
+            "extraData": null
+        },
+        {
+            "code": "MAR",
+            "url": "http://publications.europa.eu/resource/authority/country/MAR",
+            "label": "Morocco",
+            "extraData": null
+        },
+        {
+            "code": "MCO",
+            "url": "http://publications.europa.eu/resource/authority/country/MCO",
+            "label": "Monaco",
+            "extraData": null
+        },
+        {
+            "code": "MDA",
+            "url": "http://publications.europa.eu/resource/authority/country/MDA",
+            "label": "Moldova",
+            "extraData": null
+        },
+        {
+            "code": "MDG",
+            "url": "http://publications.europa.eu/resource/authority/country/MDG",
+            "label": "Madagascar",
+            "extraData": null
+        },
+        {
+            "code": "MDV",
+            "url": "http://publications.europa.eu/resource/authority/country/MDV",
+            "label": "Maldives",
+            "extraData": null
+        },
+        {
+            "code": "MEX",
+            "url": "http://publications.europa.eu/resource/authority/country/MEX",
+            "label": "Mexico",
+            "extraData": null
+        },
+        {
+            "code": "MHL",
+            "url": "http://publications.europa.eu/resource/authority/country/MHL",
+            "label": "Marshall Islands",
+            "extraData": null
+        },
+        {
+            "code": "MID",
+            "url": "http://publications.europa.eu/resource/authority/country/MID",
+            "label": "Midway Islands",
+            "extraData": null
+        },
+        {
+            "code": "MKD",
+            "url": "http://publications.europa.eu/resource/authority/country/MKD",
+            "label": "North Macedonia",
+            "extraData": null
+        },
+        {
+            "code": "MLI",
+            "url": "http://publications.europa.eu/resource/authority/country/MLI",
+            "label": "Mali",
+            "extraData": null
+        },
+        {
+            "code": "MLT",
+            "url": "http://publications.europa.eu/resource/authority/country/MLT",
+            "label": "Malta",
+            "extraData": null
+        },
+        {
+            "code": "MMR",
+            "url": "http://publications.europa.eu/resource/authority/country/MMR",
+            "label": "Myanmar/Burma",
+            "extraData": null
+        },
+        {
+            "code": "MNE",
+            "url": "http://publications.europa.eu/resource/authority/country/MNE",
+            "label": "Montenegro",
+            "extraData": null
+        },
+        {
+            "code": "MNG",
+            "url": "http://publications.europa.eu/resource/authority/country/MNG",
+            "label": "Mongolia",
+            "extraData": null
+        },
+        {
+            "code": "MNP",
+            "url": "http://publications.europa.eu/resource/authority/country/MNP",
+            "label": "Northern Mariana Islands",
+            "extraData": null
+        },
+        {
+            "code": "MOZ",
+            "url": "http://publications.europa.eu/resource/authority/country/MOZ",
+            "label": "Mozambique",
+            "extraData": null
+        },
+        {
+            "code": "MRT",
+            "url": "http://publications.europa.eu/resource/authority/country/MRT",
+            "label": "Mauritania",
+            "extraData": null
+        },
+        {
+            "code": "MSR",
+            "url": "http://publications.europa.eu/resource/authority/country/MSR",
+            "label": "Montserrat",
+            "extraData": null
+        },
+        {
+            "code": "MTQ",
+            "url": "http://publications.europa.eu/resource/authority/country/MTQ",
+            "label": "Martinique",
+            "extraData": null
+        },
+        {
+            "code": "MUS",
+            "url": "http://publications.europa.eu/resource/authority/country/MUS",
+            "label": "Mauritius",
+            "extraData": null
+        },
+        {
+            "code": "MWI",
+            "url": "http://publications.europa.eu/resource/authority/country/MWI",
+            "label": "Malawi",
+            "extraData": null
+        },
+        {
+            "code": "MYS",
+            "url": "http://publications.europa.eu/resource/authority/country/MYS",
+            "label": "Malaysia",
+            "extraData": null
+        },
+        {
+            "code": "MYT",
+            "url": "http://publications.europa.eu/resource/authority/country/MYT",
+            "label": "Mayotte",
+            "extraData": null
+        },
+        {
+            "code": "NAM",
+            "url": "http://publications.europa.eu/resource/authority/country/NAM",
+            "label": "Namibia",
+            "extraData": null
+        },
+        {
+            "code": "NCL",
+            "url": "http://publications.europa.eu/resource/authority/country/NCL",
+            "label": "New Caledonia",
+            "extraData": null
+        },
+        {
+            "code": "NER",
+            "url": "http://publications.europa.eu/resource/authority/country/NER",
+            "label": "Niger",
+            "extraData": null
+        },
+        {
+            "code": "NFK",
+            "url": "http://publications.europa.eu/resource/authority/country/NFK",
+            "label": "Norfolk Island",
+            "extraData": null
+        },
+        {
+            "code": "NGA",
+            "url": "http://publications.europa.eu/resource/authority/country/NGA",
+            "label": "Nigeria",
+            "extraData": null
+        },
+        {
+            "code": "NHB",
+            "url": "http://publications.europa.eu/resource/authority/country/NHB",
+            "label": "New Hebrides",
+            "extraData": null
+        },
+        {
+            "code": "NIC",
+            "url": "http://publications.europa.eu/resource/authority/country/NIC",
+            "label": "Nicaragua",
+            "extraData": null
+        },
+        {
+            "code": "NIU",
+            "url": "http://publications.europa.eu/resource/authority/country/NIU",
+            "label": "Niue",
+            "extraData": null
+        },
+        {
+            "code": "NLD",
+            "url": "http://publications.europa.eu/resource/authority/country/NLD",
+            "label": "Netherlands",
+            "extraData": null
+        },
+        {
+            "code": "NOR",
+            "url": "http://publications.europa.eu/resource/authority/country/NOR",
+            "label": "Norway",
+            "extraData": null
+        },
+        {
+            "code": "NPL",
+            "url": "http://publications.europa.eu/resource/authority/country/NPL",
+            "label": "Nepal",
+            "extraData": null
+        },
+        {
+            "code": "NRU",
+            "url": "http://publications.europa.eu/resource/authority/country/NRU",
+            "label": "Nauru",
+            "extraData": null
+        },
+        {
+            "code": "NTZ",
+            "url": "http://publications.europa.eu/resource/authority/country/NTZ",
+            "label": "Neutral Zone",
+            "extraData": null
+        },
+        {
+            "code": "NZL",
+            "url": "http://publications.europa.eu/resource/authority/country/NZL",
+            "label": "New Zealand",
+            "extraData": null
+        },
+        {
+            "code": "OMN",
+            "url": "http://publications.europa.eu/resource/authority/country/OMN",
+            "label": "Oman",
+            "extraData": null
+        },
+        {
+            "code": "PAK",
+            "url": "http://publications.europa.eu/resource/authority/country/PAK",
+            "label": "Pakistan",
+            "extraData": null
+        },
+        {
+            "code": "PAN",
+            "url": "http://publications.europa.eu/resource/authority/country/PAN",
+            "label": "Panama",
+            "extraData": null
+        },
+        {
+            "code": "PCI",
+            "url": "http://publications.europa.eu/resource/authority/country/PCI",
+            "label": "Trust Territory of the Pacific\r\n\t\t\t\t\t\tIslands",
+            "extraData": null
+        },
+        {
+            "code": "PCN",
+            "url": "http://publications.europa.eu/resource/authority/country/PCN",
+            "label": "Pitcairn Islands",
+            "extraData": null
+        },
+        {
+            "code": "PCZ",
+            "url": "http://publications.europa.eu/resource/authority/country/PCZ",
+            "label": "Panama Canal Zone",
+            "extraData": null
+        },
+        {
+            "code": "PER",
+            "url": "http://publications.europa.eu/resource/authority/country/PER",
+            "label": "Peru",
+            "extraData": null
+        },
+        {
+            "code": "PHL",
+            "url": "http://publications.europa.eu/resource/authority/country/PHL",
+            "label": "Philippines",
+            "extraData": null
+        },
+        {
+            "code": "PLW",
+            "url": "http://publications.europa.eu/resource/authority/country/PLW",
+            "label": "Palau",
+            "extraData": null
+        },
+        {
+            "code": "PNG",
+            "url": "http://publications.europa.eu/resource/authority/country/PNG",
+            "label": "Papua New Guinea",
+            "extraData": null
+        },
+        {
+            "code": "POL",
+            "url": "http://publications.europa.eu/resource/authority/country/POL",
+            "label": "Poland",
+            "extraData": null
+        },
+        {
+            "code": "PRI",
+            "url": "http://publications.europa.eu/resource/authority/country/PRI",
+            "label": "Puerto Rico",
+            "extraData": null
+        },
+        {
+            "code": "PRK",
+            "url": "http://publications.europa.eu/resource/authority/country/PRK",
+            "label": "North Korea",
+            "extraData": null
+        },
+        {
+            "code": "PRT",
+            "url": "http://publications.europa.eu/resource/authority/country/PRT",
+            "label": "Portugal",
+            "extraData": null
+        },
+        {
+            "code": "PRY",
+            "url": "http://publications.europa.eu/resource/authority/country/PRY",
+            "label": "Paraguay",
+            "extraData": null
+        },
+        {
+            "code": "PSE",
+            "url": "http://publications.europa.eu/resource/authority/country/PSE",
+            "label": "Palestine",
+            "extraData": null
+        },
+        {
+            "code": "PUS",
+            "url": "http://publications.europa.eu/resource/authority/country/PUS",
+            "label": "US Miscellaneous Pacific Islands",
+            "extraData": null
+        },
+        {
+            "code": "PYF",
+            "url": "http://publications.europa.eu/resource/authority/country/PYF",
+            "label": "French Polynesia",
+            "extraData": null
+        },
+        {
+            "code": "QAT",
+            "url": "http://publications.europa.eu/resource/authority/country/QAT",
+            "label": "Qatar",
+            "extraData": null
+        },
+        {
+            "code": "REU",
+            "url": "http://publications.europa.eu/resource/authority/country/REU",
+            "label": "R\u00e9union",
+            "extraData": null
+        },
+        {
+            "code": "RHO",
+            "url": "http://publications.europa.eu/resource/authority/country/RHO",
+            "label": "Southern Rhodesia",
+            "extraData": null
+        },
+        {
+            "code": "ROU",
+            "url": "http://publications.europa.eu/resource/authority/country/ROU",
+            "label": "Romania",
+            "extraData": null
+        },
+        {
+            "code": "RUS",
+            "url": "http://publications.europa.eu/resource/authority/country/RUS",
+            "label": "Russia",
+            "extraData": null
+        },
+        {
+            "code": "RWA",
+            "url": "http://publications.europa.eu/resource/authority/country/RWA",
+            "label": "Rwanda",
+            "extraData": null
+        },
+        {
+            "code": "SAU",
+            "url": "http://publications.europa.eu/resource/authority/country/SAU",
+            "label": "Saudi Arabia",
+            "extraData": null
+        },
+        {
+            "code": "SCG",
+            "url": "http://publications.europa.eu/resource/authority/country/SCG",
+            "label": "Serbia and Montenegro",
+            "extraData": null
+        },
+        {
+            "code": "SDN",
+            "url": "http://publications.europa.eu/resource/authority/country/SDN",
+            "label": "Sudan",
+            "extraData": null
+        },
+        {
+            "code": "SEN",
+            "url": "http://publications.europa.eu/resource/authority/country/SEN",
+            "label": "Senegal",
+            "extraData": null
+        },
+        {
+            "code": "SGP",
+            "url": "http://publications.europa.eu/resource/authority/country/SGP",
+            "label": "Singapore",
+            "extraData": null
+        },
+        {
+            "code": "SGS",
+            "url": "http://publications.europa.eu/resource/authority/country/SGS",
+            "label": "South Georgia and the South Sandwich\r\n\t\t\t\t\t\tIslands",
+            "extraData": null
+        },
+        {
+            "code": "SHN",
+            "url": "http://publications.europa.eu/resource/authority/country/SHN",
+            "label": "Saint Helena, Ascension and Tristan da\r\n\t\t\t\t\t\tCunha",
+            "extraData": null
+        },
+        {
+            "code": "SJM",
+            "url": "http://publications.europa.eu/resource/authority/country/SJM",
+            "label": "Svalbard and Jan Mayen",
+            "extraData": null
+        },
+        {
+            "code": "SKM",
+            "url": "http://publications.europa.eu/resource/authority/country/SKM",
+            "label": "Sikkim",
+            "extraData": null
+        },
+        {
+            "code": "SLB",
+            "url": "http://publications.europa.eu/resource/authority/country/SLB",
+            "label": "Solomon Islands",
+            "extraData": null
+        },
+        {
+            "code": "SLE",
+            "url": "http://publications.europa.eu/resource/authority/country/SLE",
+            "label": "Sierra Leone",
+            "extraData": null
+        },
+        {
+            "code": "SLV",
+            "url": "http://publications.europa.eu/resource/authority/country/SLV",
+            "label": "El Salvador",
+            "extraData": null
+        },
+        {
+            "code": "SMR",
+            "url": "http://publications.europa.eu/resource/authority/country/SMR",
+            "label": "San Marino",
+            "extraData": null
+        },
+        {
+            "code": "SOM",
+            "url": "http://publications.europa.eu/resource/authority/country/SOM",
+            "label": "Somalia",
+            "extraData": null
+        },
+        {
+            "code": "SPM",
+            "url": "http://publications.europa.eu/resource/authority/country/SPM",
+            "label": "Saint Pierre and Miquelon",
+            "extraData": null
+        },
+        {
+            "code": "SRB",
+            "url": "http://publications.europa.eu/resource/authority/country/SRB",
+            "label": "Serbia",
+            "extraData": null
+        },
+        {
+            "code": "SSD",
+            "url": "http://publications.europa.eu/resource/authority/country/SSD",
+            "label": "South Sudan",
+            "extraData": null
+        },
+        {
+            "code": "STP",
+            "url": "http://publications.europa.eu/resource/authority/country/STP",
+            "label": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "extraData": null
+        },
+        {
+            "code": "SUN",
+            "url": "http://publications.europa.eu/resource/authority/country/SUN",
+            "label": "Soviet Union",
+            "extraData": null
+        },
+        {
+            "code": "SUR",
+            "url": "http://publications.europa.eu/resource/authority/country/SUR",
+            "label": "Suriname",
+            "extraData": null
+        },
+        {
+            "code": "SVK",
+            "url": "http://publications.europa.eu/resource/authority/country/SVK",
+            "label": "Slovakia",
+            "extraData": null
+        },
+        {
+            "code": "SVN",
+            "url": "http://publications.europa.eu/resource/authority/country/SVN",
+            "label": "Slovenia",
+            "extraData": null
+        },
+        {
+            "code": "SWE",
+            "url": "http://publications.europa.eu/resource/authority/country/SWE",
+            "label": "Sweden",
+            "extraData": null
+        },
+        {
+            "code": "SWZ",
+            "url": "http://publications.europa.eu/resource/authority/country/SWZ",
+            "label": "Eswatini",
+            "extraData": null
+        },
+        {
+            "code": "SXM",
+            "url": "http://publications.europa.eu/resource/authority/country/SXM",
+            "label": "Sint Maarten",
+            "extraData": null
+        },
+        {
+            "code": "SYC",
+            "url": "http://publications.europa.eu/resource/authority/country/SYC",
+            "label": "Seychelles",
+            "extraData": null
+        },
+        {
+            "code": "SYR",
+            "url": "http://publications.europa.eu/resource/authority/country/SYR",
+            "label": "Syria",
+            "extraData": null
+        },
+        {
+            "code": "TCA",
+            "url": "http://publications.europa.eu/resource/authority/country/TCA",
+            "label": "Turks and Caicos Islands",
+            "extraData": null
+        },
+        {
+            "code": "TCD",
+            "url": "http://publications.europa.eu/resource/authority/country/TCD",
+            "label": "Chad",
+            "extraData": null
+        },
+        {
+            "code": "TGO",
+            "url": "http://publications.europa.eu/resource/authority/country/TGO",
+            "label": "Togo",
+            "extraData": null
+        },
+        {
+            "code": "THA",
+            "url": "http://publications.europa.eu/resource/authority/country/THA",
+            "label": "Thailand",
+            "extraData": null
+        },
+        {
+            "code": "TJK",
+            "url": "http://publications.europa.eu/resource/authority/country/TJK",
+            "label": "Tajikistan",
+            "extraData": null
+        },
+        {
+            "code": "TKL",
+            "url": "http://publications.europa.eu/resource/authority/country/TKL",
+            "label": "Tokelau",
+            "extraData": null
+        },
+        {
+            "code": "TKM",
+            "url": "http://publications.europa.eu/resource/authority/country/TKM",
+            "label": "Turkmenistan",
+            "extraData": null
+        },
+        {
+            "code": "TLS",
+            "url": "http://publications.europa.eu/resource/authority/country/TLS",
+            "label": "Timor-Leste",
+            "extraData": null
+        },
+        {
+            "code": "TMP",
+            "url": "http://publications.europa.eu/resource/authority/country/TMP",
+            "label": "East Timor",
+            "extraData": null
+        },
+        {
+            "code": "TON",
+            "url": "http://publications.europa.eu/resource/authority/country/TON",
+            "label": "Tonga",
+            "extraData": null
+        },
+        {
+            "code": "TTO",
+            "url": "http://publications.europa.eu/resource/authority/country/TTO",
+            "label": "Trinidad and Tobago",
+            "extraData": null
+        },
+        {
+            "code": "TUN",
+            "url": "http://publications.europa.eu/resource/authority/country/TUN",
+            "label": "Tunisia",
+            "extraData": null
+        },
+        {
+            "code": "TUR",
+            "url": "http://publications.europa.eu/resource/authority/country/TUR",
+            "label": "Turkey",
+            "extraData": null
+        },
+        {
+            "code": "TUV",
+            "url": "http://publications.europa.eu/resource/authority/country/TUV",
+            "label": "Tuvalu",
+            "extraData": null
+        },
+        {
+            "code": "TWN",
+            "url": "http://publications.europa.eu/resource/authority/country/TWN",
+            "label": "Taiwan",
+            "extraData": null
+        },
+        {
+            "code": "TZA",
+            "url": "http://publications.europa.eu/resource/authority/country/TZA",
+            "label": "Tanzania",
+            "extraData": null
+        },
+        {
+            "code": "UGA",
+            "url": "http://publications.europa.eu/resource/authority/country/UGA",
+            "label": "Uganda",
+            "extraData": null
+        },
+        {
+            "code": "UKR",
+            "url": "http://publications.europa.eu/resource/authority/country/UKR",
+            "label": "Ukraine",
+            "extraData": null
+        },
+        {
+            "code": "UMI",
+            "url": "http://publications.europa.eu/resource/authority/country/UMI",
+            "label": "United States Minor Outlying Islands",
+            "extraData": null
+        },
+        {
+            "code": "URY",
+            "url": "http://publications.europa.eu/resource/authority/country/URY",
+            "label": "Uruguay",
+            "extraData": null
+        },
+        {
+            "code": "USA",
+            "url": "http://publications.europa.eu/resource/authority/country/USA",
+            "label": "United States",
+            "extraData": null
+        },
+        {
+            "code": "UZB",
+            "url": "http://publications.europa.eu/resource/authority/country/UZB",
+            "label": "Uzbekistan",
+            "extraData": null
+        },
+        {
+            "code": "VAT",
+            "url": "http://publications.europa.eu/resource/authority/country/VAT",
+            "label": "Vatican City State",
+            "extraData": null
+        },
+        {
+            "code": "VCT",
+            "url": "http://publications.europa.eu/resource/authority/country/VCT",
+            "label": "Saint Vincent and the Grenadines",
+            "extraData": null
+        },
+        {
+            "code": "VDR",
+            "url": "http://publications.europa.eu/resource/authority/country/VDR",
+            "label": "Democratic Republic of Vietnam",
+            "extraData": null
+        },
+        {
+            "code": "VEN",
+            "url": "http://publications.europa.eu/resource/authority/country/VEN",
+            "label": "Venezuela",
+            "extraData": null
+        },
+        {
+            "code": "VGB",
+            "url": "http://publications.europa.eu/resource/authority/country/VGB",
+            "label": "British Virgin Islands",
+            "extraData": null
+        },
+        {
+            "code": "VIR",
+            "url": "http://publications.europa.eu/resource/authority/country/VIR",
+            "label": "US Virgin Islands",
+            "extraData": null
+        },
+        {
+            "code": "VNM",
+            "url": "http://publications.europa.eu/resource/authority/country/VNM",
+            "label": "Vietnam",
+            "extraData": null
+        },
+        {
+            "code": "VUT",
+            "url": "http://publications.europa.eu/resource/authority/country/VUT",
+            "label": "Vanuatu",
+            "extraData": null
+        },
+        {
+            "code": "WAK",
+            "url": "http://publications.europa.eu/resource/authority/country/WAK",
+            "label": "Wake Islands",
+            "extraData": null
+        },
+        {
+            "code": "WLF",
+            "url": "http://publications.europa.eu/resource/authority/country/WLF",
+            "label": "Wallis and Futuna",
+            "extraData": null
+        },
+        {
+            "code": "WSM",
+            "url": "http://publications.europa.eu/resource/authority/country/WSM",
+            "label": "Samoa",
+            "extraData": null
+        },
+        {
+            "code": "YEM",
+            "url": "http://publications.europa.eu/resource/authority/country/YEM",
+            "label": "Yemen",
+            "extraData": null
+        },
+        {
+            "code": "YMD",
+            "url": "http://publications.europa.eu/resource/authority/country/YMD",
+            "label": "North Yemen",
+            "extraData": null
+        },
+        {
+            "code": "YUG",
+            "url": "http://publications.europa.eu/resource/authority/country/YUG",
+            "label": "Yugoslavia",
+            "extraData": null
+        },
+        {
+            "code": "ZAF",
+            "url": "http://publications.europa.eu/resource/authority/country/ZAF",
+            "label": "South Africa",
+            "extraData": null
+        },
+        {
+            "code": "ZMB",
+            "url": "http://publications.europa.eu/resource/authority/country/ZMB",
+            "label": "Zambia",
+            "extraData": null
+        },
+        {
+            "code": "ZR0",
+            "url": "http://publications.europa.eu/resource/authority/country/ZR0",
+            "label": "Zaire",
+            "extraData": null
+        },
+        {
+            "code": "ZWE",
+            "url": "http://publications.europa.eu/resource/authority/country/ZWE",
+            "label": "Zimbabwe",
+            "extraData": null
+        }
+    ]
+}

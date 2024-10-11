@@ -1,0 +1,110 @@
+{
+    "name": "Dublin Core Frequency",
+    "description": "Dublin Core Frequency vocabulary",
+    "url": "https://www.dublincore.org/specifications/dublin-core/collection-description/frequency/",
+    "topic": "PERIODICITY",
+    "values": [
+        {
+            "code": "triennial",
+            "url": "http://purl.org/cld/freq/triennial",
+            "label": "Triennial",
+            "extraData": null
+        },
+        {
+            "code": "biennial",
+            "url": "http://purl.org/cld/freq/biennial",
+            "label": "Biennial",
+            "extraData": null
+        },
+        {
+            "code": "annual",
+            "url": "http://purl.org/cld/freq/annual",
+            "label": "Annual",
+            "extraData": null
+        },
+        {
+            "code": "semiannual",
+            "url": "http://purl.org/cld/freq/semiannual",
+            "label": "Semiannual",
+            "extraData": null
+        },
+        {
+            "code": "threeTimesAYear",
+            "url": "http://purl.org/cld/freq/threeTimesAYear",
+            "label": "Three times a year",
+            "extraData": null
+        },
+        {
+            "code": "quarterly",
+            "url": "http://purl.org/cld/freq/quarterly",
+            "label": "Quarterly",
+            "extraData": null
+        },
+        {
+            "code": "bimonthly",
+            "url": "http://purl.org/cld/freq/bimonthly",
+            "label": "Bimonthly",
+            "extraData": null
+        },
+        {
+            "code": "monthly",
+            "url": "http://purl.org/cld/freq/monthly",
+            "label": "Monthly",
+            "extraData": null
+        },
+        {
+            "code": "semimonthly",
+            "url": "http://purl.org/cld/freq/semimonthly",
+            "label": "Semimonthly",
+            "extraData": null
+        },
+        {
+            "code": "biweekly",
+            "url": "http://purl.org/cld/freq/biweekly",
+            "label": "Biweekly",
+            "extraData": null
+        },
+        {
+            "code": "threeTimesAMonth",
+            "url": "http://purl.org/cld/freq/threeTimesAMonth",
+            "label": "Three times a month",
+            "extraData": null
+        },
+        {
+            "code": "weekly",
+            "url": "http://purl.org/cld/freq/weekly",
+            "label": "Weekly",
+            "extraData": null
+        },
+        {
+            "code": "semiweekly",
+            "url": "http://purl.org/cld/freq/semiweekly",
+            "label": "Semiweekly",
+            "extraData": null
+        },
+        {
+            "code": "threeTimesAWeek",
+            "url": "http://purl.org/cld/freq/threeTimesAWeek",
+            "label": "Three times a week",
+            "extraData": null
+        },
+        {
+            "code": "daily",
+            "url": "http://purl.org/cld/freq/daily",
+            "label": "Daily",
+            "extraData": null
+        },
+        {
+            "code": "continuous",
+            "url": "http://purl.org/cld/freq/continuous",
+            "label": "Continuous",
+            "extraData": null
+        },
+        {
+            "code": "irregular",
+            "url": "http://purl.org/cld/freq/irregular",
+            "label": "Irregular",
+            "extraData": null
+        }
+    ]
+}

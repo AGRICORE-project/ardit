@@ -1,0 +1,22 @@
+.comment {
+    background-color: #f8f9fa;
+    border-left: 4px solid #677E67;
+}
+
+.comment .card {
+    background-color: #f8f9fa;
+    border: 0px solid rgba(0, 0, 0, .125) !important;
+}
+
+.green-link {
+    color: #46673A;
+    font-weight: bold;
+}
+
+.replies-level-1 {
+    margin: 0 0 0 2.5em;
+}
+
+.replies-level-2 {
+    margin: 0 0 0 5em;
+}

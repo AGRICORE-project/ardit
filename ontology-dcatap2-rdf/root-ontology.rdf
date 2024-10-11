@@ -1,0 +1,1580 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://agricore-project.eu/ontology/agricore-dcatap#"
+     xml:base="https://agricore-project.eu/ontology/agricore-dcatap"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://agricore-project.eu/ontology/agricore-dcatap">
+        <owl:versionIRI rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap/1.0.5"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dataOrigins -->
+
+    <rdfs:Datatype rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dataOrigins">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>FORECAST</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>MEASURED</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>OBSERVED</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#priceTypes -->
+
+    <rdfs:Datatype rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#priceTypes">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>INDEX</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>PURCHASE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>SELLING</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/conformsTo">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#aggregationDistance -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#aggregationDistance">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+        <skos:definition>A specific area size representation of aggregation level</skos:definition>
+        <skos:note>Contains a value with an associated unit of measure that represent a geographic area (eg: 1 square km)</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#aggregationGeoReference -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#aggregationGeoReference">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <skos:definition>A geographic representation of aggregation level</skos:definition>
+        <skos:note>Contains a reference to a vocabulary that represents different geographical boundaries like &apos;CONTINENT&apos;, &apos;COUNTRY&apos;, &apos;NUTS1&apos;, ...</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel">
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#currency -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#currency">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Currency"/>
+        <rdfs:comment xml:lang="en">Property used to represent the currency of a price</rdfs:comment>
+        <rdfs:label xml:lang="en">currency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dataFrequency -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dataFrequency">
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasAnalysisUnit -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasAnalysisUnit">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasAreaSize -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasAreaSize">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentAnalysisUnit"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatEnvironmentAnalysisUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+        <skos:definition>The minimum size (of an area) referenced to a unit of analysis of a geo referenced dataset</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasContinentalCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasContinentalCoverage">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment>vocabulary only for continents</rdfs:comment>
+        <rdfs:range>values from vocabulary http://publications.europa.eu/resource/authority/continent</rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasCountryCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasCountryCoverage">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment>vocabulary country</rdfs:comment>
+        <rdfs:range>values from vocabulary http://publications.europa.eu/resource/authority/country</rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasCreationDate -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasCreationDate"/>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasDataFrequencyElaboration -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasDataFrequencyElaboration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DataFrequencyElaboration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetType -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetType">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range>values from vocabulary http://publications.europa.eu/resource/authority/uxp/det</rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+        <rdfs:label xml:lang="en">dataset variables</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasContinentalCoverage"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasCountryCoverage"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeonameCoverage"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasRegionCoverage"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasGeonameCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasGeonameCoverage">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment>vocabulary geonames</rdfs:comment>
+        <rdfs:range>values from vocabulary https://www.geonames.org/</rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasLandCover -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasLandCover">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentVariable"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">landCover</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasMeasureUnit -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasMeasureUnit">
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit"/>
+        <rdfs:label xml:lang="en">measure unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasPrice">
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasPurpose -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasPurpose">
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetPurpose"/>
+        <rdfs:comment>purpose of the research
+TODO: domain and range</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasQuantity -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasQuantity"/>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasReferenceCatalog -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasReferenceCatalog"/>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasReferenceSystem -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasReferenceSystem"/>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasRegionCoverage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasRegionCoverage">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:comment>vocabulary for regions</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasSizeUnit -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasSizeUnit">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+        <skos:definition>The size unit referenced to a price</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#hasUnitReference -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasUnitReference">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnitReference"/>
+        <rdfs:comment>Is a reference to a vocabulary that define the covered unit of a dataset analysis</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#isUsedIn">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+        <rdfs:range rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#lineage -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#lineage">
+        <rdfs:comment xml:lang="en">his property can either point to an existing lineage document (human- or machine-readable) via its URI, or to a dct:ProvenanceStatement including such description (see § 13.1 Class: Lineage).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#measureReference -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#measureReference">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AmountMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcat:keyword -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcat:keyword">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:subject"/>
+        <rdfs:comment xml:lang="en">A keyword or tag describing a resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="en">keyword</rdfs:label>
+        <skos:definition xml:lang="en">A keyword or tag describing a resource.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcat:theme -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcat:theme">
+        <rdfs:subPropertyOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="en">theme</rdfs:label>
+        <skos:definition xml:lang="en">A main category of the resource. A resource can have multiple themes.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:hasFormat -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:hasFormat">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:hasVersion -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isFormatOf -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isFormatOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:label xml:lang="en-us">Is Part Of</rdfs:label>
+        <skos:definition xml:lang="en-us">A related resource in which the described resource is physically or logically included.</skos:definition>
+        <skos:note xml:lang="en-us">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReferencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReferencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:label xml:lang="en-us">Is Referenced By</rdfs:label>
+        <skos:definition xml:lang="en-us">A related resource that references, cites, or otherwise points to the described resource.</skos:definition>
+        <skos:note xml:lang="en-us">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReplacedBy -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReplacedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isRequiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isVersionOf -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isVersionOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:references -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:references">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:replaces -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:replaces">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:requires -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:requires">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:source -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:source">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:comment xml:lang="en-us">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</rdfs:comment>
+        <rdfs:label xml:lang="en-us">Source</rdfs:label>
+        <skos:definition xml:lang="en-us">A related resource from which the described resource is derived.</skos:definition>
+        <skos:note xml:lang="en-us">This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#dcterms:subject -->
+
+    <owl:ObjectProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:subject">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#aggregationScale -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#aggregationScale">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <skos:definition>A scale definition for aggregation level</skos:definition>
+        <skos:note>Contain a number to represent the scale (eg: 1000 is for 1:1000)</skos:note>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#amount -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#amount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#downscalingSuggestions -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#downscalingSuggestions">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#mathRepresentation -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#mathRepresentation">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>AVERAGE</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>INSTANT_VALUE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>MAX</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>MEDIAN</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>MIN</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>MODE</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>SUM</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#priceType -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#priceType">
+        <rdfs:domain rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>PURCHASE</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>SELLING</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#referenceValues -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#referenceValues">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#sampleSize -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#sampleSize">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#statisticalRepresentationOf -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#statisticalRepresentationOf">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#unitAnalysisNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#unitAnalysisNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Represent the &quot;sampled&quot; size of the unit of analysis (eg: interviewed people)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#variableDataOrigin -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#variableDataOrigin">
+        <rdfs:comment>the origin of the values represented by a dataset variable (measured or forecast)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#variableName -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#variableName">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#yearReference -->
+
+    <owl:DatatypeProperty rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#yearReference">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Catalog">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#catalog"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#record"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#service"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#CatalogRecord -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#CatalogRecord">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/conformsTo"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/dc/terms/Standard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/description"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/issued"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/modified"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/title"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#spatialResolutionInMeters"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#temporalResolution"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>The activity associated with generation of a dataset will typically be an initiative, project, mission, survey, on-going activity (&quot;business as usual&quot;) etc. Multiple prov:wasGeneratedBy properties can be used to indicate the dataset production context at various levels of granularity.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Resource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dcat:theme"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReferencedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationGeoReference"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationDistance"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationScale"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <skos:definition>Level of aggregation of the data represented by the dataset or variable</skos:definition>
+        <skos:note>Could be:
+- equivalent scale (eg: 1/1000 -&gt; 1000) integer
+- distance (eg: 1 km) class
+- georeference (eg: CONTINENTAL, COUNTRY, NUTS1, ..)</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#AmountMeasure -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AmountMeasure">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#measureReference"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#isUsedIn"/>
+                <owl:allValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/temporal"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasUnitReference"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnitReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#downscalingSuggestions"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#unitAnalysisNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The definition of the covered units by dataset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnitReference -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnitReference">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#Census -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Census">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Statistic"/>
+        <rdfs:comment>This class represent the totality of the data available for a scope (people, geographic areas, crops production, cattles)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#CensusAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#CensusAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Census"/>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#StatisticAnalysisUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#CensusDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#CensusDataset">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Census"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#StatisticDataset"/>
+        <rdfs:comment>Dataset that refers to census data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#Currency -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Currency">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AmountMeasure"/>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit"/>
+        <rdfs:comment xml:lang="en">The currency of an amount. It assumes a specific value as defined by the controlled vocabulary available at http://publications.europa.eu/resource/authority/currency</rdfs:comment>
+        <rdfs:label>Currency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#DataFrequencyElaboration -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DataFrequencyElaboration">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dataFrequency"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/dc/terms/Frequency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#mathRepresentation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#Dataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasAnalysisUnit"/>
+                <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetType"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/subject"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables"/>
+                <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasPurpose"/>
+                <owl:allValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetPurpose"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:title xml:lang="en">Agricore Dataset</dc:title>
+        <rdfs:comment xml:lang="en">The Agricore base dataset</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasGeoCoverage"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/dc/terms/Location"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>one entry of specific vocabulary with this order:
+- continental
+- country
+- region
+- geonames</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#DatasetPurpose -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DatasetPurpose">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:comment>Environmental policy, income and distributional policies, technical/economic efficiency levels/gains, trade</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasMeasureUnit"/>
+                <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dcterms:isReferencedBy"/>
+                <owl:allValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/temporal"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#aggregationLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AggregationLevel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDataFrequencyElaboration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DataFrequencyElaboration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#referenceValues"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#downscalingSuggestions"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#variableName"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#mathRepresentation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#variableDataOrigin"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#dataOrigins"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#CensusAnalysisUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasAreaSize"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicAnalysisUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentDataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#CensusDataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables"/>
+                        <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentVariable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicDataset"/>
+        <rdfs:comment xml:lang="en">Agricore geo referenced census dataset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentVariable -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentVariable">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AmountMeasure"/>
+        <rdfs:comment xml:lang="en">The measure unit of an amount. It assumes a specific value as defined by the controlled vocabulary available at http://publications.europa.eu/resource/authority/measurement-unit</rdfs:comment>
+        <rdfs:label xml:lang="en">MeasureUnit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#PriceObject -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#currency"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Currency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasSizeUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#priceType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#priceTypes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Used to represent information about a price variable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#PriceVariable -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#PriceVariable">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#PriceObject"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicVariable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasMeasureUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#MeasureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#amount"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represent a bounds ratio for values. It can represent a price unit, a scale, ...</rdfs:comment>
+        <rdfs:label xml:lang="en">Size unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#CensusAnalysisUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicDataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#CensusDataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables"/>
+                        <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicVariable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Agricore socio economical census dataset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicVariable -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicVariable">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#DatasetVariable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatEnvironmentAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatEnvironmentAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#StatisticAnalysisUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasAreaSize"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SizeUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#StatSocioEconomicAnalysisUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatEnvironmentDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatEnvironmentDataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatisticDataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables"/>
+                        <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#EnvironmentVariable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Agricore geo referenced statistical dataset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatSocioEconomicAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatSocioEconomicAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#StatisticAnalysisUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatSocioEconomicDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatSocioEconomicDataset">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatisticDataset"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#hasDatasetVariables"/>
+                        <owl:someValuesFrom rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#SocioEconomicVariable"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Agricore socio economical statistical dataset</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#Statistic -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#Statistic">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AgricoreDomain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#sampleSize"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#statisticalRepresentationOf"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This class represent a sample of the data available for a scope (people, geographic areas, crops production, cattles)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatisticAnalysisUnit -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatisticAnalysisUnit">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#AnalysisUnit"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Statistic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://agricore-project.eu/ontology/agricore-dcatap#StatisticDataset -->
+
+    <owl:Class rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#StatisticDataset">
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Dataset"/>
+        <rdfs:subClassOf rdf:resource="https://agricore-project.eu/ontology/agricore-dcatap#Statistic"/>
+        <rdfs:comment>Dataset that refers to sample data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasContinentalCoverage"/>
+            <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasCountryCoverage"/>
+            <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasGeonameCoverage"/>
+            <rdf:Description rdf:about="https://agricore-project.eu/ontology/agricore-dcatap#hasRegionCoverage"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

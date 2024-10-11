@@ -1,0 +1,9 @@
+<app-header *ngIf="userLoggedIn"></app-header>
+
+<alert></alert>
+
+<div class="container my-3 footer-wrap">
+    <router-outlet></router-outlet>
+</div>
+
+<app-footer *ngIf="userLoggedIn"></app-footer>

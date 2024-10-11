@@ -1,0 +1,69 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{title}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <form [formGroup]="vocabularyValueForm" (ngSubmit)="submitVocabularyValue()" novalidate>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Code *</label>
+                <ng-template #popValCode>
+                    <div>
+                        <span>A short identifier of the value. It can be a combination of numbers and letters of 3 or 4 characters. Such as "v01" or "vl31"</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popValCode" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="code">
+
+                <span class="text-danger" *ngIf="fieldInvalid(vocabularyValueForm, 'code')"><small>Code is required</small></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Label *</label>
+                <ng-template #popValLabel>
+                    <div>
+                        <span>The text to be displayed in the dropdown menus</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popValLabel" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="label">
+
+                <span class="text-danger" *ngIf="fieldInvalid(vocabularyValueForm, 'label')"><small>Label is required</small></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Link</label>
+                <ng-template #popValLink>
+                    <div>
+                        <span>A external link to the value. Leave it blank if it is an internal vocabulary</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popValLink" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="url">
+
+                <span class="text-danger" *ngIf="fieldInvalid(vocabularyValueForm, 'url')"><small>Link is required</small></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Extra data</label>
+                <ng-template #popValExtraData>
+                    <div>
+                        <span>Additional information that differentiates this value from the rest of the values in the vocabulary</span>
+                    </div>
+                </ng-template>
+                <i class="far fa-question-circle fa-xs ml-1" [ngbPopover]="popValExtraData" placement="bottom" container="body"></i>
+                <input type="text" class="form-control" formControlName="extraData">
+            </div>
+        </div>
+        <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+        <hr>
+
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="vocabularyValueForm.pristine || vocabularyValueForm.invalid" class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

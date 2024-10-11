@@ -1,0 +1,99 @@
+<div *ngIf="comments">
+    <h5>Comments</h5>
+
+    <app-new-comment-box *checkRoles="['ADMIN','MANTAINER','EDITOR','USER']" [datasetId]="datasetId" (newComment)="sendNewComment($event)"></app-new-comment-box>
+
+    <hr>
+
+    <div *ngIf="comments.length == 0">
+        <span><i>There are no comments yet.</i></span>
+    </div>
+
+    <div  *ngFor="let comment of comments; index as i">
+
+        <div class="comment">
+            <div class="card flex-md-row mt-3">
+                <div *ngIf="!comment.deleted; else commentDeleted">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block card-link-text"><i class="fas fa-comments"></i> {{comment.userId}}</strong>
+                        <div *ngIf="!comment.lastUpdate" class="mb-1 text-muted"><small>{{comment.createdAt | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                        <div *ngIf="comment.lastUpdate" class="mb-1 text-muted"><small>Last update: {{comment.lastUpdate | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                        <p class="card-text mb-auto">{{comment.content}}</p>
+
+                        <div class="d-flex flex-row">
+                            <a class="green-link" [routerLink]="" *ngIf="currentUser" (click)="createReply(i)"><small><i class="fas fa-reply"></i> Reply</small></a>
+                            <a *canUpdateComment="comment.userId" class="green-link ml-2" [routerLink]="" (click)="modalUpdate(i, null, null, 0)"><small><i class="fas fa-pencil-alt"></i> Update</small></a>
+                            <a *canDeleteComment="comment.userId" class="green-link ml-2" [routerLink]="" (click)="deleteComment(i,null,null,0)"><small><i class="fas fa-trash-alt"></i> Delete</small></a>
+                            <a *canPurgeComment='["ADMIN","MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,null,null,0)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                        </div>
+                    </div>
+                </div>
+                <ng-template #commentDeleted>
+                    <div>
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <span class="d-inline-block card-link-text font-italic"><i class="fas fa-comment-slash"></i> {{comment.userId}}</span>
+                            <p class="card-text mb-auto font-italic"><small>{{comment.content}}</small></p>
+                            <a *canPurgeComment='["ADMIN","MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,null,null,0)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                        </div>
+                    </div>
+                </ng-template>
+            </div>
+
+            <div *ngFor="let replyLevel1 of comment.replies; index as j">
+                <div class="card flex-md-row replies-level-1">
+                    <div *ngIf="!replyLevel1.deleted; else replyLevel1Deleted">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block card-link-text"><i class="fas fa-comments"></i> {{replyLevel1.userId}}</strong>
+                            <div *ngIf="!replyLevel1.lastUpdate" class="mb-1 text-muted"><small>{{replyLevel1.createdAt | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                            <div *ngIf="replyLevel1.lastUpdate" class="mb-1 text-muted"><small>Last update: {{replyLevel1.lastUpdate | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                            <p class="card-text mb-auto">{{replyLevel1.content}}</p>
+                            
+                            <div class="d-flex flex-row">
+                                <a class="green-link" [routerLink]="" *ngIf="currentUser" (click)="createReply(i,j)"><small><i class="fas fa-reply"></i> Reply</small></a>
+                                <a *canUpdateComment="replyLevel1.userId" class="green-link ml-2" [routerLink]="" (click)="modalUpdate(i,j,null,1)"><small><i class="fas fa-pencil-alt"></i> Update</small></a>
+                                <a *canDeleteComment="replyLevel1.userId" class="green-link ml-2" [routerLink]="" (click)="deleteComment(i,j,null,1)"><small><i class="fas fa-trash-alt"></i> Delete</small></a>
+                                <a *canPurgeComment='["ADMIN", "MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,j,null,1)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ng-template #replyLevel1Deleted>
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <span class="d-inline-block card-link-text font-italic"><i class="fas fa-comment-slash"></i> {{replyLevel1.userId}}</span>
+                            <p class="card-text mb-auto font-italic"><small>{{replyLevel1.content}}</small></p>
+                            <a *canPurgeComment='["ADMIN", "MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,j,null,1)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                        </div>
+                    </ng-template>
+                </div>
+
+                <div *ngFor="let replyLevel2 of replyLevel1.replies; index as k">
+                    <div class="card flex-md-row replies-level-2">
+                        <div *ngIf="!replyLevel2.deleted; else replyLevel2Deleted">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <strong class="d-inline-block card-link-text"><i class="fas fa-comments"></i> {{replyLevel2.userId}}</strong>
+                                <div *ngIf="!replyLevel2.lastUpdate" class="mb-1 text-muted"><small>{{replyLevel2.createdAt | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                                <div *ngIf="replyLevel2.lastUpdate" class="mb-1 text-muted"><small>Last update: {{replyLevel2.lastUpdate | date:'MMM d, y, H:mm:ss z'}}</small></div>
+                                <p class="card-text mb-auto">{{replyLevel2.content}}</p>
+                                
+                                <div class="d-flex flex-row">
+                                    <a *canUpdateComment="replyLevel2.userId" class="green-link ml-2" [routerLink]="" (click)="modalUpdate(i,j,k, 2)"><small><i class="fas fa-pencil-alt"></i> Update</small></a>
+                                    <a *canDeleteComment="replyLevel2.userId" class="green-link ml-2" [routerLink]="" (click)="deleteComment(i,j,k,2)"><small><i class="fas fa-trash-alt"></i> Delete</small></a>
+                                    <a *canPurgeComment='["ADMIN", "MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,j,k,2)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ng-template #replyLevel2Deleted>
+                            <div class="card-body d-flex flex-column align-items-start">
+                                <span class="d-inline-block card-link-text font-italic"><i class="fas fa-comment-slash"></i> {{replyLevel2.userId}}</span>
+                                <p class="card-text mb-auto font-italic"><small>{{replyLevel2.content}}</small></p>
+                                <a *canPurgeComment='["ADMIN", "MANTAINER"]' class="green-link ml-2" [routerLink]="" (click)="purgeComment(i,j,k,2)"><small><i class="fas fa-times-circle"></i> Permanent erase</small></a>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

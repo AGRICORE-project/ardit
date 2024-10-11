@@ -1,0 +1,29 @@
+<div class="container py-4 col-sm-6">
+
+    <div class="row">
+        <img class="mr-3" src="/assets/img/logo-alt.png" alt="Agricore logo" width="70px" height="70px">
+        <h1><strong>ARDIT</strong></h1>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body justify-content-center">
+
+            <div class="card-title text-center">
+                <h4><strong>Email verification</strong></h4>
+                <hr>
+            </div>
+
+            <div *ngIf="success" class="alert alert-success">
+                <span>{{success}}</span>
+            </div>
+
+            <div *ngIf="error" class="alert alert-danger">
+                <span>{{error}}</span>
+            </div>
+
+            <div class="text-center">
+                <a routerLink="{{loginRoute}}" [routerLinkActive]="['active']">Sign in</a>
+            </div>
+        </div>
+    </div>
+</div>

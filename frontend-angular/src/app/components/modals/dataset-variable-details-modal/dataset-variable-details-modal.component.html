@@ -1,0 +1,134 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{variableSelected.name}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <div class="row ml-1">
+        <div class="col-md-6">
+
+            <dt>Name</dt>
+            <dd>{{variableSelected.name}}</dd>
+
+            <dt>Type</dt>
+            <dd>{{variableSelected.variableType}}</dd>
+
+            <dt>Unit of measurement</dt>
+            <dd *ngIf="!variableSelected.measurementUnit; else variableMeasurementUnit" class="font-italic">Not available</dd>
+            <ng-template #variableMeasurementUnit>
+                <dd>{{variableSelected.measurementUnit}}</dd>
+            </ng-template>
+
+            <dt>Temporal extent</dt>
+            <dd *ngIf="!variableSelected.tmpExtentFrom && !variableSelected.tmpExtentTo; else variableTmpExtent" class="font-italic">Not available</dd>
+            <ng-template #variableTmpExtent>
+                <dd>{{variableSelected.tmpExtentFrom | date:'MMMM, yyyy'}} - {{variableSelected.tmpExtentTo | date:'MMMM, yyyy'}}</dd>
+            </ng-template>
+
+            <dt>Aggregation level</dt>
+            <dd *ngIf="!variableSelected.aggregationLevel && !variableSelected.aggregationUnit; else variableAggregationLevel" class="font-italic">Not available</dd>
+            <ng-template #variableAggregationLevel>
+                <dd>{{variableSelected.aggregationLevel}} {{variableSelected.aggregationUnit}}</dd>
+            </ng-template>
+
+            <dt>Aggregation scale</dt>
+            <dd *ngIf="!variableSelected.aggregationScale; else variableAggregationScale" class="font-italic">Not available</dd>
+            <ng-template #variableAggregationScale>
+                <dd>{{variableSelected.aggregationScale}}</dd>
+            </ng-template>
+        </div>
+
+        <div class="col-md-6">
+
+            <dt>Data frequency</dt>
+            <dd *ngIf="!variableSelected.frequency; else variableFrequency" class="font-italic">Not available</dd>
+            <ng-template #variableFrequency>
+                <dd>{{variableSelected.frequency}}</dd>
+            </ng-template>
+
+            <dt>Data frequency mathematical representation</dt>
+            <dd *ngIf="!variableSelected.frequencyMathRep else variableFrequencyMathRep" class="font-italic">Not available</dd>
+            <ng-template #variableFrequencyMathRep>
+                <dd>{{variableSelected.frequencyMathRep}}</dd>
+            </ng-template>
+
+            <dt>Mathematical representation</dt>
+            <dd *ngIf="!variableSelected.mathRepresentation else variableMathRep" class="font-italic">Not available</dd>
+            <ng-template #variableMathRep>
+                <dd>{{variableSelected.mathRepresentation}}</dd>
+            </ng-template>
+
+            <dt>Data origin</dt>
+            <dd *ngIf="!variableSelected.dataOrigin else variableDataOrigin" class="font-italic">Not available</dd>
+            <ng-template #variableDataOrigin>
+                <dd>{{variableSelected.dataOrigin}}</dd>
+            </ng-template>
+
+            <div *ngIf="variableSelected.variableType.includes('Price')">
+                <dt>Currency</dt>
+                <dd *ngIf="!variableSelected.currency else variableCurrency" class="font-italic">Not available</dd>
+                <ng-template #variableCurrency>
+                    <dd>{{variableSelected.currency}}</dd>
+                </ng-template>
+
+                <dt>Price type</dt>
+                <dd *ngIf="!variableSelected.priceType else variablePriceType" class="font-italic">Not available</dd>
+                <ng-template #variablePriceType>
+                    <dd>{{variableSelected.priceType}}</dd>
+                </ng-template>
+
+                <dt>Size unit</dt>
+                <dd *ngIf="!variableSelected.sizeUnit && !variableSelected.sizeUnitAmount else variableSizeUnit" class="font-italic">Not available</dd>
+                <ng-template #variableSizeUnit>
+                    <dd>{{variableSelected.sizeUnit}} {{variableSelected.sizeUnitAmount}}</dd>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-md-12">
+        <dt>Reference values</dt>
+        <dd *ngIf="variableSelected.referenceValues.length==0 else variableRefValues" class="font-italic">Not available</dd>
+        <ng-template #variableRefValues>
+            <dd>
+                <ul *ngFor="let value of variableSelected.referenceValues">
+                    <li>{{value}}</li>
+                </ul>
+            </dd>
+        </ng-template>
+    </div>
+
+    <div class="col-md-12">
+        <dt>Unit of analysis</dt>
+        <dd *ngIf="variableSelected.analysisUnits.length==0 else variableAnalysisUnits" class="font-italic">Not available</dd>
+        <ng-template #variableAnalysisUnits>
+            <dd>
+                <ul *ngFor="let unit of variableSelected.analysisUnits">
+                    <li>{{unit.unitReference}}</li>
+                </ul>
+            </dd>
+        </ng-template>
+    </div>
+
+    <hr>
+
+    <div class="col-md-12">
+        <dt>Statistical representativeness</dt>
+        <dd *ngIf="!variableSelected.statsRepresentativeness; else variableStatsRep" class="font-italic">Not available</dd>
+        <ng-template #variableStatsRep>
+            <dd>{{variableSelected.statsRepresentativeness}}</dd>
+        </ng-template>
+    </div>
+
+    <div class="col-md-12">
+        <dt>Suggested downscaling methodologies</dt>
+        <dd *ngIf="!variableSelected.downscalingMethodology; else variableDownscaling" class="font-italic">Not available</dd>
+        <ng-template #variableDownscaling>
+            <dd>{{variableSelected.downscalingMethodology}}</dd>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,151 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profile settings</li>
+        </ol>
+    </nav>
+
+    <div class="card bg-light">
+
+        <div *ngIf="!profileData" class="d-flex justify-content-center">
+            <div class="spinner-border spinner-color m-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div *ngIf="profileData" class="card-body main-panel">
+            <div class="card-title">
+                <h5>Profile settings</h5>
+                <hr>
+            </div>
+
+            <ul ngbNav #nav="ngbNav" [(activeId)]="navItemActive" class="nav-tabs">
+                <li [ngbNavItem]="1">
+                    <a class="nav-link" ngbNavLink><i class="fas fa-user"></i> Account</a>
+                    <ng-template ngbNavContent>
+                        <div class="card-title mt-3">
+                            <h5>Your account details</h5>
+                        </div>
+
+                        <form [formGroup]="profileForm" (ngSubmit)="updateAccount()" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" formControlName="username" [readonly]="true">
+
+                                    <span class="text-danger" *ngIf="fieldInvalid(profileForm, 'username')"><small>Username is required</small></span>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label>Email *</label>
+                                    <input type="email" class="form-control" formControlName="email">
+
+                                    <div *ngIf="fieldInvalid(profileForm, 'email')">
+                                        <span class="text-danger" *ngIf="profileForm.controls['email'].errors.required"><small>Email is required</small><br></span>
+                                        <span class="text-danger" *ngIf="profileForm.controls['email'].errors.email"><small>Email must be correctly formatted</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+                            <hr>
+                            <div class="form-group mt-2">
+                                <button type="submit" [disabled]="profileForm.pristine || profileForm.invalid" class="btn btn-success">Update account</button>
+                            </div>
+                        </form>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="2">
+                    <a class="nav-link" ngbNavLink><i class="fas fa-lock"></i> Password</a>
+                    <ng-template ngbNavContent>
+                        <div class="card-title mt-3">
+                            <h5>Change password</h5>
+                        </div>
+
+                        <form [formGroup]="passwordForm" (ngSubmit)="updatePassword()" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label>Current password *</label>
+                                    <input type="password" class="form-control" formControlName="currentPassword">
+
+                                    <div *ngIf="fieldInvalid(passwordForm, 'currentPassword')">
+                                        <span class="text-danger" *ngIf="passwordForm.controls['currentPassword'].errors.required"><small>Current password is required</small><br></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label>New password *</label>
+                                    <input type="password" class="form-control" formControlName="newPassword">
+
+                                    <div *ngIf="fieldInvalid(passwordForm, 'newPassword')">
+                                        <span class="text-danger" *ngIf="passwordForm.controls['newPassword'].errors.required"><small>New password is required</small><br></span>
+                                        <span class="text-danger" *ngIf="passwordForm.controls['newPassword'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                    <label>Confirm new password *</label>
+                                    <input type="password" class="form-control" formControlName="newPasswordConfirm">
+
+                                    <div *ngIf="fieldInvalid(passwordForm, 'newPasswordConfirm')">
+                                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.required"><small>New password confirmation is required</small><br></span>
+                                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.mustMatch"><small>Passwords must match</small><br></span>
+                                        <span class="text-danger" *ngIf="passwordForm.controls['newPasswordConfirm'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span><small><i>Fields marked with asterisk (*) are required</i></small></span>
+                            <hr>
+                            <div class="form-group mt-2">
+                                <button type="submit" [disabled]="passwordForm.pristine || passwordForm.invalid" class="btn btn-success">Update password</button>
+                            </div>
+                        </form>
+                    </ng-template>
+                </li>
+                <li [ngbNavItem]="3">
+                    <a class="nav-link" ngbNavLink><i class="fas fa-trash"></i> Delete account</a>
+                    <ng-template ngbNavContent>
+                        <div class="card-title mt-3">
+                            <h5>Delete account</h5>
+                        </div>
+
+                        <p>By deleting your account, all your data will be removed. This process cannot be undone.</p>
+                        
+                        <button class="btn btn-outline-danger me-2" (click)="openDeleteModal(deleteModal)">
+                            <div>Delete user</div>
+                        </button>
+                        
+                    </ng-template>
+                </li>
+            </ul>
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation delete modal-->
+<ng-template #deleteModal let-modal>
+    <div class="modal-header">
+        <h5 class="modal-title">Delete account</h5>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+             <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row">
+            <div class="form-group">
+                <p>Are you sure you want to delete your user?</p>
+                <span>This process cannot be undone. By deleting your account, all your data will be removed.</span>
+            </div>
+        </div>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="button" class="btn btn-secondary mr-2" (click)="modal.dismiss()">Cancel</button>
+            <button type="button" class="btn btn-danger" (click)="deleteAccount()">Delete</button>
+        </div>
+    </div>
+</ng-template>

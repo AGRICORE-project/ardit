@@ -1,0 +1,74 @@
+{
+    "name": "DCMI resource type vocabulary",
+    "description": "Vocabulary to describe the genre or nature of a resource",
+    "url": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#section-7",
+    "topic": "RESOURCE_TYPE",
+    "values": [
+        {
+            "code": "COL",
+            "url": "http://purl.org/dc/dcmitype/Collection",
+            "label": "Collection",
+            "extraData": null
+        },
+        {
+            "code": "DAT",
+            "url": "http://purl.org/dc/dcmitype/Dataset",
+            "label": "Dataset",
+            "extraData": null
+        },
+        {
+            "code": "EVE",
+            "url": "http://purl.org/dc/dcmitype/Event",
+            "label": "Event",
+            "extraData": null
+        },
+        {
+            "code": "IMG",
+            "url": "http://purl.org/dc/dcmitype/Image",
+            "label": "Image",
+            "extraData": null
+        },
+        {
+            "code": "INR",
+            "url": "http://purl.org/dc/dcmitype/InteractiveResource",
+            "label": "Interactive resource",
+            "extraData": null
+        },
+        {
+            "code": "MIM",
+            "url": "http://purl.org/dc/dcmitype/MovingImage",
+            "label": "Moving image",
+            "extraData": null
+        },
+        {
+            "code": "SRV",
+            "url": "http://purl.org/dc/dcmitype/Service",
+            "label": "Service",
+            "extraData": null
+        },
+        {
+            "code": "SOF",
+            "url": "http://purl.org/dc/dcmitype/Software",
+            "label": "Software",
+            "extraData": null
+        },
+        {
+            "code": "SOU",
+            "url": "http://purl.org/dc/dcmitype/Sound",
+            "label": "Sound",
+            "extraData": null
+        },
+        {
+            "code": "STI",
+            "url": "http://purl.org/dc/dcmitype/StillImage",
+            "label": "Still image",
+            "extraData": null
+        },
+        {
+            "code": "TEX",
+            "url": "http://purl.org/dc/dcmitype/Text",
+            "label": "Text",
+            "extraData": null
+        }
+    ]
+}

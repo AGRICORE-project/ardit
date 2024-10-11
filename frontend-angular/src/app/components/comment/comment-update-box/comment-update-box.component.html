@@ -1,0 +1,27 @@
+<div class="modal-header">
+    <h4 class="modal-title">Update comment</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <form [formGroup]="updateForm" (ngSubmit)="(submitUpdate())" novalidate>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <textarea class="form-control mt-3 mb-1" formControlName="content" rows="5" placeholder="Write a new reply"></textarea>
+                <span class="text-danger" *ngIf="fieldInvalid(updateForm, 'content')"><small>500 character limit exceeded</small></span>
+                <div class="d-flex">
+                    <span><small><i>Maximum 500 characters allowed</i></small></span>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button type="submit" [disabled]="updateForm.pristine || updateForm.invalid" class="btn btn-success"><i class="fas fa-pencil-alt"></i> Update</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="activeModal.dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

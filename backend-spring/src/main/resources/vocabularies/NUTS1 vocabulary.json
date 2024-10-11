@@ -1,0 +1,698 @@
+{
+    "name": "NUTS1 vocabulary",
+    "description": "NUTS1 values for dataset regional coverage",
+    "url": "http://nuts.geovocab.org/id/nuts1.html",
+    "topic": "NUTS1",
+    "values": [
+        {
+            "code": "IS0",
+            "url": "http://nuts.geovocab.org/id/IS0",
+            "label": "\u00cdSLAND",
+            "extraData": null
+        },
+        {
+            "code": "SE3",
+            "url": "http://nuts.geovocab.org/id/SE3",
+            "label": "Norra Sverige",
+            "extraData": null
+        },
+        {
+            "code": "FI2",
+            "url": "http://nuts.geovocab.org/id/FI2",
+            "label": "\u00c5LAND",
+            "extraData": null
+        },
+        {
+            "code": "FI1",
+            "url": "http://nuts.geovocab.org/id/FI1",
+            "label": "MANNER-SUOMI",
+            "extraData": null
+        },
+        {
+            "code": "NO0",
+            "url": "http://nuts.geovocab.org/id/NO0",
+            "label": "NORGE",
+            "extraData": null
+        },
+        {
+            "code": "SE1",
+            "url": "http://nuts.geovocab.org/id/SE1",
+            "label": "\u00d6stra Sverige",
+            "extraData": null
+        },
+        {
+            "code": "EE0",
+            "url": "http://nuts.geovocab.org/id/EE0",
+            "label": "EESTI",
+            "extraData": null
+        },
+        {
+            "code": "LV0",
+            "url": "http://nuts.geovocab.org/id/LV0",
+            "label": "LATVIJA",
+            "extraData": null
+        },
+        {
+            "code": "SE2",
+            "url": "http://nuts.geovocab.org/id/SE2",
+            "label": "S\u00f6dra Sverige",
+            "extraData": null
+        },
+        {
+            "code": "UKM",
+            "url": "http://nuts.geovocab.org/id/UKM",
+            "label": "SCOTLAND",
+            "extraData": null
+        },
+        {
+            "code": "DK0",
+            "url": "http://nuts.geovocab.org/id/DK0",
+            "label": "DANMARK",
+            "extraData": null
+        },
+        {
+            "code": "UKN",
+            "url": "http://nuts.geovocab.org/id/UKN",
+            "label": "NORTHERN IRELAND",
+            "extraData": null
+        },
+        {
+            "code": "UKC",
+            "url": "http://nuts.geovocab.org/id/UKC",
+            "label": "NORTH EAST (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "LT0",
+            "url": "http://nuts.geovocab.org/id/LT0",
+            "label": "LIETUVA",
+            "extraData": null
+        },
+        {
+            "code": "DEF",
+            "url": "http://nuts.geovocab.org/id/DEF",
+            "label": "SCHLESWIG-HOLSTEIN",
+            "extraData": null
+        },
+        {
+            "code": "DE6",
+            "url": "http://nuts.geovocab.org/id/DE6",
+            "label": "HAMBURG",
+            "extraData": null
+        },
+        {
+            "code": "DE8",
+            "url": "http://nuts.geovocab.org/id/DE8",
+            "label": "MECKLENBURG-VORPOMMERN",
+            "extraData": null
+        },
+        {
+            "code": "UKE",
+            "url": "http://nuts.geovocab.org/id/UKE",
+            "label": "YORKSHIRE AND THE HUMBER",
+            "extraData": null
+        },
+        {
+            "code": "UKD",
+            "url": "http://nuts.geovocab.org/id/UKD",
+            "label": "NORTH WEST (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "PL6",
+            "url": "http://nuts.geovocab.org/id/PL6",
+            "label": "REGION P\u00d3\u0141NOCNY",
+            "extraData": null
+        },
+        {
+            "code": "DE5",
+            "url": "http://nuts.geovocab.org/id/DE5",
+            "label": "BREMEN",
+            "extraData": null
+        },
+        {
+            "code": "NL1",
+            "url": "http://nuts.geovocab.org/id/NL1",
+            "label": "NOORD-NEDERLAND",
+            "extraData": null
+        },
+        {
+            "code": "DE3",
+            "url": "http://nuts.geovocab.org/id/DE3",
+            "label": "BERLIN",
+            "extraData": null
+        },
+        {
+            "code": "UKF",
+            "url": "http://nuts.geovocab.org/id/UKF",
+            "label": "EAST MIDLANDS (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "IE0",
+            "url": "http://nuts.geovocab.org/id/IE0",
+            "label": "IRELAND",
+            "extraData": null
+        },
+        {
+            "code": "UKG",
+            "url": "http://nuts.geovocab.org/id/UKG",
+            "label": "WEST MIDLANDS (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "UKL",
+            "url": "http://nuts.geovocab.org/id/UKL",
+            "label": "WALES",
+            "extraData": null
+        },
+        {
+            "code": "UKI",
+            "url": "http://nuts.geovocab.org/id/UKI",
+            "label": "LONDON",
+            "extraData": null
+        },
+        {
+            "code": "NL3",
+            "url": "http://nuts.geovocab.org/id/NL3",
+            "label": "WEST-NEDERLAND",
+            "extraData": null
+        },
+        {
+            "code": "DEE",
+            "url": "http://nuts.geovocab.org/id/DEE",
+            "label": "SACHSEN-ANHALT",
+            "extraData": null
+        },
+        {
+            "code": "NL4",
+            "url": "http://nuts.geovocab.org/id/NL4",
+            "label": "ZUID-NEDERLAND",
+            "extraData": null
+        },
+        {
+            "code": "PL5",
+            "url": "http://nuts.geovocab.org/id/PL5",
+            "label": "REGION PO\u0141UDNIOWO-ZACHODNI",
+            "extraData": null
+        },
+        {
+            "code": "FR3",
+            "url": "http://nuts.geovocab.org/id/FR3",
+            "label": "NORD",
+            "extraData": null
+        },
+        {
+            "code": "BE1",
+            "url": "http://nuts.geovocab.org/id/BE1",
+            "label": "R\u00c9GION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST",
+            "extraData": null
+        },
+        {
+            "code": "BE2",
+            "url": "http://nuts.geovocab.org/id/BE2",
+            "label": "VLAAMS GEWEST",
+            "extraData": null
+        },
+        {
+            "code": "PL4",
+            "url": "http://nuts.geovocab.org/id/PL4",
+            "label": "REGION P\u00d3\u0141NOCNO-ZACHODNI",
+            "extraData": null
+        },
+        {
+            "code": "NL2",
+            "url": "http://nuts.geovocab.org/id/NL2",
+            "label": "OOST-NEDERLAND",
+            "extraData": null
+        },
+        {
+            "code": "DE4",
+            "url": "http://nuts.geovocab.org/id/DE4",
+            "label": "BRANDENBURG",
+            "extraData": null
+        },
+        {
+            "code": "PL1",
+            "url": "http://nuts.geovocab.org/id/PL1",
+            "label": "REGION CENTRALNY",
+            "extraData": null
+        },
+        {
+            "code": "DE9",
+            "url": "http://nuts.geovocab.org/id/DE9",
+            "label": "NIEDERSACHSEN",
+            "extraData": null
+        },
+        {
+            "code": "UKH",
+            "url": "http://nuts.geovocab.org/id/UKH",
+            "label": "EAST OF ENGLAND",
+            "extraData": null
+        },
+        {
+            "code": "ITE",
+            "url": "http://nuts.geovocab.org/id/ITE",
+            "label": "CENTRO (I)",
+            "extraData": null
+        },
+        {
+            "code": "MK0",
+            "url": "http://nuts.geovocab.org/id/MK0",
+            "label": "\u041f\u041e\u0420\u0410\u041d\u0415\u0428\u041d\u0410 \u0408\u0423\u0413\u041e\u0421\u041b\u041e\u0412\u0415\u041d\u0421\u041a\u0410 \u0420\u0415\u041f\u0423\u0411\u041b\u0418\u041a\u0410 \u041c\u0410\u041a\u0415\u0414\u041e\u041d\u0418\u0408\u0410 / PORANE\u0160NA JUGOSLOVENSKA REPUBLIKA MAKEDONIJA",
+            "extraData": null
+        },
+        {
+            "code": "ES2",
+            "url": "http://nuts.geovocab.org/id/ES2",
+            "label": "NORESTE",
+            "extraData": null
+        },
+        {
+            "code": "TR1",
+            "url": "http://nuts.geovocab.org/id/TR1",
+            "label": "\u0130STANBUL",
+            "extraData": null
+        },
+        {
+            "code": "ES3",
+            "url": "http://nuts.geovocab.org/id/ES3",
+            "label": "COMUNIDAD DE MADRID",
+            "extraData": null
+        },
+        {
+            "code": "TR8",
+            "url": "http://nuts.geovocab.org/id/TR8",
+            "label": "BATI KARADENIZ",
+            "extraData": null
+        },
+        {
+            "code": "TR9",
+            "url": "http://nuts.geovocab.org/id/TR9",
+            "label": "DO\u011eU KARADENIZ",
+            "extraData": null
+        },
+        {
+            "code": "TR2",
+            "url": "http://nuts.geovocab.org/id/TR2",
+            "label": "BATI MARMARA",
+            "extraData": null
+        },
+        {
+            "code": "TR4",
+            "url": "http://nuts.geovocab.org/id/TR4",
+            "label": "DO\u011eU MARMARA",
+            "extraData": null
+        },
+        {
+            "code": "DEA",
+            "url": "http://nuts.geovocab.org/id/DEA",
+            "label": "NORDRHEIN-WESTFALEN",
+            "extraData": null
+        },
+        {
+            "code": "UKJ",
+            "url": "http://nuts.geovocab.org/id/UKJ",
+            "label": "SOUTH EAST (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "DED",
+            "url": "http://nuts.geovocab.org/id/DED",
+            "label": "SACHSEN",
+            "extraData": null
+        },
+        {
+            "code": "DEG",
+            "url": "http://nuts.geovocab.org/id/DEG",
+            "label": "TH\u00dcRINGEN",
+            "extraData": null
+        },
+        {
+            "code": "UKK",
+            "url": "http://nuts.geovocab.org/id/UKK",
+            "label": "SOUTH WEST (ENGLAND)",
+            "extraData": null
+        },
+        {
+            "code": "LU0",
+            "url": "http://nuts.geovocab.org/id/LU0",
+            "label": "LUXEMBOURG (GRAND-DUCH\u00c9)",
+            "extraData": null
+        },
+        {
+            "code": "PL3",
+            "url": "http://nuts.geovocab.org/id/PL3",
+            "label": "REGION WSCHODNI",
+            "extraData": null
+        },
+        {
+            "code": "PL2",
+            "url": "http://nuts.geovocab.org/id/PL2",
+            "label": "REGION PO\u0141UDNIOWY",
+            "extraData": null
+        },
+        {
+            "code": "BE3",
+            "url": "http://nuts.geovocab.org/id/BE3",
+            "label": "R\u00c9GION WALLONNE",
+            "extraData": null
+        },
+        {
+            "code": "DE7",
+            "url": "http://nuts.geovocab.org/id/DE7",
+            "label": "HESSEN",
+            "extraData": null
+        },
+        {
+            "code": "CZ0",
+            "url": "http://nuts.geovocab.org/id/CZ0",
+            "label": "\u010cESK\u00c1 REPUBLIKA",
+            "extraData": null
+        },
+        {
+            "code": "DEC",
+            "url": "http://nuts.geovocab.org/id/DEC",
+            "label": "SAARLAND",
+            "extraData": null
+        },
+        {
+            "code": "DEB",
+            "url": "http://nuts.geovocab.org/id/DEB",
+            "label": "RHEINLAND-PFALZ",
+            "extraData": null
+        },
+        {
+            "code": "FR1",
+            "url": "http://nuts.geovocab.org/id/FR1",
+            "label": "\u00ceLE DE FRANCE",
+            "extraData": null
+        },
+        {
+            "code": "SK0",
+            "url": "http://nuts.geovocab.org/id/SK0",
+            "label": "SLOVENSK\u00c1 REPUBLIKA",
+            "extraData": null
+        },
+        {
+            "code": "DE1",
+            "url": "http://nuts.geovocab.org/id/DE1",
+            "label": "BADEN-W\u00dcRTTEMBERG",
+            "extraData": null
+        },
+        {
+            "code": "DE2",
+            "url": "http://nuts.geovocab.org/id/DE2",
+            "label": "BAYERN",
+            "extraData": null
+        },
+        {
+            "code": "HU1",
+            "url": "http://nuts.geovocab.org/id/HU1",
+            "label": "K\u00d6Z\u00c9P-MAGYARORSZ\u00c1G",
+            "extraData": null
+        },
+        {
+            "code": "AT1",
+            "url": "http://nuts.geovocab.org/id/AT1",
+            "label": "OST\u00d6STERREICH",
+            "extraData": null
+        },
+        {
+            "code": "FR4",
+            "url": "http://nuts.geovocab.org/id/FR4",
+            "label": "EST",
+            "extraData": null
+        },
+        {
+            "code": "LI0",
+            "url": "http://nuts.geovocab.org/id/LI0",
+            "label": "LIECHTENSTEIN",
+            "extraData": null
+        },
+        {
+            "code": "FR2",
+            "url": "http://nuts.geovocab.org/id/FR2",
+            "label": "BASSIN PARISIEN",
+            "extraData": null
+        },
+        {
+            "code": "AT3",
+            "url": "http://nuts.geovocab.org/id/AT3",
+            "label": "WEST\u00d6STERREICH",
+            "extraData": null
+        },
+        {
+            "code": "HU3",
+            "url": "http://nuts.geovocab.org/id/HU3",
+            "label": "ALF\u00d6LD \u00c9S \u00c9SZAK",
+            "extraData": null
+        },
+        {
+            "code": "AT2",
+            "url": "http://nuts.geovocab.org/id/AT2",
+            "label": "S\u00dcD\u00d6STERREICH",
+            "extraData": null
+        },
+        {
+            "code": "HU2",
+            "url": "http://nuts.geovocab.org/id/HU2",
+            "label": "DUN\u00c1NT\u00daL",
+            "extraData": null
+        },
+        {
+            "code": "CH0",
+            "url": "http://nuts.geovocab.org/id/CH0",
+            "label": "SCHWEIZ/SUISSE/SVIZZERA",
+            "extraData": null
+        },
+        {
+            "code": "RO1",
+            "url": "http://nuts.geovocab.org/id/RO1",
+            "label": "Macroregiunea unu",
+            "extraData": null
+        },
+        {
+            "code": "FR5",
+            "url": "http://nuts.geovocab.org/id/FR5",
+            "label": "OUEST",
+            "extraData": null
+        },
+        {
+            "code": "SI0",
+            "url": "http://nuts.geovocab.org/id/SI0",
+            "label": "SLOVENIJA",
+            "extraData": null
+        },
+        {
+            "code": "FR7",
+            "url": "http://nuts.geovocab.org/id/FR7",
+            "label": "CENTRE-EST",
+            "extraData": null
+        },
+        {
+            "code": "RO2",
+            "url": "http://nuts.geovocab.org/id/RO2",
+            "label": "Macroregiunea doi",
+            "extraData": null
+        },
+        {
+            "code": "RO4",
+            "url": "http://nuts.geovocab.org/id/RO4",
+            "label": "Macroregiunea patru",
+            "extraData": null
+        },
+        {
+            "code": "RO3",
+            "url": "http://nuts.geovocab.org/id/RO3",
+            "label": "Macroregiunea trei",
+            "extraData": null
+        },
+        {
+            "code": "ITD",
+            "url": "http://nuts.geovocab.org/id/ITD",
+            "label": "NORD-EST",
+            "extraData": null
+        },
+        {
+            "code": "ITC",
+            "url": "http://nuts.geovocab.org/id/ITC",
+            "label": "NORD-OVEST",
+            "extraData": null
+        },
+        {
+            "code": "FR6",
+            "url": "http://nuts.geovocab.org/id/FR6",
+            "label": "SUD-OUEST",
+            "extraData": null
+        },
+        {
+            "code": "HR0",
+            "url": "http://nuts.geovocab.org/id/HR0",
+            "label": "HRVATSKA",
+            "extraData": null
+        },
+        {
+            "code": "BG3",
+            "url": "http://nuts.geovocab.org/id/BG3",
+            "label": "\u0421\u0415\u0412\u0415\u0420\u041d\u0410 \u0418 \u042e\u0413\u041e\u0418\u0417\u0422\u041e\u0427\u041d\u0410 \u0411\u042a\u041b\u0413\u0410\u0420\u0418\u042f / SEVERNA I IZTOCHNA BULGARIA",
+            "extraData": null
+        },
+        {
+            "code": "ES1",
+            "url": "http://nuts.geovocab.org/id/ES1",
+            "label": "NOROESTE",
+            "extraData": null
+        },
+        {
+            "code": "FR8",
+            "url": "http://nuts.geovocab.org/id/FR8",
+            "label": "M\u00c9DITERRAN\u00c9E",
+            "extraData": null
+        },
+        {
+            "code": "BG4",
+            "url": "http://nuts.geovocab.org/id/BG4",
+            "label": "\u042e\u0413\u041e\u0417\u0410\u041f\u0410\u0414\u041d\u0410 \u0418 \u042e\u0416\u041d\u0410 \u0426\u0415\u041d\u0422\u0420\u0410\u041b\u041d\u0410 \u0411\u042a\u041b\u0413\u0410\u0420\u0418\u042f / YUGOZAPADNA I YUZHNA TSENTRALNA BULGARIA",
+            "extraData": null
+        },
+        {
+            "code": "PT1",
+            "url": "http://nuts.geovocab.org/id/PT1",
+            "label": "CONTINENTE",
+            "extraData": null
+        },
+        {
+            "code": "GR2",
+            "url": "http://nuts.geovocab.org/id/GR2",
+            "label": "\u039a\u0395\u039d\u03a4\u03a1\u0399\u039a\u0397 \u0395\u039b\u039b\u0391\u0394\u0391 / KENTRIKI ELLADA",
+            "extraData": null
+        },
+        {
+            "code": "ITG",
+            "url": "http://nuts.geovocab.org/id/ITG",
+            "label": "ISOLE",
+            "extraData": null
+        },
+        {
+            "code": "TRC",
+            "url": "http://nuts.geovocab.org/id/TRC",
+            "label": "G\u00dcNEYDO\u011eU ANADOLU",
+            "extraData": null
+        },
+        {
+            "code": "TR6",
+            "url": "http://nuts.geovocab.org/id/TR6",
+            "label": "AKDENIZ",
+            "extraData": null
+        },
+        {
+            "code": "GR3",
+            "url": "http://nuts.geovocab.org/id/GR3",
+            "label": "ATTIK\u0397 / ATTIKI",
+            "extraData": null
+        },
+        {
+            "code": "MT0",
+            "url": "http://nuts.geovocab.org/id/MT0",
+            "label": "MALTA",
+            "extraData": null
+        },
+        {
+            "code": "CY0",
+            "url": "http://nuts.geovocab.org/id/CY0",
+            "label": "\u039a\u03a5\u03a0\u03a1\u039f\u03a3 / KIBRIS",
+            "extraData": null
+        },
+        {
+            "code": "GR4",
+            "url": "http://nuts.geovocab.org/id/GR4",
+            "label": "N\u0397\u03a3\u0399\u0391 \u0391\u0399\u0393\u0391\u0399\u039f\u03a5, K\u03a1\u0397\u03a4\u0397 / NISIA AIGAIOU, KRITI",
+            "extraData": null
+        },
+        {
+            "code": "ES6",
+            "url": "http://nuts.geovocab.org/id/ES6",
+            "label": "SUR",
+            "extraData": null
+        },
+        {
+            "code": "PT3",
+            "url": "http://nuts.geovocab.org/id/PT3",
+            "label": "Regi\u00e3o Aut\u00f3noma da MADEIRA",
+            "extraData": null
+        },
+        {
+            "code": "ES7",
+            "url": "http://nuts.geovocab.org/id/ES7",
+            "label": "CANARIAS",
+            "extraData": null
+        },
+        {
+            "code": "FR9",
+            "url": "http://nuts.geovocab.org/id/FR9",
+            "label": "D\u00c9PARTEMENTS D'OUTRE-MER",
+            "extraData": null
+        },
+        {
+            "code": "TRA",
+            "url": "http://nuts.geovocab.org/id/TRA",
+            "label": "KUZEYDO\u011eU ANADOLU",
+            "extraData": null
+        },
+        {
+            "code": "GR1",
+            "url": "http://nuts.geovocab.org/id/GR1",
+            "label": "\u0392\u039f\u03a1\u0395\u0399\u0391 \u0395\u039b\u039b\u0391\u0394\u0391 / VOREIA ELLADA",
+            "extraData": null
+        },
+        {
+            "code": "ES4",
+            "url": "http://nuts.geovocab.org/id/ES4",
+            "label": "CENTRO (E)",
+            "extraData": null
+        },
+        {
+            "code": "ES5",
+            "url": "http://nuts.geovocab.org/id/ES5",
+            "label": "ESTE",
+            "extraData": null
+        },
+        {
+            "code": "ITF",
+            "url": "http://nuts.geovocab.org/id/ITF",
+            "label": "SUD",
+            "extraData": null
+        },
+        {
+            "code": "TR7",
+            "url": "http://nuts.geovocab.org/id/TR7",
+            "label": "ORTA ANADOLU",
+            "extraData": null
+        },
+        {
+            "code": "PT2",
+            "url": "http://nuts.geovocab.org/id/PT2",
+            "label": "Regi\u00e3o Aut\u00f3noma dos A\u00c7ORES",
+            "extraData": null
+        },
+        {
+            "code": "TRB",
+            "url": "http://nuts.geovocab.org/id/TRB",
+            "label": "ORTADO\u011eU ANADOLU",
+            "extraData": null
+        },
+        {
+            "code": "TR5",
+            "url": "http://nuts.geovocab.org/id/TR5",
+            "label": "BATI ANADOLU",
+            "extraData": null
+        },
+        {
+            "code": "TR3",
+            "url": "http://nuts.geovocab.org/id/TR3",
+            "label": "EGE",
+            "extraData": null
+        }
+    ]
+}

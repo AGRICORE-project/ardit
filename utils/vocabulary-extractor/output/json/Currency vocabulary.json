@@ -1,0 +1,1646 @@
+{
+    "name": "Currency vocabulary",
+    "description": "Currency values for socio-economic datasets",
+    "url": "http://publications.europa.eu/resource/authority/currency",
+    "topic": "CURRENCY",
+    "values": [
+        {
+            "code": "ADP",
+            "url": "http://publications.europa.eu/resource/authority/currency/ADP",
+            "label": "Andorran peseta(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "AED",
+            "url": "http://publications.europa.eu/resource/authority/currency/AED",
+            "label": "UAE dirham",
+            "extraData": null
+        },
+        {
+            "code": "AFA",
+            "url": "http://publications.europa.eu/resource/authority/currency/AFA",
+            "label": "Afghani(until 2002)",
+            "extraData": null
+        },
+        {
+            "code": "AFN",
+            "url": "http://publications.europa.eu/resource/authority/currency/AFN",
+            "label": "Afghani",
+            "extraData": null
+        },
+        {
+            "code": "ALK",
+            "url": "http://publications.europa.eu/resource/authority/currency/ALK",
+            "label": "Lek(until 1992)",
+            "extraData": null
+        },
+        {
+            "code": "ALL",
+            "url": "http://publications.europa.eu/resource/authority/currency/ALL",
+            "label": "Lek",
+            "extraData": null
+        },
+        {
+            "code": "AMD",
+            "url": "http://publications.europa.eu/resource/authority/currency/AMD",
+            "label": "Dram",
+            "extraData": null
+        },
+        {
+            "code": "ANG",
+            "url": "http://publications.europa.eu/resource/authority/currency/ANG",
+            "label": "Netherlands Antillean guilder",
+            "extraData": null
+        },
+        {
+            "code": "AOA",
+            "url": "http://publications.europa.eu/resource/authority/currency/AOA",
+            "label": "Kwanza",
+            "extraData": null
+        },
+        {
+            "code": "AON",
+            "url": "http://publications.europa.eu/resource/authority/currency/AON",
+            "label": "New Angolan kwanza(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "AOR",
+            "url": "http://publications.europa.eu/resource/authority/currency/AOR",
+            "label": "Angolan kwanza readjustado(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "ARA",
+            "url": "http://publications.europa.eu/resource/authority/currency/ARA",
+            "label": "Argentine austral(until 1991)",
+            "extraData": null
+        },
+        {
+            "code": "ARM",
+            "url": "http://publications.europa.eu/resource/authority/currency/ARM",
+            "label": "Argentine peso moneda nacional(until 1969)",
+            "extraData": null
+        },
+        {
+            "code": "ARP",
+            "url": "http://publications.europa.eu/resource/authority/currency/ARP",
+            "label": "Argentine peso argentino(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "ARS",
+            "url": "http://publications.europa.eu/resource/authority/currency/ARS",
+            "label": "Argentine peso",
+            "extraData": null
+        },
+        {
+            "code": "ATS",
+            "url": "http://publications.europa.eu/resource/authority/currency/ATS",
+            "label": "Austrian schilling(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "AUD",
+            "url": "http://publications.europa.eu/resource/authority/currency/AUD",
+            "label": "Australian dollar",
+            "extraData": null
+        },
+        {
+            "code": "AWG",
+            "url": "http://publications.europa.eu/resource/authority/currency/AWG",
+            "label": "Aruban guilder",
+            "extraData": null
+        },
+        {
+            "code": "AZM",
+            "url": "http://publications.europa.eu/resource/authority/currency/AZM",
+            "label": "Azerbaijani manat(until 2005)",
+            "extraData": null
+        },
+        {
+            "code": "AZN",
+            "url": "http://publications.europa.eu/resource/authority/currency/AZN",
+            "label": "Azerbaijan manat",
+            "extraData": null
+        },
+        {
+            "code": "BAM",
+            "url": "http://publications.europa.eu/resource/authority/currency/BAM",
+            "label": "Convertible mark",
+            "extraData": null
+        },
+        {
+            "code": "BBD",
+            "url": "http://publications.europa.eu/resource/authority/currency/BBD",
+            "label": "Barbados dollar",
+            "extraData": null
+        },
+        {
+            "code": "BDT",
+            "url": "http://publications.europa.eu/resource/authority/currency/BDT",
+            "label": "Taka",
+            "extraData": null
+        },
+        {
+            "code": "BEF",
+            "url": "http://publications.europa.eu/resource/authority/currency/BEF",
+            "label": "Belgian franc(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "BGJ",
+            "url": "http://publications.europa.eu/resource/authority/currency/BGJ",
+            "label": "Lev A/52(until 1951)",
+            "extraData": null
+        },
+        {
+            "code": "BGK",
+            "url": "http://publications.europa.eu/resource/authority/currency/BGK",
+            "label": "Lev A/62(until 1961)",
+            "extraData": null
+        },
+        {
+            "code": "BGL",
+            "url": "http://publications.europa.eu/resource/authority/currency/BGL",
+            "label": "Lev A/99(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "BGN",
+            "url": "http://publications.europa.eu/resource/authority/currency/BGN",
+            "label": "Lev",
+            "extraData": null
+        },
+        {
+            "code": "BHD",
+            "url": "http://publications.europa.eu/resource/authority/currency/BHD",
+            "label": "Bahraini dinar",
+            "extraData": null
+        },
+        {
+            "code": "BIF",
+            "url": "http://publications.europa.eu/resource/authority/currency/BIF",
+            "label": "Burundi franc",
+            "extraData": null
+        },
+        {
+            "code": "BMD",
+            "url": "http://publications.europa.eu/resource/authority/currency/BMD",
+            "label": "Bermuda dollar",
+            "extraData": null
+        },
+        {
+            "code": "BND",
+            "url": "http://publications.europa.eu/resource/authority/currency/BND",
+            "label": "Brunei dollar",
+            "extraData": null
+        },
+        {
+            "code": "BOB",
+            "url": "http://publications.europa.eu/resource/authority/currency/BOB",
+            "label": "Boliviano",
+            "extraData": null
+        },
+        {
+            "code": "BOP",
+            "url": "http://publications.europa.eu/resource/authority/currency/BOP",
+            "label": "Bolivian peso(until 1986)",
+            "extraData": null
+        },
+        {
+            "code": "BOV",
+            "url": "http://publications.europa.eu/resource/authority/currency/BOV",
+            "label": "Mvdol",
+            "extraData": null
+        },
+        {
+            "code": "BRB",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRB",
+            "label": "Cruzeiro novo(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "BRC",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRC",
+            "label": "Cruzado(until 1989)",
+            "extraData": null
+        },
+        {
+            "code": "BRE",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRE",
+            "label": "Cruziero(until 1993)",
+            "extraData": null
+        },
+        {
+            "code": "BRL",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRL",
+            "label": "Real",
+            "extraData": null
+        },
+        {
+            "code": "BRN",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRN",
+            "label": "Cruzado novo(until 1990)",
+            "extraData": null
+        },
+        {
+            "code": "BRR",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRR",
+            "label": "Cruziero real(until 1993)",
+            "extraData": null
+        },
+        {
+            "code": "BRZ",
+            "url": "http://publications.europa.eu/resource/authority/currency/BRZ",
+            "label": "Cruziero(until 1967)",
+            "extraData": null
+        },
+        {
+            "code": "BSD",
+            "url": "http://publications.europa.eu/resource/authority/currency/BSD",
+            "label": "Bahamian dollar",
+            "extraData": null
+        },
+        {
+            "code": "BTN",
+            "url": "http://publications.europa.eu/resource/authority/currency/BTN",
+            "label": "Ngultrum",
+            "extraData": null
+        },
+        {
+            "code": "BWP",
+            "url": "http://publications.europa.eu/resource/authority/currency/BWP",
+            "label": "Pula",
+            "extraData": null
+        },
+        {
+            "code": "BYN",
+            "url": "http://publications.europa.eu/resource/authority/currency/BYN",
+            "label": "Belarusian rouble",
+            "extraData": null
+        },
+        {
+            "code": "BYR",
+            "url": "http://publications.europa.eu/resource/authority/currency/BYR",
+            "label": "Belarusian rouble(until 2016)",
+            "extraData": null
+        },
+        {
+            "code": "BZD",
+            "url": "http://publications.europa.eu/resource/authority/currency/BZD",
+            "label": "Belize dollar",
+            "extraData": null
+        },
+        {
+            "code": "CAD",
+            "url": "http://publications.europa.eu/resource/authority/currency/CAD",
+            "label": "Canadian dollar",
+            "extraData": null
+        },
+        {
+            "code": "CDF",
+            "url": "http://publications.europa.eu/resource/authority/currency/CDF",
+            "label": "Congolese franc",
+            "extraData": null
+        },
+        {
+            "code": "CHE",
+            "url": "http://publications.europa.eu/resource/authority/currency/CHE",
+            "label": "WIR Euro",
+            "extraData": null
+        },
+        {
+            "code": "CHF",
+            "url": "http://publications.europa.eu/resource/authority/currency/CHF",
+            "label": "Swiss franc",
+            "extraData": null
+        },
+        {
+            "code": "CHW",
+            "url": "http://publications.europa.eu/resource/authority/currency/CHW",
+            "label": "WIR Franc",
+            "extraData": null
+        },
+        {
+            "code": "CLE",
+            "url": "http://publications.europa.eu/resource/authority/currency/CLE",
+            "label": "Chilean escudo(until 1975)",
+            "extraData": null
+        },
+        {
+            "code": "CLF",
+            "url": "http://publications.europa.eu/resource/authority/currency/CLF",
+            "label": "Unidad de Fomento",
+            "extraData": null
+        },
+        {
+            "code": "CLP",
+            "url": "http://publications.europa.eu/resource/authority/currency/CLP",
+            "label": "Chilean peso",
+            "extraData": null
+        },
+        {
+            "code": "CNY",
+            "url": "http://publications.europa.eu/resource/authority/currency/CNY",
+            "label": "Renminbi-yuan",
+            "extraData": null
+        },
+        {
+            "code": "COP",
+            "url": "http://publications.europa.eu/resource/authority/currency/COP",
+            "label": "Colombian peso",
+            "extraData": null
+        },
+        {
+            "code": "COU",
+            "url": "http://publications.europa.eu/resource/authority/currency/COU",
+            "label": "Unidad de Valor Real",
+            "extraData": null
+        },
+        {
+            "code": "CRC",
+            "url": "http://publications.europa.eu/resource/authority/currency/CRC",
+            "label": "Costa Rican colon",
+            "extraData": null
+        },
+        {
+            "code": "CSJ",
+            "url": "http://publications.europa.eu/resource/authority/currency/CSJ",
+            "label": "Czechoslovak koruna(until 1953)",
+            "extraData": null
+        },
+        {
+            "code": "CSK",
+            "url": "http://publications.europa.eu/resource/authority/currency/CSK",
+            "label": "Czechoslovak koruna(until 1993)",
+            "extraData": null
+        },
+        {
+            "code": "CUC",
+            "url": "http://publications.europa.eu/resource/authority/currency/CUC",
+            "label": "Convertible peso",
+            "extraData": null
+        },
+        {
+            "code": "CUP",
+            "url": "http://publications.europa.eu/resource/authority/currency/CUP",
+            "label": "Cuban peso",
+            "extraData": null
+        },
+        {
+            "code": "CVE",
+            "url": "http://publications.europa.eu/resource/authority/currency/CVE",
+            "label": "Cabo Verde escudo",
+            "extraData": null
+        },
+        {
+            "code": "CYP",
+            "url": "http://publications.europa.eu/resource/authority/currency/CYP",
+            "label": "Cypriot pound(until 2007)",
+            "extraData": null
+        },
+        {
+            "code": "CZK",
+            "url": "http://publications.europa.eu/resource/authority/currency/CZK",
+            "label": "Czech koruna",
+            "extraData": null
+        },
+        {
+            "code": "DDM",
+            "url": "http://publications.europa.eu/resource/authority/currency/DDM",
+            "label": "East-German Mark(until 1990)",
+            "extraData": null
+        },
+        {
+            "code": "DEM",
+            "url": "http://publications.europa.eu/resource/authority/currency/DEM",
+            "label": "German mark(until 2001)",
+            "extraData": null
+        },
+        {
+            "code": "DJF",
+            "url": "http://publications.europa.eu/resource/authority/currency/DJF",
+            "label": "Djibouti franc",
+            "extraData": null
+        },
+        {
+            "code": "DKK",
+            "url": "http://publications.europa.eu/resource/authority/currency/DKK",
+            "label": "Danish krone",
+            "extraData": null
+        },
+        {
+            "code": "DOP",
+            "url": "http://publications.europa.eu/resource/authority/currency/DOP",
+            "label": "Dominican peso",
+            "extraData": null
+        },
+        {
+            "code": "DZD",
+            "url": "http://publications.europa.eu/resource/authority/currency/DZD",
+            "label": "Algerian dinar",
+            "extraData": null
+        },
+        {
+            "code": "ECS",
+            "url": "http://publications.europa.eu/resource/authority/currency/ECS",
+            "label": "Ecuadorian sucre(until 2000)",
+            "extraData": null
+        },
+        {
+            "code": "EEK",
+            "url": "http://publications.europa.eu/resource/authority/currency/EEK",
+            "label": "Estonian kroon(until 2010)",
+            "extraData": null
+        },
+        {
+            "code": "EGP",
+            "url": "http://publications.europa.eu/resource/authority/currency/EGP",
+            "label": "Egyptian pound",
+            "extraData": null
+        },
+        {
+            "code": "ERN",
+            "url": "http://publications.europa.eu/resource/authority/currency/ERN",
+            "label": "Nakfa",
+            "extraData": null
+        },
+        {
+            "code": "ESP",
+            "url": "http://publications.europa.eu/resource/authority/currency/ESP",
+            "label": "Peseta(until 1998)",
+            "extraData": null
+        },
+        {
+            "code": "ETB",
+            "url": "http://publications.europa.eu/resource/authority/currency/ETB",
+            "label": "Birr",
+            "extraData": null
+        },
+        {
+            "code": "EUR",
+            "url": "http://publications.europa.eu/resource/authority/currency/EUR",
+            "label": "Euro",
+            "extraData": null
+        },
+        {
+            "code": "FIM",
+            "url": "http://publications.europa.eu/resource/authority/currency/FIM",
+            "label": "Finnish markka(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "FJD",
+            "url": "http://publications.europa.eu/resource/authority/currency/FJD",
+            "label": "Fiji dollar",
+            "extraData": null
+        },
+        {
+            "code": "FKP",
+            "url": "http://publications.europa.eu/resource/authority/currency/FKP",
+            "label": "Falkland Islands pound",
+            "extraData": null
+        },
+        {
+            "code": "FRF",
+            "url": "http://publications.europa.eu/resource/authority/currency/FRF",
+            "label": "French franc(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "GBP",
+            "url": "http://publications.europa.eu/resource/authority/currency/GBP",
+            "label": "Pound sterling",
+            "extraData": null
+        },
+        {
+            "code": "GEL",
+            "url": "http://publications.europa.eu/resource/authority/currency/GEL",
+            "label": "Lari",
+            "extraData": null
+        },
+        {
+            "code": "GHC",
+            "url": "http://publications.europa.eu/resource/authority/currency/GHC",
+            "label": "Cedi(until 2006)",
+            "extraData": null
+        },
+        {
+            "code": "GHS",
+            "url": "http://publications.europa.eu/resource/authority/currency/GHS",
+            "label": "Ghana cedi",
+            "extraData": null
+        },
+        {
+            "code": "GIP",
+            "url": "http://publications.europa.eu/resource/authority/currency/GIP",
+            "label": "Gibraltar pound",
+            "extraData": null
+        },
+        {
+            "code": "GMD",
+            "url": "http://publications.europa.eu/resource/authority/currency/GMD",
+            "label": "Dalasi",
+            "extraData": null
+        },
+        {
+            "code": "GNE",
+            "url": "http://publications.europa.eu/resource/authority/currency/GNE",
+            "label": "Syli(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "GNF",
+            "url": "http://publications.europa.eu/resource/authority/currency/GNF",
+            "label": "Guinean franc",
+            "extraData": null
+        },
+        {
+            "code": "GQE",
+            "url": "http://publications.europa.eu/resource/authority/currency/GQE",
+            "label": "Ekwele(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "GRD",
+            "url": "http://publications.europa.eu/resource/authority/currency/GRD",
+            "label": "Drachma(until 2000)",
+            "extraData": null
+        },
+        {
+            "code": "GTQ",
+            "url": "http://publications.europa.eu/resource/authority/currency/GTQ",
+            "label": "Quetzal",
+            "extraData": null
+        },
+        {
+            "code": "GWP",
+            "url": "http://publications.europa.eu/resource/authority/currency/GWP",
+            "label": "Guinea-Bissau peso(until 1997)",
+            "extraData": null
+        },
+        {
+            "code": "GYD",
+            "url": "http://publications.europa.eu/resource/authority/currency/GYD",
+            "label": "Guyana dollar",
+            "extraData": null
+        },
+        {
+            "code": "HKD",
+            "url": "http://publications.europa.eu/resource/authority/currency/HKD",
+            "label": "Hong Kong dollar",
+            "extraData": null
+        },
+        {
+            "code": "HNL",
+            "url": "http://publications.europa.eu/resource/authority/currency/HNL",
+            "label": "Lempira",
+            "extraData": null
+        },
+        {
+            "code": "HRK",
+            "url": "http://publications.europa.eu/resource/authority/currency/HRK",
+            "label": "Kuna",
+            "extraData": null
+        },
+        {
+            "code": "HTG",
+            "url": "http://publications.europa.eu/resource/authority/currency/HTG",
+            "label": "Gourde",
+            "extraData": null
+        },
+        {
+            "code": "HUF",
+            "url": "http://publications.europa.eu/resource/authority/currency/HUF",
+            "label": "Forint",
+            "extraData": null
+        },
+        {
+            "code": "IDR",
+            "url": "http://publications.europa.eu/resource/authority/currency/IDR",
+            "label": "Rupiah",
+            "extraData": null
+        },
+        {
+            "code": "IEP",
+            "url": "http://publications.europa.eu/resource/authority/currency/IEP",
+            "label": "Irish pound(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "ILP",
+            "url": "http://publications.europa.eu/resource/authority/currency/ILP",
+            "label": "Israeli lira(until 1980)",
+            "extraData": null
+        },
+        {
+            "code": "ILR",
+            "url": "http://publications.europa.eu/resource/authority/currency/ILR",
+            "label": "Shekel(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "ILS",
+            "url": "http://publications.europa.eu/resource/authority/currency/ILS",
+            "label": "Shekel",
+            "extraData": null
+        },
+        {
+            "code": "INR",
+            "url": "http://publications.europa.eu/resource/authority/currency/INR",
+            "label": "Indian rupee",
+            "extraData": null
+        },
+        {
+            "code": "IQD",
+            "url": "http://publications.europa.eu/resource/authority/currency/IQD",
+            "label": "Iraqi dinar",
+            "extraData": null
+        },
+        {
+            "code": "IRR",
+            "url": "http://publications.europa.eu/resource/authority/currency/IRR",
+            "label": "Iranian rial",
+            "extraData": null
+        },
+        {
+            "code": "ISJ",
+            "url": "http://publications.europa.eu/resource/authority/currency/ISJ",
+            "label": "Icelandic old kr\u00f3na(until 1981)",
+            "extraData": null
+        },
+        {
+            "code": "ISK",
+            "url": "http://publications.europa.eu/resource/authority/currency/ISK",
+            "label": "Iceland kr\u00f3na",
+            "extraData": null
+        },
+        {
+            "code": "ITL",
+            "url": "http://publications.europa.eu/resource/authority/currency/ITL",
+            "label": "Italian lira(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "JMD",
+            "url": "http://publications.europa.eu/resource/authority/currency/JMD",
+            "label": "Jamaica dollar",
+            "extraData": null
+        },
+        {
+            "code": "JOD",
+            "url": "http://publications.europa.eu/resource/authority/currency/JOD",
+            "label": "Jordanian dinar",
+            "extraData": null
+        },
+        {
+            "code": "JPY",
+            "url": "http://publications.europa.eu/resource/authority/currency/JPY",
+            "label": "Yen",
+            "extraData": null
+        },
+        {
+            "code": "KES",
+            "url": "http://publications.europa.eu/resource/authority/currency/KES",
+            "label": "Kenyan shilling",
+            "extraData": null
+        },
+        {
+            "code": "KGS",
+            "url": "http://publications.europa.eu/resource/authority/currency/KGS",
+            "label": "Som",
+            "extraData": null
+        },
+        {
+            "code": "KHR",
+            "url": "http://publications.europa.eu/resource/authority/currency/KHR",
+            "label": "Riel",
+            "extraData": null
+        },
+        {
+            "code": "KMF",
+            "url": "http://publications.europa.eu/resource/authority/currency/KMF",
+            "label": "Comorian franc",
+            "extraData": null
+        },
+        {
+            "code": "KPW",
+            "url": "http://publications.europa.eu/resource/authority/currency/KPW",
+            "label": "North Korean won",
+            "extraData": null
+        },
+        {
+            "code": "KRW",
+            "url": "http://publications.europa.eu/resource/authority/currency/KRW",
+            "label": "South Korean won",
+            "extraData": null
+        },
+        {
+            "code": "KWD",
+            "url": "http://publications.europa.eu/resource/authority/currency/KWD",
+            "label": "Kuwaiti dinar",
+            "extraData": null
+        },
+        {
+            "code": "KYD",
+            "url": "http://publications.europa.eu/resource/authority/currency/KYD",
+            "label": "Cayman Islands dollar",
+            "extraData": null
+        },
+        {
+            "code": "KZT",
+            "url": "http://publications.europa.eu/resource/authority/currency/KZT",
+            "label": "Tenge",
+            "extraData": null
+        },
+        {
+            "code": "LAJ",
+            "url": "http://publications.europa.eu/resource/authority/currency/LAJ",
+            "label": "Kip(until 1979)",
+            "extraData": null
+        },
+        {
+            "code": "LAK",
+            "url": "http://publications.europa.eu/resource/authority/currency/LAK",
+            "label": "Kip",
+            "extraData": null
+        },
+        {
+            "code": "LBP",
+            "url": "http://publications.europa.eu/resource/authority/currency/LBP",
+            "label": "Lebanese pound",
+            "extraData": null
+        },
+        {
+            "code": "LKR",
+            "url": "http://publications.europa.eu/resource/authority/currency/LKR",
+            "label": "Sri Lankan rupee",
+            "extraData": null
+        },
+        {
+            "code": "LRD",
+            "url": "http://publications.europa.eu/resource/authority/currency/LRD",
+            "label": "Liberian dollar",
+            "extraData": null
+        },
+        {
+            "code": "LSL",
+            "url": "http://publications.europa.eu/resource/authority/currency/LSL",
+            "label": "Loti",
+            "extraData": null
+        },
+        {
+            "code": "LTL",
+            "url": "http://publications.europa.eu/resource/authority/currency/LTL",
+            "label": "Litas(until 2014)",
+            "extraData": null
+        },
+        {
+            "code": "LUF",
+            "url": "http://publications.europa.eu/resource/authority/currency/LUF",
+            "label": "Luxembourg franc(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "LVL",
+            "url": "http://publications.europa.eu/resource/authority/currency/LVL",
+            "label": "Lats(until 2013)",
+            "extraData": null
+        },
+        {
+            "code": "LYD",
+            "url": "http://publications.europa.eu/resource/authority/currency/LYD",
+            "label": "Libyan dinar",
+            "extraData": null
+        },
+        {
+            "code": "MAD",
+            "url": "http://publications.europa.eu/resource/authority/currency/MAD",
+            "label": "Moroccan dirham",
+            "extraData": null
+        },
+        {
+            "code": "MDL",
+            "url": "http://publications.europa.eu/resource/authority/currency/MDL",
+            "label": "Moldovan leu",
+            "extraData": null
+        },
+        {
+            "code": "MGA",
+            "url": "http://publications.europa.eu/resource/authority/currency/MGA",
+            "label": "Ariary",
+            "extraData": null
+        },
+        {
+            "code": "MGF",
+            "url": "http://publications.europa.eu/resource/authority/currency/MGF",
+            "label": "Malagasy franc(until 2004)",
+            "extraData": null
+        },
+        {
+            "code": "MKD",
+            "url": "http://publications.europa.eu/resource/authority/currency/MKD",
+            "label": "Denar",
+            "extraData": null
+        },
+        {
+            "code": "MLF",
+            "url": "http://publications.europa.eu/resource/authority/currency/MLF",
+            "label": "Mali franc(until 1984)",
+            "extraData": null
+        },
+        {
+            "code": "MMK",
+            "url": "http://publications.europa.eu/resource/authority/currency/MMK",
+            "label": "Kyat",
+            "extraData": null
+        },
+        {
+            "code": "MNT",
+            "url": "http://publications.europa.eu/resource/authority/currency/MNT",
+            "label": "Tugrik",
+            "extraData": null
+        },
+        {
+            "code": "MOP",
+            "url": "http://publications.europa.eu/resource/authority/currency/MOP",
+            "label": "Pataca",
+            "extraData": null
+        },
+        {
+            "code": "MRO",
+            "url": "http://publications.europa.eu/resource/authority/currency/MRO",
+            "label": "Ouguiya(until 2018)",
+            "extraData": null
+        },
+        {
+            "code": "MRU",
+            "url": "http://publications.europa.eu/resource/authority/currency/MRU",
+            "label": "Ouguiya",
+            "extraData": null
+        },
+        {
+            "code": "MTL",
+            "url": "http://publications.europa.eu/resource/authority/currency/MTL",
+            "label": "Maltese lira(until 2007)",
+            "extraData": null
+        },
+        {
+            "code": "MTP",
+            "url": "http://publications.europa.eu/resource/authority/currency/MTP",
+            "label": "Maltese pound(until 1971)",
+            "extraData": null
+        },
+        {
+            "code": "MUR",
+            "url": "http://publications.europa.eu/resource/authority/currency/MUR",
+            "label": "Mauritian rupee",
+            "extraData": null
+        },
+        {
+            "code": "MVQ",
+            "url": "http://publications.europa.eu/resource/authority/currency/MVQ",
+            "label": "Maldive rupee(until 1983)",
+            "extraData": null
+        },
+        {
+            "code": "MVR",
+            "url": "http://publications.europa.eu/resource/authority/currency/MVR",
+            "label": "Rufiyaa",
+            "extraData": null
+        },
+        {
+            "code": "MWK",
+            "url": "http://publications.europa.eu/resource/authority/currency/MWK",
+            "label": "Malawian kwacha",
+            "extraData": null
+        },
+        {
+            "code": "MXN",
+            "url": "http://publications.europa.eu/resource/authority/currency/MXN",
+            "label": "Mexican peso",
+            "extraData": null
+        },
+        {
+            "code": "MXP",
+            "url": "http://publications.europa.eu/resource/authority/currency/MXP",
+            "label": "Mexican peso(until 1993)",
+            "extraData": null
+        },
+        {
+            "code": "MXV",
+            "url": "http://publications.europa.eu/resource/authority/currency/MXV",
+            "label": "Mexican Unidad de Inversion",
+            "extraData": null
+        },
+        {
+            "code": "MYR",
+            "url": "http://publications.europa.eu/resource/authority/currency/MYR",
+            "label": "Ringgit",
+            "extraData": null
+        },
+        {
+            "code": "MZM",
+            "url": "http://publications.europa.eu/resource/authority/currency/MZM",
+            "label": "Metica(until 2006)",
+            "extraData": null
+        },
+        {
+            "code": "MZN",
+            "url": "http://publications.europa.eu/resource/authority/currency/MZN",
+            "label": "Metical",
+            "extraData": null
+        },
+        {
+            "code": "NAD",
+            "url": "http://publications.europa.eu/resource/authority/currency/NAD",
+            "label": "Namibian dollar",
+            "extraData": null
+        },
+        {
+            "code": "NFD",
+            "url": "http://publications.europa.eu/resource/authority/currency/NFD",
+            "label": "Newfoundland dollar(until 1949)",
+            "extraData": null
+        },
+        {
+            "code": "NGN",
+            "url": "http://publications.europa.eu/resource/authority/currency/NGN",
+            "label": "Naira",
+            "extraData": null
+        },
+        {
+            "code": "NIO",
+            "url": "http://publications.europa.eu/resource/authority/currency/NIO",
+            "label": "C\u00f3rdoba oro",
+            "extraData": null
+        },
+        {
+            "code": "NLG",
+            "url": "http://publications.europa.eu/resource/authority/currency/NLG",
+            "label": "Netherlands guilder(until 1998)",
+            "extraData": null
+        },
+        {
+            "code": "NOK",
+            "url": "http://publications.europa.eu/resource/authority/currency/NOK",
+            "label": "Norwegian krone",
+            "extraData": null
+        },
+        {
+            "code": "NPR",
+            "url": "http://publications.europa.eu/resource/authority/currency/NPR",
+            "label": "Nepalese rupee",
+            "extraData": null
+        },
+        {
+            "code": "NZD",
+            "url": "http://publications.europa.eu/resource/authority/currency/NZD",
+            "label": "New Zealand dollar",
+            "extraData": null
+        },
+        {
+            "code": "OMR",
+            "url": "http://publications.europa.eu/resource/authority/currency/OMR",
+            "label": "Omani rial",
+            "extraData": null
+        },
+        {
+            "code": "PAB",
+            "url": "http://publications.europa.eu/resource/authority/currency/PAB",
+            "label": "Balboa",
+            "extraData": null
+        },
+        {
+            "code": "PEH",
+            "url": "http://publications.europa.eu/resource/authority/currency/PEH",
+            "label": "Sol(until 1985)",
+            "extraData": null
+        },
+        {
+            "code": "PEI",
+            "url": "http://publications.europa.eu/resource/authority/currency/PEI",
+            "label": "Inti(until 1991)",
+            "extraData": null
+        },
+        {
+            "code": "PEN",
+            "url": "http://publications.europa.eu/resource/authority/currency/PEN",
+            "label": "Sol",
+            "extraData": null
+        },
+        {
+            "code": "PGK",
+            "url": "http://publications.europa.eu/resource/authority/currency/PGK",
+            "label": "Kina",
+            "extraData": null
+        },
+        {
+            "code": "PHP",
+            "url": "http://publications.europa.eu/resource/authority/currency/PHP",
+            "label": "Philippine peso",
+            "extraData": null
+        },
+        {
+            "code": "PKR",
+            "url": "http://publications.europa.eu/resource/authority/currency/PKR",
+            "label": "Pakistani rupee",
+            "extraData": null
+        },
+        {
+            "code": "PLN",
+            "url": "http://publications.europa.eu/resource/authority/currency/PLN",
+            "label": "Zloty",
+            "extraData": null
+        },
+        {
+            "code": "PLZ",
+            "url": "http://publications.europa.eu/resource/authority/currency/PLZ",
+            "label": "Zloty A/94(until 1994)",
+            "extraData": null
+        },
+        {
+            "code": "PTE",
+            "url": "http://publications.europa.eu/resource/authority/currency/PTE",
+            "label": "Portuguese escudo(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "PYG",
+            "url": "http://publications.europa.eu/resource/authority/currency/PYG",
+            "label": "Guaran\u00ed",
+            "extraData": null
+        },
+        {
+            "code": "QAR",
+            "url": "http://publications.europa.eu/resource/authority/currency/QAR",
+            "label": "Qatari rial",
+            "extraData": null
+        },
+        {
+            "code": "ROL",
+            "url": "http://publications.europa.eu/resource/authority/currency/ROL",
+            "label": "Romanian leu A/05(until 2005)",
+            "extraData": null
+        },
+        {
+            "code": "RON",
+            "url": "http://publications.europa.eu/resource/authority/currency/RON",
+            "label": "Romanian leu",
+            "extraData": null
+        },
+        {
+            "code": "RSD",
+            "url": "http://publications.europa.eu/resource/authority/currency/RSD",
+            "label": "Serbian dinar",
+            "extraData": null
+        },
+        {
+            "code": "RUB",
+            "url": "http://publications.europa.eu/resource/authority/currency/RUB",
+            "label": "Russian rouble",
+            "extraData": null
+        },
+        {
+            "code": "RUR",
+            "url": "http://publications.europa.eu/resource/authority/currency/RUR",
+            "label": "Russian rouble A/97(until 1997)",
+            "extraData": null
+        },
+        {
+            "code": "RWF",
+            "url": "http://publications.europa.eu/resource/authority/currency/RWF",
+            "label": "Rwandese franc",
+            "extraData": null
+        },
+        {
+            "code": "SAR",
+            "url": "http://publications.europa.eu/resource/authority/currency/SAR",
+            "label": "Saudi riyal",
+            "extraData": null
+        },
+        {
+            "code": "SBD",
+            "url": "http://publications.europa.eu/resource/authority/currency/SBD",
+            "label": "Solomon Islands dollar",
+            "extraData": null
+        },
+        {
+            "code": "SCR",
+            "url": "http://publications.europa.eu/resource/authority/currency/SCR",
+            "label": "Seychelles rupee",
+            "extraData": null
+        },
+        {
+            "code": "SDD",
+            "url": "http://publications.europa.eu/resource/authority/currency/SDD",
+            "label": "Sudanese dinar(until 2007)",
+            "extraData": null
+        },
+        {
+            "code": "SDG",
+            "url": "http://publications.europa.eu/resource/authority/currency/SDG",
+            "label": "Sudanese pound",
+            "extraData": null
+        },
+        {
+            "code": "SEK",
+            "url": "http://publications.europa.eu/resource/authority/currency/SEK",
+            "label": "Swedish krona",
+            "extraData": null
+        },
+        {
+            "code": "SGD",
+            "url": "http://publications.europa.eu/resource/authority/currency/SGD",
+            "label": "Singapore dollar",
+            "extraData": null
+        },
+        {
+            "code": "SHP",
+            "url": "http://publications.europa.eu/resource/authority/currency/SHP",
+            "label": "Saint Helena pound",
+            "extraData": null
+        },
+        {
+            "code": "SIT",
+            "url": "http://publications.europa.eu/resource/authority/currency/SIT",
+            "label": "Slovenian tolar(until 2007)",
+            "extraData": null
+        },
+        {
+            "code": "SKK",
+            "url": "http://publications.europa.eu/resource/authority/currency/SKK",
+            "label": "Slovak koruna(until 2009)",
+            "extraData": null
+        },
+        {
+            "code": "SLL",
+            "url": "http://publications.europa.eu/resource/authority/currency/SLL",
+            "label": "Leone",
+            "extraData": null
+        },
+        {
+            "code": "SOS",
+            "url": "http://publications.europa.eu/resource/authority/currency/SOS",
+            "label": "Somali shilling",
+            "extraData": null
+        },
+        {
+            "code": "SRD",
+            "url": "http://publications.europa.eu/resource/authority/currency/SRD",
+            "label": "Surinamese dollar",
+            "extraData": null
+        },
+        {
+            "code": "SRG",
+            "url": "http://publications.europa.eu/resource/authority/currency/SRG",
+            "label": "Suriname guilder(until 2004)",
+            "extraData": null
+        },
+        {
+            "code": "SSP",
+            "url": "http://publications.europa.eu/resource/authority/currency/SSP",
+            "label": "South Sudanese pound",
+            "extraData": null
+        },
+        {
+            "code": "STD",
+            "url": "http://publications.europa.eu/resource/authority/currency/STD",
+            "label": "Dobra(until 2018)",
+            "extraData": null
+        },
+        {
+            "code": "STN",
+            "url": "http://publications.europa.eu/resource/authority/currency/STN",
+            "label": "Dobra",
+            "extraData": null
+        },
+        {
+            "code": "SUR",
+            "url": "http://publications.europa.eu/resource/authority/currency/SUR",
+            "label": "Soviet Union rouble(until 1991)",
+            "extraData": null
+        },
+        {
+            "code": "SVC",
+            "url": "http://publications.europa.eu/resource/authority/currency/SVC",
+            "label": "Salvadorian col\u00f3n",
+            "extraData": null
+        },
+        {
+            "code": "SYP",
+            "url": "http://publications.europa.eu/resource/authority/currency/SYP",
+            "label": "Syrian pound",
+            "extraData": null
+        },
+        {
+            "code": "SZL",
+            "url": "http://publications.europa.eu/resource/authority/currency/SZL",
+            "label": "Lilangeni",
+            "extraData": null
+        },
+        {
+            "code": "THB",
+            "url": "http://publications.europa.eu/resource/authority/currency/THB",
+            "label": "Baht",
+            "extraData": null
+        },
+        {
+            "code": "TJR",
+            "url": "http://publications.europa.eu/resource/authority/currency/TJR",
+            "label": "Tajikistani rouble(until 2000)",
+            "extraData": null
+        },
+        {
+            "code": "TJS",
+            "url": "http://publications.europa.eu/resource/authority/currency/TJS",
+            "label": "Somoni",
+            "extraData": null
+        },
+        {
+            "code": "TMM",
+            "url": "http://publications.europa.eu/resource/authority/currency/TMM",
+            "label": "Turkmen manat(until 2008)",
+            "extraData": null
+        },
+        {
+            "code": "TMT",
+            "url": "http://publications.europa.eu/resource/authority/currency/TMT",
+            "label": "Turkmen manat",
+            "extraData": null
+        },
+        {
+            "code": "TND",
+            "url": "http://publications.europa.eu/resource/authority/currency/TND",
+            "label": "Tunisian dinar",
+            "extraData": null
+        },
+        {
+            "code": "TOP",
+            "url": "http://publications.europa.eu/resource/authority/currency/TOP",
+            "label": "Pa\u2019anga",
+            "extraData": null
+        },
+        {
+            "code": "TPE",
+            "url": "http://publications.europa.eu/resource/authority/currency/TPE",
+            "label": "Portuguese Timorese escudo(until 1976)",
+            "extraData": null
+        },
+        {
+            "code": "TRL",
+            "url": "http://publications.europa.eu/resource/authority/currency/TRL",
+            "label": "Turkish lira A/05(until 2005)",
+            "extraData": null
+        },
+        {
+            "code": "TRY",
+            "url": "http://publications.europa.eu/resource/authority/currency/TRY",
+            "label": "Turkish lira",
+            "extraData": null
+        },
+        {
+            "code": "TTD",
+            "url": "http://publications.europa.eu/resource/authority/currency/TTD",
+            "label": "Trinidad and Tobago dollar",
+            "extraData": null
+        },
+        {
+            "code": "TWD",
+            "url": "http://publications.europa.eu/resource/authority/currency/TWD",
+            "label": "New Taiwan dollar",
+            "extraData": null
+        },
+        {
+            "code": "TZS",
+            "url": "http://publications.europa.eu/resource/authority/currency/TZS",
+            "label": "Tanzanian shilling",
+            "extraData": null
+        },
+        {
+            "code": "UAH",
+            "url": "http://publications.europa.eu/resource/authority/currency/UAH",
+            "label": "Hryvnia",
+            "extraData": null
+        },
+        {
+            "code": "UAK",
+            "url": "http://publications.europa.eu/resource/authority/currency/UAK",
+            "label": "Karbovanets(until 1996)",
+            "extraData": null
+        },
+        {
+            "code": "UGS",
+            "url": "http://publications.europa.eu/resource/authority/currency/UGS",
+            "label": "Uganda shilling A/87(until 1987)",
+            "extraData": null
+        },
+        {
+            "code": "UGX",
+            "url": "http://publications.europa.eu/resource/authority/currency/UGX",
+            "label": "Uganda shilling",
+            "extraData": null
+        },
+        {
+            "code": "USD",
+            "url": "http://publications.europa.eu/resource/authority/currency/USD",
+            "label": "US dollar",
+            "extraData": null
+        },
+        {
+            "code": "USN",
+            "url": "http://publications.europa.eu/resource/authority/currency/USN",
+            "label": "US dollar",
+            "extraData": null
+        },
+        {
+            "code": "USS",
+            "url": "http://publications.europa.eu/resource/authority/currency/USS",
+            "label": "US dollar(until 2014)",
+            "extraData": null
+        },
+        {
+            "code": "UYI",
+            "url": "http://publications.europa.eu/resource/authority/currency/UYI",
+            "label": "Uruguay Peso en Unidades Indexadas",
+            "extraData": null
+        },
+        {
+            "code": "UYN",
+            "url": "http://publications.europa.eu/resource/authority/currency/UYN",
+            "label": "Uruguay old peso(until 1993)",
+            "extraData": null
+        },
+        {
+            "code": "UYU",
+            "url": "http://publications.europa.eu/resource/authority/currency/UYU",
+            "label": "Uruguayan peso",
+            "extraData": null
+        },
+        {
+            "code": "UYW",
+            "url": "http://publications.europa.eu/resource/authority/currency/UYW",
+            "label": "Unidad Previsional",
+            "extraData": null
+        },
+        {
+            "code": "UZS",
+            "url": "http://publications.europa.eu/resource/authority/currency/UZS",
+            "label": "Sum",
+            "extraData": null
+        },
+        {
+            "code": "VEB",
+            "url": "http://publications.europa.eu/resource/authority/currency/VEB",
+            "label": "Bol\u00edvar fuerte(until 2007)",
+            "extraData": null
+        },
+        {
+            "code": "VEF",
+            "url": "http://publications.europa.eu/resource/authority/currency/VEF",
+            "label": "Bol\u00edvar(until 2018)",
+            "extraData": null
+        },
+        {
+            "code": "VES",
+            "url": "http://publications.europa.eu/resource/authority/currency/VES",
+            "label": "Bol\u00edvar soberano",
+            "extraData": null
+        },
+        {
+            "code": "VNC",
+            "url": "http://publications.europa.eu/resource/authority/currency/VNC",
+            "label": "Old dong(until 1978)",
+            "extraData": null
+        },
+        {
+            "code": "VND",
+            "url": "http://publications.europa.eu/resource/authority/currency/VND",
+            "label": "Dong",
+            "extraData": null
+        },
+        {
+            "code": "VUV",
+            "url": "http://publications.europa.eu/resource/authority/currency/VUV",
+            "label": "Vatu",
+            "extraData": null
+        },
+        {
+            "code": "WST",
+            "url": "http://publications.europa.eu/resource/authority/currency/WST",
+            "label": "Tala",
+            "extraData": null
+        },
+        {
+            "code": "XAF",
+            "url": "http://publications.europa.eu/resource/authority/currency/XAF",
+            "label": "CFA franc (BEAC)",
+            "extraData": null
+        },
+        {
+            "code": "XAG",
+            "url": "http://publications.europa.eu/resource/authority/currency/XAG",
+            "label": "Silver",
+            "extraData": null
+        },
+        {
+            "code": "XAU",
+            "url": "http://publications.europa.eu/resource/authority/currency/XAU",
+            "label": "Gold",
+            "extraData": null
+        },
+        {
+            "code": "XBA",
+            "url": "http://publications.europa.eu/resource/authority/currency/XBA",
+            "label": "Bond Markets Unit European Composite\n\t\t\t\t\t\tUnit (EURCO)",
+            "extraData": null
+        },
+        {
+            "code": "XBB",
+            "url": "http://publications.europa.eu/resource/authority/currency/XBB",
+            "label": "Bond Markets Unit European Monetary\n\t\t\t\t\t\tUnit (E.M.U.-6)",
+            "extraData": null
+        },
+        {
+            "code": "XBC",
+            "url": "http://publications.europa.eu/resource/authority/currency/XBC",
+            "label": "Bond Markets Unit European Unit of\n\t\t\t\t\t\tAccount 9 (E.U.A.-9)",
+            "extraData": null
+        },
+        {
+            "code": "XBD",
+            "url": "http://publications.europa.eu/resource/authority/currency/XBD",
+            "label": "Bond Markets Unit European Unit of\n\t\t\t\t\t\tAccount 17 (E.U.A.-17)",
+            "extraData": null
+        },
+        {
+            "code": "XCD",
+            "url": "http://publications.europa.eu/resource/authority/currency/XCD",
+            "label": "East Caribbean dollar",
+            "extraData": null
+        },
+        {
+            "code": "XDR",
+            "url": "http://publications.europa.eu/resource/authority/currency/XDR",
+            "label": "SDR (Special Drawing Right)",
+            "extraData": null
+        },
+        {
+            "code": "XEU",
+            "url": "http://publications.europa.eu/resource/authority/currency/XEU",
+            "label": "European Currency Unit(until 1999)",
+            "extraData": null
+        },
+        {
+            "code": "XOF",
+            "url": "http://publications.europa.eu/resource/authority/currency/XOF",
+            "label": "CFA Franc (BCEAO)",
+            "extraData": null
+        },
+        {
+            "code": "XPD",
+            "url": "http://publications.europa.eu/resource/authority/currency/XPD",
+            "label": "Palladium",
+            "extraData": null
+        },
+        {
+            "code": "XPF",
+            "url": "http://publications.europa.eu/resource/authority/currency/XPF",
+            "label": "CFP franc",
+            "extraData": null
+        },
+        {
+            "code": "XPT",
+            "url": "http://publications.europa.eu/resource/authority/currency/XPT",
+            "label": "Platinum",
+            "extraData": null
+        },
+        {
+            "code": "XSU",
+            "url": "http://publications.europa.eu/resource/authority/currency/XSU",
+            "label": "Sucre",
+            "extraData": null
+        },
+        {
+            "code": "XTS",
+            "url": "http://publications.europa.eu/resource/authority/currency/XTS",
+            "label": "Code reserved for testing purposes",
+            "extraData": null
+        },
+        {
+            "code": "XUA",
+            "url": "http://publications.europa.eu/resource/authority/currency/XUA",
+            "label": "ADB Unit of Account",
+            "extraData": null
+        },
+        {
+            "code": "XXX",
+            "url": "http://publications.europa.eu/resource/authority/currency/XXX",
+            "label": "No currency",
+            "extraData": null
+        },
+        {
+            "code": "YDD",
+            "url": "http://publications.europa.eu/resource/authority/currency/YDD",
+            "label": "South Yemeni dinar(until 1996)",
+            "extraData": null
+        },
+        {
+            "code": "YER",
+            "url": "http://publications.europa.eu/resource/authority/currency/YER",
+            "label": "Yemeni rial",
+            "extraData": null
+        },
+        {
+            "code": "YUD",
+            "url": "http://publications.europa.eu/resource/authority/currency/YUD",
+            "label": "Yugoslav dinar(until 1989)",
+            "extraData": null
+        },
+        {
+            "code": "YUF",
+            "url": "http://publications.europa.eu/resource/authority/currency/YUF",
+            "label": "Yugoslav dinar(until 1965)",
+            "extraData": null
+        },
+        {
+            "code": "YUM",
+            "url": "http://publications.europa.eu/resource/authority/currency/YUM",
+            "label": "Yugoslav dinar(until 2003)",
+            "extraData": null
+        },
+        {
+            "code": "YUN",
+            "url": "http://publications.europa.eu/resource/authority/currency/YUN",
+            "label": "Yugoslav dinar(until 1992)",
+            "extraData": null
+        },
+        {
+            "code": "YUS",
+            "url": "http://publications.europa.eu/resource/authority/currency/YUS",
+            "label": "Yugoslav dinar(until 1943)",
+            "extraData": null
+        },
+        {
+            "code": "ZAR",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZAR",
+            "label": "Rand",
+            "extraData": null
+        },
+        {
+            "code": "ZMK",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZMK",
+            "label": "Zambian kwacha(until 2012)",
+            "extraData": null
+        },
+        {
+            "code": "ZMW",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZMW",
+            "label": "Zambian kwacha",
+            "extraData": null
+        },
+        {
+            "code": "ZRN",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZRN",
+            "label": "Za\u00efrean za\u00efre(until 1997)",
+            "extraData": null
+        },
+        {
+            "code": "ZRZ",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZRZ",
+            "label": "Za\u00efrean new za\u00efre(until 1992)",
+            "extraData": null
+        },
+        {
+            "code": "ZWC",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZWC",
+            "label": "Rhodesian dollar(until 1980)",
+            "extraData": null
+        },
+        {
+            "code": "ZWD",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZWD",
+            "label": "Zimbabwe dollar A/06(until 2006)",
+            "extraData": null
+        },
+        {
+            "code": "ZWL",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZWL",
+            "label": "Zimbabwe dollar",
+            "extraData": null
+        },
+        {
+            "code": "ZWN",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZWN",
+            "label": "Zimbabwe dollar A/08(until 2008)",
+            "extraData": null
+        },
+        {
+            "code": "ZWR",
+            "url": "http://publications.europa.eu/resource/authority/currency/ZWR",
+            "label": "Zimbabwe dollar A/09(until 2009)",
+            "extraData": null
+        }
+    ]
+}

@@ -1,0 +1,1039 @@
+<html>
+<head>
+</head>
+<body>
+	<table cellspacing="0" class="yui3-datatable-table"
+		id="yui_patched_v3_18_1_1_1606469360152_370">
+		<colgroup id="yui_patched_v3_18_1_1_1606469360152_482">
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<tbody class="yui3-datatable-data">
+			<tr id="yui_patched_v3_18_1_1_1606469360152_416"
+				data-yui3-record="model_1" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/2N/">2N</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">decibel</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The decibel (dB) is a unit of sound
+						intensity. One bel represents the logarithm of a ratio between two
+						power quantities of 10:1, or the logarithm of a ratio between two
+						field quantities of √10:1. One decibel is one tenth (deci-) of one
+						bel.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_417"
+				data-yui3-record="model_2" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/3C/">3C</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">manmonth</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The manmonth is a unit of count
+						defining the number of months for a person or persons to perform
+						an undertaking.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_418"
+				data-yui3-record="model_3" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/AD/">AD</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">byte</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The byte is a unit of information equal
+						to 8 bits.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_419"
+				data-yui3-record="model_4" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/AMP/">AMP</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">ampere</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The ampere (A) is the base unit of
+						electric current in the International System of Units, equivalent
+						to 6.24×1018 elementary charges, such as electrons, moving through
+						a surface in one second.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_420"
+				data-yui3-record="model_5" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/BAR/">BAR</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">bar</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The bar (bar) is a non-SI unit of
+						pressure (i.e. outside of the International System of Units),
+						defined as exactly equal to 100 000 Pa, 10⁵ Pa, which is slightly
+						less than the current average atmospheric pressure on Earth at sea
+						level.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_421"
+				data-yui3-record="model_6" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/BIT/">BIT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">bit</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The bit (b), short for "binary digit",
+						is a non-SI unit of information (i.e. outside of the International
+						System of Units) used in computing and digital communications,
+						defined as the minimum amount of information required to make one
+						simple yes-or-no decision at the lowest level in a system.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_422"
+				data-yui3-record="model_7" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/BQL/">BQL</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">becquerel</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The becquerel (Bq) is a derived unit of
+						radioactivity in the International System of Units, defined as the
+						activity of a quantity of radioactive material in which one
+						nucleus decays per second, 1 Bq = s⁻¹.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_423"
+				data-yui3-record="model_8" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/C34/">C34</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">mole</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The mole (mol) is the base unit for
+						amount of substance in the International System of Units, defined
+						as the amount of a chemical substance that contains exactly
+						6.02214076 × 1023 constitutive particles, e.g. atoms, molecules,
+						ions or electrons.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_424"
+				data-yui3-record="model_9" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/C45/">C45</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">nanometre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The nanometre (nm) is a unit of length
+						in the International System of Units, equal to one billionth of a
+						metre, 10⁻⁹ m (0.000000001 m).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_425"
+				data-yui3-record="model_10" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/CDL/">CDL</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">candela</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The candela (cd) is the base unit of
+						luminous intensity in the International System of Units. It is
+						defined as the luminous intensity, in a given direction, of a
+						source that emits monochromatic radiation of frequency 540×1012
+						hertz and has a radiant intensity in that direction of 1/683 watt
+						per steradian.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_426"
+				data-yui3-record="model_11" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/CEL/">CEL</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">degree Celsius</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The degree Celsius (°C) is a unit of
+						temperature used by the International System of Units. The scale
+						used to be based on 0 °C for the freezing point of water and 100
+						°C for the boiling point of water. The degree Celsius and the
+						Celsius scale are now defined by absolute zero and the triple
+						point of Vienna Standard Mean Ocean Water.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_427"
+				data-yui3-record="model_12" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/CMK/">CMK</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">square centimetre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The square centimetre (cm²) is a unit
+						of area in the International System of Units, equivalent to the
+						area formed by a square measuring 1 cm by 1 cm, 10⁻⁴ m².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_428"
+				data-yui3-record="model_13" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/CMQ/">CMQ</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">cubic centimetre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The cubic centimetre (cm³) is a unit of
+						volume in the International System of Units, equivalent to the
+						volume formed by a cube measuring 1 cm by 1 cm by 1 cm, 10⁻⁶ m³.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_429"
+				data-yui3-record="model_14" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/CMT/">CMT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">centimetre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The centimetre (cm) is a unit of length
+						in the International System of Units, equivalent to one hundredth
+						of a metre, 10⁻² m (0.01 m).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_430"
+				data-yui3-record="model_15" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/D30/">D30</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">terajoule</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The terajoule (TJ) is a derived unit of
+						energy in the International System of Units, equivalent to one
+						trillion, 1000 000 000 000 (10¹²), joules.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_431"
+				data-yui3-record="model_16" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/E34/">E34</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">gigabyte</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The gigabyte is a unit of information
+						equal to 10⁹ bytes.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_432"
+				data-yui3-record="model_17" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/GRM/">GRM</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">gram</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The gram (g) is a unit of mass in the
+						International System of Units (SI), equivalent to one thousandth
+						of the SI base unit, the kilogram, 10⁻³ kg (0.001 kg).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_433"
+				data-yui3-record="model_18" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/GTE/">GTE</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">gross tonnage</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The gross tonnage (GT) is a nonlinear
+						unit of measurement, equivalent to the volume of all of a ship's
+						enclosed spaces (from keel to funnel) measured to the outside of
+						the hull framing.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_434"
+				data-yui3-record="model_19" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/GWH/">GWH</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">gigawatt-hour</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The gigawatt-hour (GWh, GW⋅h) is a
+						composite unit of energy in the International System of Units,
+						equivalent to a million (10⁶) kilowatt-hours.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_435"
+				data-yui3-record="model_20" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/HAR/">HAR</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">hectare</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The hectare (ha) is a unit of area in
+						the International System of Units, equivalent to 10 000 square
+						meters, 10⁴ m².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_436"
+				data-yui3-record="model_21" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/HLT/">HLT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">hectolitre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The hectolitre (hl) is a unit of fluid
+						volume (or capacity), equivalent to the volume of hundred litres,
+						100 l, or 10⁻¹ m³ (0.1 m³).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_437"
+				data-yui3-record="model_22" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/HTZ/">HTZ</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">hertz</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The hertz (Hz) is the derived unit of
+						frequency in the International System of Units, defined as one
+						cycle per second.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_438"
+				data-yui3-record="model_23" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/HUR/">HUR</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">hour</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The hour (h) is a unit of time accepted
+						for use with the International System of Units, equivalent to 1⁄24
+						of a day, 3600 seconds (scientifically reckoned as 3599–3601
+						seconds).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_439"
+				data-yui3-record="model_24" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/JOU/">JOU</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">joule</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The joule (J) is a derived unit of
+						energy in the International System of Units, equivalent to the
+						energy transferred to (or work done on) an object when a force of
+						one newton acts on that object in the direction of its motion
+						through a distance of one metre.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_440"
+				data-yui3-record="model_25" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KEL/">KEL</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kelvin</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The Kelvin (K) is the base unit of
+						temperature in the International System of Units. The Kelvin scale
+						is an absolute thermodynamic temperature scale using as its null
+						point absolute zero, the temperature at which all thermal motion
+						ceases.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_441"
+				data-yui3-record="model_26" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KGM/">KGM</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kilogram</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The kilogram (kg) is the base unit of
+						mass in the International System of Units. It remains defined by a
+						platinum alloy cylinder, the international prototype kilogram
+						stored in Saint-Cloud, Paris.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_442"
+				data-yui3-record="model_27" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KMH/">KMH</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kilometre per hour</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The kilometre per hour (km/h) is a unit
+						of speed in the International System of Units, equivalent to the
+						number of kilometres covered in one hour.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_443"
+				data-yui3-record="model_28" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KMK/">KMK</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">square kilometre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The square kilometre (km²) is a unit of
+						area in the International System of Units, equivalent to the area
+						formed by a square measuring 1 km by 1 km, 10⁶ m².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_444"
+				data-yui3-record="model_29" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KTM/">KTM</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kilometre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The kilometre (km) is a unit of length
+						in the International System of Units, equivalent to 1000 meters,
+						10³ m, or about 0.621 miles.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_445"
+				data-yui3-record="model_30" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KWH/">KWH</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kilowatt-hour</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The kilowatt-hour (kWh, kW⋅h) is a
+						composite unit of energy in the International System of Units,
+						equivalent to the energy provided by a thousand watts in one hour.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_446"
+				data-yui3-record="model_31" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/KWT/">KWT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">kilowatt</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The kilowatt (kW) is a unit of power in
+						the International System of Units, equivalent to one thousand
+						watts, 10³ W.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_447"
+				data-yui3-record="model_32" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/LH/">LH</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">labour hour</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The labour hour is a unit of time
+						defining the number of labour hours.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_448"
+				data-yui3-record="model_33" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/LTR/">LTR</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">litre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The litre (l) is a unit of volume
+						accepted for use with the International System of Units,
+						representing the volume of 10 cm × 10 cm × 10 cm, 1000 cubic
+						centimetres (cm³) and is thus equal to one thousandth of a cubic
+						metre, 10⁻³ m³, or 1 cubic decimetre (dm³).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_449"
+				data-yui3-record="model_34" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MAW/">MAW</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">megawatt</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The megawatt (MW) is a unit of power in
+						the International System of Units, equivalent to million watts,
+						10⁶ W.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_450"
+				data-yui3-record="model_35" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MGM/">MGM</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">milligram</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The milligram (mg) is a unit of mass in
+						the International System of Units, equivalent to one thousandth of
+						a gramme, 10⁻³ g (0.001 g), or 10⁻⁶ kg (0.000001 kg).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_451"
+				data-yui3-record="model_36" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MIN/">MIN</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">minute</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The minute (min) is a unit of time
+						accepted for use with the International System of Units,
+						equivalent to 1⁄60 of an hour, or 60 seconds.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_452"
+				data-yui3-record="model_37" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MLT/">MLT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">millilitre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The millilitre (ml) is a unit of fluid
+						volume (or capacity), equivalent to one thousandth of a litre
+						(0.001 l), 10⁻⁶ m³. The millilitre is not a unit in the
+						International System of Units (SI), but is accepted for use with
+						SI units and prefixes by the International Committee for Weights
+						and Measures.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_453"
+				data-yui3-record="model_38" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MMT/">MMT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">millimetre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The millimetre (mm) is a unit of length
+						in the International System of Units, equivalent to one thousandth
+						of a metre, 10⁻³ m (0.001 m).</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_454"
+				data-yui3-record="model_39" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MTK/">MTK</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">square metre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The square metre (m²) is a unit of area
+						in the International System of Units, equivalent to the area
+						formed by a square measuring 1 m by 1 m, 1 m².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_455"
+				data-yui3-record="model_40" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MTR/">MTR</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">metre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The metre (m) is the base unit of
+						length in some metric systems, including the International System
+						of Units. The metre is defined as the length of the path travelled
+						by light in a vacuum in 1/299 792 458 second.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_456"
+				data-yui3-record="model_41" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/MTS/">MTS</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">metre per second</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The metre per second (m/s) is a unit of
+						speed in the International System of Units, equivalent to the
+						number of metres covered in one second.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_457"
+				data-yui3-record="model_42" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/NEW/">NEW</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">newton</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The newton (N) is a derived unit of
+						force in the International System of Units, representing the force
+						needed to accelerate one kilogram of mass at the rate of one metre
+						per second squared in the direction of the applied force, (kg ×
+						m)/s².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_458"
+				data-yui3-record="model_43" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/PAL/">PAL</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">pascal</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The pascal (Pa) is a derived unit of
+						pressure in the International System of Units, defined as one
+						newton per square metre, 1 N/m².</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_459"
+				data-yui3-record="model_44" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/SEC/">SEC</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">second</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The second (s) is the base unit of time
+						in the International System of Units (SI), commonly understood and
+						historically defined as 1⁄86400 of a day. However, it is defined
+						by the SI as the duration of 9 192 631 770 periods of the
+						radiation corresponding to the transition between the two
+						hyperfine levels of the ground state of the caesium-133 atom.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_460"
+				data-yui3-record="model_45" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/TKM/">TKM</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">tonne-kilometre</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The tonne-kilometre (tkm) is a unit of
+						measurement used for calculating the quantity of traffic,
+						representing the transport of one tonne of goods over a distance
+						of one kilometre.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_461"
+				data-yui3-record="model_46" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/TNE/">TNE</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">tonne</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The (metric) tonne (t) is a non-SI unit
+						of mass (i.e. outside of the International System of Units),
+						equivalent to one thousand kilograms, 10³ kg (1000 kg), or
+						approximately the mass of one cubic meter of water at four degrees
+						Celsius. It is accepted for use with SI units and prefixes by the
+						International Committee for Weights and Measures.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_462"
+				data-yui3-record="model_47" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/TOE/">TOE</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">tonne of oil equivalent</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The tonne of oil equivalent (toe) is a
+						unit of energy, defined as the amount of energy released by
+						burning one tonne of crude oil. It is approximately 42 gigajoules.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_463"
+				data-yui3-record="model_48" class="yui3-datatable-odd ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/VLT/">VLT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">volt</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The volt (V) is the derived unit for
+						electric potential, electric potential difference (voltage) and
+						electromotive force, defined as the difference in electric
+						potential between two points of a conducting wire when an electric
+						current of one ampere dissipates one watt of power between those
+						points.</span></td>
+			</tr>
+			<tr id="yui_patched_v3_18_1_1_1606469360152_464"
+				data-yui3-record="model_49" class="yui3-datatable-even ">
+				<td class="yui3-datatable-col-conceptURI  yui3-datatable-cell "><span
+					class="current-link"><a
+						href="/web/eu-vocabularies/at-concept/-/resource/authority/measurement-unit/WTT/">WTT</a></span></td>
+				<td class="yui3-datatable-col-label  yui3-datatable-cell "><span
+					class="current-link">watt</span></td>
+				<td class="yui3-datatable-col-startDate  yui3-datatable-cell "><span
+					class="current-link">1952-07-23</span></td>
+				<td class="yui3-datatable-col-endDate  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-predecessor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-successor  yui3-datatable-cell "><span
+					class="current-link"></span></td>
+				<td class="yui3-datatable-col-definition  yui3-datatable-cell "><span
+					class="current-link">The watt (W) is a unit of power in the
+						International System of Units, defined as a derived unit of one
+						joule per second and used to quantify the rate of energy transfer.</span></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

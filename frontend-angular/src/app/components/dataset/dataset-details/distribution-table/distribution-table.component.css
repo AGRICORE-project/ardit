@@ -1,0 +1,33 @@
+.fa-file-download {
+    color: #44613a;
+}
+
+thead th {
+    background-color: #44613a;
+    color: white;
+}
+
+
+/* Pagination config*/
+
+.paginator ::ng-deep .ngx-pagination .current {
+    background: #44613a;
+    border-radius: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.paginator ::ng-deep .ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: #d4edda;
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+}
+
+.paginator ::ng-deep .ngx-pagination a:focus,
+.ngx-pagination button:focus {
+    outline: none;
+    background: #d4edda;
+}

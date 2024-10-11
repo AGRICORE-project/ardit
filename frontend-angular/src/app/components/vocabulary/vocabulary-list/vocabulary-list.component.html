@@ -1,0 +1,120 @@
+<div class="container col-sm-12">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="breadcrumb-link" href="#"><i class="fas fa-home"></i></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Vocabularies</li>
+        </ol>
+    </nav>
+
+    <div class="card">
+        <div class="card-body main-panel">
+
+            <div class="card-title d-flex justify-content-between align-items-center">
+                <h5>Vocabularies</h5>
+                <button type="button" class="btn btn-outline-success" routerLink="{{vocabularyCreateRoute}}"><i class="fas fa-plus"></i> Create a new vocabulary</button>
+            </div>
+
+            <hr>
+
+            <div *ngIf="!vocabularies" class="d-flex justify-content-center">
+                <div class="spinner-border spinner-color m-5" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div *ngIf="vocabularies">
+
+                <div class="form-group form-inline">
+                    Search: <input class="form-control ml-2" type="text" [(ngModel)]="searchInput" (ngModelChange)="onSearch($event)" placeholder="Search for vocabularies..." />
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <span *ngIf="vocabularies.length" class="mr-2"><small><em>Vocabularies found: {{vocabulariesFiltered.length}}</em></small></span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th class="text-center">Link</th>
+                                <th class="text-center">Topic</th>
+                                <th class="text-center">Options</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let vocabulary of vocabulariesFiltered | paginate: {itemsPerPage: pageSize, currentPage: page, totalItems: collectionSize }; index as i">
+
+                                <td>
+                                    <ngb-highlight [result]="vocabulary.name" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                                </td>
+
+                                <td>
+                                    <ngb-highlight [result]="vocabulary.description" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                                </td>
+
+                                <td *ngIf="!vocabulary.url; else vocabularyLink" class="text-center">Internal vocabulary</td>
+                                <ng-template #vocabularyLink>
+                                    <td class="text-center"><small><a class="attribute-link" href="{{vocabulary.url}}" target="_blank"><i class="fas fa-external-link-alt"></i></a></small></td>
+                                </ng-template>
+
+                                <td class="text-center">
+                                    <ngb-highlight [result]="vocabulary.topic" [term]="searchInput" [highlightClass]="'table-highlight'"></ngb-highlight>
+                                </td>
+
+                                <td class="text-center">
+                                    <div ngbDropdown container="body">
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" ngbDropdownToggle>Options</button>
+                                        <div ngbDropdownMenu>
+                                            <button type="button" ngbDropdownItem routerLink="{{vocabularyEditRoute}}{{vocabulary.id}}"><i class="fas fa-pencil-alt"></i> Edit</button>
+                                            <button type="button" ngbDropdownItem (click)="getJsonVocabulary(vocabulary.id)"><i class="fas fa-file-download"></i> Download vocabulary as JSON file</button>
+                                            <button type="button" ngbDropdownItem (click)="openDeleteModal(deleteVocabularyModal, vocabulary.id)"><i class="fas fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div *ngIf="vocabulariesFiltered.length == 0">
+                    <span><i>No items found</i></span>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <pagination-controls class="paginator" [responsive]="true" (pageChange)="pageChanged($event)"></pagination-controls>
+
+                    <select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+                      <option [ngValue]="10">10 items per page</option>
+                      <option [ngValue]="20">20 items per page</option>
+                      <option [ngValue]="50">50 items per page</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Delete vocabulary modal-->
+<ng-template #deleteVocabularyModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Delete vocabulary</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-row">
+            <span>Deleting a vocabulary will delete all its associated values. Are you sure about that? Please, consider deleting values individually, changes cannot be undone</span>
+        </div>
+        <hr>
+        <div class="form-group mt-2 float-right">
+            <button class="btn btn-danger" (click)="deleteVocabulary()">Yes, delete it</button>
+            <button type="button" class="btn btn-secondary ml-2" (click)="modal.dismiss()">Cancel</button>
+        </div>
+    </div>
+</ng-template>

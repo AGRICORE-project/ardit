@@ -1,0 +1,81 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{analysisUnitSelected.unitReference}}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+
+    <div class="row ml-1">
+        <div class="col-md-6">
+
+            <dt>Name</dt>
+            <dd>{{analysisUnitSelected.unitReference}}</dd>
+
+            <dt>Temporal extent</dt>
+            <dd *ngIf="!analysisUnitSelected.tmpExtentFrom && !analysisUnitSelected.tmpExtentTo; else analysisUnitTmpExtent" class="font-italic">Not available</dd>
+            <ng-template #analysisUnitTmpExtent>
+                <dd>{{analysisUnitSelected.tmpExtentFrom | date:'MMMM, yyyy'}} - {{analysisUnitSelected.tmpExtentTo | date:'MMMM, yyyy'}}</dd>
+            </ng-template>
+
+            <dt>Aggregation level</dt>
+            <dd *ngIf="!analysisUnitSelected.aggregationLevel && !analysisUnitSelected.aggregationUnit; else analysisUnitAggregationLevel" class="font-italic">Not available</dd>
+            <ng-template #analysisUnitAggregationLevel>
+                <dd>{{analysisUnitSelected.aggregationLevel}} {{analysisUnitSelected.aggregationUnit}}</dd>
+            </ng-template>
+
+            <dt>Aggregation scale</dt>
+            <dd *ngIf="!analysisUnitSelected.aggregationScale; else analysisUnitAggregationScale" class="font-italic">Not available</dd>
+            <ng-template #analysisUnitAggregationScale>
+                <dd>{{analysisUnitSelected.aggregationScale}}</dd>
+            </ng-template>
+        </div>
+
+        <div class="col-md-6">
+
+            <dt>Census</dt>
+            <dd *ngIf="!analysisUnitSelected.census; else analysisUnitCensus">No</dd>
+            <ng-template #analysisUnitCensus>
+                <dd>Yes</dd>
+            </ng-template>
+
+            <dt>Population coverage</dt>
+            <dd *ngIf="!analysisUnitSelected.populationCoverage; else analysisUnitPopulationCoverage" class="font-italic">Not available</dd>
+            <ng-template #analysisUnitPopulationCoverage>
+                <dd>{{analysisUnitSelected.populationCoverage}}%</dd>
+            </ng-template>
+
+            <dt>Unit of analysis number</dt>
+            <dd *ngIf="!analysisUnitSelected.unitAnalysisNumber; else analysisUnitNumber" class="font-italic">Not available</dd>
+            <ng-template #analysisUnitNumber>
+                <dd>{{analysisUnitSelected.unitAnalysisNumber}}</dd>
+            </ng-template>
+
+            <div *ngIf="datasetType.includes('GEOREFERENCED')">
+                <dt>Area size</dt>
+                <dd *ngIf="!analysisUnitSelected.areaSizeValue && !analysisUnitSelected.areaSizeUnit; else analysisUnitAreaSize" class="font-italic">Not available</dd>
+                <ng-template #analysisUnitAreaSize>
+                    <dd>{{analysisUnitSelected.areaSizeValue}} {{analysisUnitSelected.areaSizeUnit}}</dd>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-md-12">
+        <dt>Statistical representativeness</dt>
+        <dd *ngIf="!analysisUnitSelected.statsRepresentativeness; else analysisUnitStatsRep" class="font-italic">Not available</dd>
+        <ng-template #analysisUnitStatsRep>
+            <dd>{{analysisUnitSelected.statsRepresentativeness}}</dd>
+        </ng-template>
+    </div>
+
+    <div class="col-md-12">
+        <dt>Available stratification criteria & suggested downscaling methodologies</dt>
+        <dd *ngIf="!analysisUnitSelected.downscalingMethodology; else analysisUnitDownscaling" class="font-italic">Not available</dd>
+        <ng-template #analysisUnitDownscaling>
+            <dd>{{analysisUnitSelected.downscalingMethodology}}</dd>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{
+    "name": "Continents vocabulary",
+    "description": "Continents values for dataset continental coverage",
+    "url": "http://publications.europa.eu/resource/authority/continent",
+    "topic": "CONTINENT",
+    "values": [
+        {
+            "code": "AFRICA",
+            "url": "http://publications.europa.eu/resource/authority/continent/AFRICA",
+            "label": "Africa",
+            "extraData": null
+        },
+        {
+            "code": "AMERICA",
+            "url": "http://publications.europa.eu/resource/authority/continent/AMERICA",
+            "label": "America",
+            "extraData": null
+        },
+        {
+            "code": "ANTARCTICA",
+            "url": "http://publications.europa.eu/resource/authority/continent/ANTARCTICA",
+            "label": "Antarctica",
+            "extraData": null
+        },
+        {
+            "code": "ASIA",
+            "url": "http://publications.europa.eu/resource/authority/continent/ASIA",
+            "label": "Asia",
+            "extraData": null
+        },
+        {
+            "code": "EUROPE",
+            "url": "http://publications.europa.eu/resource/authority/continent/EUROPE",
+            "label": "Europe",
+            "extraData": null
+        },
+        {
+            "code": "OCEANIA",
+            "url": "http://publications.europa.eu/resource/authority/continent/OCEANIA",
+            "label": "Oceania",
+            "extraData": null
+        }
+    ]
+}

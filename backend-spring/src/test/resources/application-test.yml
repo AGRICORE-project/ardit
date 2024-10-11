@@ -1,0 +1,39 @@
+cookie: 
+  domain: localhost
+  expirationTimeInSeconds: 10800
+  name: AGRICORE-TOKEN
+jwt:
+  expirationMinutes: 60
+  id: agricorejwt
+  secret: Te2Y2NqC8jN
+ldap:
+  partition: agricore
+  partitionSuffix: dc=agricore,dc=eu
+  password: w3qDe77RXWs
+  port: 390
+  principal: cn=admin,dc=agricore,dc=eu
+  url: ldap://localhost:390
+server:
+  error:
+    include-stacktrace: never
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb;
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: create 
+  ldap:
+    embedded:
+      base-dn: dc=agricore,dc=eu
+      credential:
+        password: w3qDe77RXWs
+        username: cn=admin,dc=agricore,dc=eu
+      ldif: classpath:test.ldif
+      port: 390
+      validation:
+        enabled: false
+  liquibase:
+    enabled: false

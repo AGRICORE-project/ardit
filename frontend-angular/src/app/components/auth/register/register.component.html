@@ -1,0 +1,71 @@
+<div class="container py-4 col-sm-6">
+
+    <div class="row">
+        <img class="mr-3" src="/assets/img/logo-alt.png" alt="Agricore logo" width="70px" height="70px">
+        <h1><strong>ARDIT</strong></h1>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body justify-content-center">
+
+            <div class="card-title text-center">
+                <h4><strong>Sign up</strong></h4>
+                <hr>
+            </div>
+
+            <form [formGroup]="registerForm" (ngSubmit)="signUp()" novalidate>
+
+                <div *ngIf="success" class="alert alert-success">
+                    <span>{{success}}</span>
+                </div>
+
+                <div *ngIf="error" class="alert alert-danger">
+                    <span>{{error}}</span>
+                </div>
+
+                <div class="form-group">
+                    <input id="username" type="text" class="form-control" formControlName="username" placeholder="Username">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(registerForm, 'username')"><small>Username is required</small></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" formControlName="email" placeholder="Email">
+
+                    <span class="text-danger" *ngIf="fieldInvalid(registerForm, 'email')"><small>Email is required</small></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password">
+
+                    <div *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty || registerForm.controls['password'].touched)">
+                        <span class="text-danger" *ngIf="registerForm.controls['password'].errors.required"><small>Password is required</small></span>
+                        <span class="text-danger" *ngIf="registerForm.controls['password'].errors.minlength"><small>Password must be at least 8 characters long</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirm password">
+                    <div *ngIf="fieldInvalid(registerForm, 'confirmPassword')">
+                        <span class="text-danger" *ngIf="registerForm.controls['confirmPassword'].errors.required"><small>Password confirmation is required</small><br></span>
+                        <span class="text-danger" *ngIf="registerForm.controls['confirmPassword'].errors.mustMatch"><small>Passwords must match</small><br></span>
+                        <span class="text-danger" *ngIf="registerForm.controls['confirmPassword'].errors.minlength"><small>The password must be at least 8 characters long</small></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-primary btn-block" [disabled]="registerForm.pristine || registerForm.invalid">Sign up 
+                        <div *ngIf="spinner" class="spinner-border spinner-border-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <a routerLink="{{loginRoute}}" [routerLinkActive]="['active']">I have an account! Sign in</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

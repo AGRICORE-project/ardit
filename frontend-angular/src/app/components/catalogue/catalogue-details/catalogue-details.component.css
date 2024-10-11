@@ -1,0 +1,58 @@
+.attribute-link {
+    color: #677E67;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+.dataset-info {
+    background-color: #f8f9fa;
+    border-left: 5px solid #677E67;
+}
+
+.dataset-info:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-left: 5px solid #44613a;
+}
+
+.draft-heading {
+    color: grey;
+}
+
+span.section {
+    font-weight: bold;
+}
+
+.section-green {
+    color: #44613a;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+}
+
+
+/* Pagination config*/
+
+.paginator ::ng-deep .ngx-pagination .current {
+    background: #44613a;
+    border-radius: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.paginator ::ng-deep .ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: #d4edda;
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    text-decoration: none;
+}
+
+.paginator ::ng-deep .ngx-pagination a:focus,
+.ngx-pagination button:focus {
+    outline: none;
+    background: #d4edda;
+}
